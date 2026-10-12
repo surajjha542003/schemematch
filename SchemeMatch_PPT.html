@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SchemeMatch — Presentation</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  @page { size: 1280px 720px; margin: 0; }
+
+  body { font-family: 'Inter', sans-serif; background: #0f0f1a; color: #fff; }
+
+  .slide {
+    width: 1280px; height: 720px;
+    position: relative; overflow: hidden;
+    page-break-after: always;
+    display: flex; flex-direction: column;
+  }
+
+  /* ─── SLIDE 1: TITLE ─── */
+  .s1 {
+    background: linear-gradient(135deg, #0f0a2e 0%, #1a103d 30%, #2d1b69 60%, #1e0f4a 100%);
+    justify-content: center; align-items: center; text-align: center;
+  }
+  .s1::before {
+    content: ''; position: absolute; top: -200px; right: -200px;
+    width: 600px; height: 600px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(99,102,241,0.15) 0%, transparent 70%);
+  }
+  .s1::after {
+    content: ''; position: absolute; bottom: -150px; left: -100px;
+    width: 500px; height: 500px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(14,165,233,0.12) 0%, transparent 70%);
+  }
+  .s1 .badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(99,102,241,0.15); border: 1px solid rgba(99,102,241,0.3);
+    padding: 8px 20px; border-radius: 30px; font-size: 13px; color: #a5b4fc;
+    font-weight: 500; letter-spacing: 1px; text-transform: uppercase;
+    margin-bottom: 28px; z-index: 1;
+  }
+  .s1 h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 72px; font-weight: 700; letter-spacing: -2px;
+    background: linear-gradient(135deg, #fff 0%, #c7d2fe 50%, #818cf8 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    line-height: 1.1; margin-bottom: 16px; z-index: 1;
+  }
+  .s1 .tagline {
+    font-size: 20px; color: #94a3b8; font-weight: 300;
+    max-width: 680px; line-height: 1.6; z-index: 1; margin-bottom: 40px;
+  }
+  .s1 .pills { display: flex; gap: 10px; z-index: 1; flex-wrap: wrap; justify-content: center; }
+  .s1 .pill {
+    padding: 8px 18px; border-radius: 8px; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  .pill-purple { background: rgba(139,92,246,0.2); color: #c4b5fd; border: 1px solid rgba(139,92,246,0.3); }
+  .pill-blue { background: rgba(14,165,233,0.15); color: #7dd3fc; border: 1px solid rgba(14,165,233,0.3); }
+  .pill-green { background: rgba(16,185,129,0.15); color: #6ee7b7; border: 1px solid rgba(16,185,129,0.3); }
+  .pill-amber { background: rgba(245,158,11,0.15); color: #fcd34d; border: 1px solid rgba(245,158,11,0.3); }
+  .s1 .team {
+    position: absolute; bottom: 36px; font-size: 13px; color: #64748b;
+    z-index: 1; letter-spacing: 0.5px;
+  }
+
+  /* ─── SLIDE 2: PROBLEM ─── */
+  .s2 {
+    background: linear-gradient(160deg, #0f0a2e 0%, #1a0f3a 100%);
+    padding: 56px 72px;
+  }
+  .slide-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 3px;
+    text-transform: uppercase; color: #6366f1; margin-bottom: 8px;
+  }
+  .slide-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 40px; font-weight: 700; letter-spacing: -1px;
+    margin-bottom: 36px; line-height: 1.2;
+  }
+  .stat-hero {
+    background: linear-gradient(135deg, rgba(239,68,68,0.12) 0%, rgba(239,68,68,0.05) 100%);
+    border: 1px solid rgba(239,68,68,0.25); border-radius: 16px;
+    padding: 24px 32px; margin-bottom: 32px;
+    display: flex; align-items: center; gap: 24px;
+  }
+  .stat-hero .num {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 52px; font-weight: 700; color: #f87171;
+    white-space: nowrap;
+  }
+  .stat-hero .desc { font-size: 16px; color: #cbd5e1; line-height: 1.6; }
+  .stat-hero .desc strong { color: #fca5a5; }
+
+  .problem-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .pcard {
+    background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px; padding: 24px;
+  }
+  .pcard .picon { font-size: 28px; margin-bottom: 12px; }
+  .pcard .ptitle { font-size: 15px; font-weight: 700; margin-bottom: 8px; color: #f1f5f9; }
+  .pcard .pdesc { font-size: 12.5px; color: #94a3b8; line-height: 1.6; }
+  .pcard-danger { border-color: rgba(239,68,68,0.3); background: rgba(239,68,68,0.06); }
+  .pcard-danger .ptitle { color: #fca5a5; }
+
+  /* ─── SLIDE 3: SOLUTION ─── */
+  .s3 {
+    background: linear-gradient(160deg, #0f0a2e 0%, #0f1a3a 100%);
+    padding: 52px 72px;
+  }
+  .sol-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 20px; }
+  .sol-card {
+    background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px; padding: 24px 26px;
+    position: relative; overflow: hidden;
+  }
+  .sol-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  }
+  .sol-c1::before { background: linear-gradient(90deg, #8b5cf6, #a78bfa); }
+  .sol-c2::before { background: linear-gradient(90deg, #0ea5e9, #38bdf8); }
+  .sol-c3::before { background: linear-gradient(90deg, #10b981, #34d399); }
+  .sol-card .sol-icon { font-size: 24px; margin-bottom: 10px; }
+  .sol-card .sol-title { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+  .sol-card .sol-desc { font-size: 12px; color: #94a3b8; line-height: 1.6; }
+  .sol-c1 .sol-title { color: #c4b5fd; }
+  .sol-c2 .sol-title { color: #7dd3fc; }
+  .sol-c3 .sol-title { color: #6ee7b7; }
+
+  .algo-box {
+    background: linear-gradient(135deg, rgba(99,102,241,0.08), rgba(14,165,233,0.06));
+    border: 1px solid rgba(99,102,241,0.2); border-radius: 14px;
+    padding: 22px 28px;
+    display: flex; align-items: center; gap: 32px;
+  }
+  .algo-box .algo-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase; color: #818cf8; margin-bottom: 6px;
+  }
+  .algo-box .algo-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px; font-weight: 700; color: #e0e7ff; margin-bottom: 4px;
+  }
+  .algo-box .algo-desc { font-size: 12px; color: #94a3b8; line-height: 1.5; }
+  .algo-flow {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 11px; font-weight: 600; flex-shrink: 0;
+  }
+  .algo-step {
+    padding: 8px 14px; border-radius: 8px;
+    background: rgba(99,102,241,0.15); color: #a5b4fc;
+    border: 1px solid rgba(99,102,241,0.25);
+    white-space: nowrap;
+  }
+  .algo-arrow { color: #4f46e5; font-size: 16px; }
+
+  /* ─── SLIDE 4: SCALABILITY ─── */
+  .s4 {
+    background: linear-gradient(160deg, #0f0a2e 0%, #0a1e2e 100%);
+    padding: 52px 72px;
+  }
+  .scale-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 24px; }
+  .scale-card {
+    background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px; padding: 26px; display: flex; gap: 18px; align-items: flex-start;
+  }
+  .scale-card .sc-icon {
+    width: 48px; height: 48px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px; flex-shrink: 0;
+  }
+  .sc-i1 { background: rgba(139,92,246,0.15); }
+  .sc-i2 { background: rgba(14,165,233,0.15); }
+  .sc-i3 { background: rgba(16,185,129,0.15); }
+  .sc-i4 { background: rgba(245,158,11,0.15); }
+  .scale-card .sc-title { font-size: 15px; font-weight: 700; margin-bottom: 5px; }
+  .scale-card .sc-desc { font-size: 12px; color: #94a3b8; line-height: 1.55; }
+
+  .scale-footer {
+    display: flex; gap: 16px; justify-content: center;
+  }
+  .sf-item {
+    background: rgba(99,102,241,0.08); border: 1px solid rgba(99,102,241,0.2);
+    border-radius: 12px; padding: 16px 28px; text-align: center; flex: 1;
+  }
+  .sf-item .sf-val {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 28px; font-weight: 700; color: #818cf8;
+  }
+  .sf-item .sf-label { font-size: 11px; color: #94a3b8; margin-top: 4px; font-weight: 500; }
+
+  /* ─── SLIDE 5: IMPACT ─── */
+  .s5 {
+    background: linear-gradient(160deg, #0f0a2e 0%, #0a2e1a 100%);
+    padding: 52px 72px;
+  }
+  .impact-metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 28px; }
+  .im {
+    background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px; padding: 24px 16px; text-align: center;
+  }
+  .im .im-val {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 36px; font-weight: 700; margin-bottom: 6px;
+  }
+  .im-v1 { color: #34d399; }
+  .im-v2 { color: #818cf8; }
+  .im-v3 { color: #fbbf24; }
+  .im-v4 { color: #f472b6; }
+  .im .im-label { font-size: 11px; color: #94a3b8; font-weight: 500; line-height: 1.4; }
+
+  .impact-compare {
+    background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px; overflow: hidden;
+  }
+  .ic-header { display: grid; grid-template-columns: 180px 1fr 1fr 1fr; }
+  .ic-header div {
+    padding: 14px 18px; font-size: 11px; font-weight: 700;
+    letter-spacing: 1px; text-transform: uppercase;
+    background: rgba(99,102,241,0.1); color: #a5b4fc;
+    border-bottom: 1px solid rgba(99,102,241,0.2);
+  }
+  .ic-row { display: grid; grid-template-columns: 180px 1fr 1fr 1fr; }
+  .ic-row div {
+    padding: 12px 18px; font-size: 12.5px; color: #cbd5e1;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    display: flex; align-items: center; gap: 6px;
+  }
+  .ic-row .ic-feat { font-weight: 600; color: #e2e8f0; }
+  .ic-yes { color: #34d399 !important; font-weight: 600 !important; }
+  .ic-no { color: #f87171 !important; }
+  .ic-partial { color: #fbbf24 !important; }
+
+  /* ─── SLIDE 6: REFERENCES ─── */
+  .s6 {
+    background: linear-gradient(160deg, #0f0a2e 0%, #1a103d 100%);
+    padding: 52px 72px;
+  }
+  .ref-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 28px; }
+  .ref-card {
+    background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px; padding: 18px 22px;
+    display: flex; gap: 14px; align-items: flex-start;
+  }
+  .ref-card .ref-icon {
+    width: 36px; height: 36px; border-radius: 8px; display: flex;
+    align-items: center; justify-content: center; font-size: 16px;
+    flex-shrink: 0; background: rgba(99,102,241,0.12);
+  }
+  .ref-card .ref-title { font-size: 13px; font-weight: 600; color: #e2e8f0; margin-bottom: 3px; }
+  .ref-card .ref-url { font-size: 10.5px; color: #818cf8; word-break: break-all; }
+  .ref-card .ref-note { font-size: 10.5px; color: #64748b; margin-top: 2px; }
+
+  .ref-tech {
+    background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 12px; padding: 20px 24px;
+  }
+  .ref-tech-title { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #6366f1; margin-bottom: 12px; }
+  .ref-tech-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+  .ref-tech-tag {
+    padding: 6px 14px; border-radius: 8px; font-size: 11px; font-weight: 600;
+    background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+    color: #94a3b8;
+  }
+
+  .slide-footer {
+    position: absolute; bottom: 24px; left: 72px; right: 72px;
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 11px; color: #475569;
+  }
+  .slide-num {
+    width: 28px; height: 28px; border-radius: 50%;
+    background: rgba(99,102,241,0.15); border: 1px solid rgba(99,102,241,0.3);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; color: #818cf8; font-size: 11px;
+  }
+
+  .thank-box {
+    margin-top: 20px; text-align: center;
+    background: linear-gradient(135deg, rgba(99,102,241,0.1), rgba(14,165,233,0.08));
+    border: 1px solid rgba(99,102,241,0.2); border-radius: 16px;
+    padding: 20px;
+  }
+  .thank-box .tb-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 24px; font-weight: 700; color: #c7d2fe; margin-bottom: 6px;
+  }
+  .thank-box .tb-sub { font-size: 13px; color: #94a3b8; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════ SLIDE 1: TITLE ═══════════ -->
+<div class="slide s1">
+  <div class="badge">🎓 Hackathon Presentation 2026</div>
+  <h1>SchemeMatch</h1>
+  <div class="tagline">
+    AI-Powered, Conflict-Aware Government Scholarship<br>
+    Optimization Platform for Indian Students
+  </div>
+  <div class="pills">
+    <span class="pill pill-purple">🤖 AI Profile Extraction</span>
+    <span class="pill pill-blue">⚡ &lt;50ms Evaluation</span>
+    <span class="pill pill-green">🧮 MWIS Algorithm</span>
+    <span class="pill pill-amber">🌐 Offline-First</span>
+  </div>
+  <div class="team">
+    Tamil Nadu Focus · 30+ Schemes · Vanilla JS + Node.js + MongoDB
+  </div>
+</div>
+
+<!-- ═══════════ SLIDE 2: PROBLEM STATEMENT ═══════════ -->
+<div class="slide s2">
+  <div class="slide-label">The Problem</div>
+  <div class="slide-title">Why Deserving Students Lose Financial Aid</div>
+
+  <div class="stat-hero">
+    <div class="num">₹1,200 Cr</div>
+    <div class="desc">
+      in state and central scholarships go <strong>unclaimed or rejected every year</strong> — not because students 
+      don't want them, but because navigating government portals feels like preparing for the civil services exam.
+    </div>
+  </div>
+
+  <div class="problem-cards">
+    <div class="pcard">
+      <div class="picon">🔀</div>
+      <div class="ptitle">15+ Overlapping Schemes</div>
+      <div class="pdesc">Tamil Nadu runs 15+ welfare & scholarship schemes across ADW, BC/MBC Welfare, Pudhumai Penn, 7.5% Quota — each with hyper-specific thresholds across community, income, gender, and more.</div>
+    </div>
+    <div class="pcard">
+      <div class="picon">📄</div>
+      <div class="ptitle">Information Overload</div>
+      <div class="pdesc">A student cannot read 15 separate 40-page government gazette orders to know what they qualify for. There is no single unified source that aggregates all criteria.</div>
+    </div>
+    <div class="pcard pcard-danger">
+      <div class="picon">⚠️</div>
+      <div class="ptitle">The "Conflict Trap"</div>
+      <div class="pdesc">Students can't draw from two overlapping schemes simultaneously. Apply to both → <strong>both get rejected</strong>. Or they pick a ₹4K scheme when eligible for a ₹40K bundle.</div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span>SchemeMatch — Project Presentation</span>
+    <div class="slide-num">2</div>
+  </div>
+</div>
+
+<!-- ═══════════ SLIDE 3: THE SOLUTION ═══════════ -->
+<div class="slide s3">
+  <div class="slide-label">The Solution</div>
+  <div class="slide-title">SchemeMatch — An Algorithmic Scholarship Counselor</div>
+
+  <div class="sol-grid">
+    <div class="sol-card sol-c1">
+      <div class="sol-icon">🤖</div>
+      <div class="sol-title">Zero-Barrier AI Profiling</div>
+      <div class="sol-desc">Student types: <em>"I'm a girl from a TN govt school, doing B.Tech, 1.2 LPA, BC"</em> — our NL parser extracts all parameters instantly. Dual-mode: LLM primary + deterministic regex fallback.</div>
+    </div>
+    <div class="sol-card sol-c2">
+      <div class="sol-icon">📋</div>
+      <div class="sol-title">30+ Audited Scheme Catalog</div>
+      <div class="sol-desc">19 Tamil Nadu + 11 National schemes, each coded with exact departmental criteria as deterministic <code style="color:#7dd3fc; background:rgba(14,165,233,0.15); padding:2px 6px; border-radius:4px; font-size:11px;">eligFn()</code> functions. Rule-based — zero hallucinations.</div>
+    </div>
+    <div class="sol-card sol-c3" style="grid-column: span 2;">
+      <div class="sol-icon">⚡</div>
+      <div class="sol-title">Conflict-Aware Decision Engine — The Core Innovation</div>
+      <div class="sol-desc">Doesn't dump 8 random schemes. Models schemes as a <strong>weighted conflict graph</strong>. Solves the <strong>Maximum Weight Independent Set (MWIS)</strong> problem to find the highest-value, legally valid, non-conflicting combination. Uses bitmask brute-force (n≤20, &lt;50ms) with greedy fallback. AI only phrases results — <strong>never decides eligibility</strong>.</div>
+    </div>
+  </div>
+
+  <div class="algo-box">
+    <div style="flex:1;">
+      <div class="algo-label">Algorithm Pipeline</div>
+      <div class="algo-title">From Natural Language to Optimal Aid Bundle in &lt;50ms</div>
+      <div class="algo-desc">Each scheme has <code style="color:#a5b4fc;background:rgba(99,102,241,0.15);padding:1px 5px;border-radius:3px;font-size:10px;">exclusiveGroup</code> and <code style="color:#a5b4fc;background:rgba(99,102,241,0.15);padding:1px 5px;border-radius:3px;font-size:10px;">conflictsWith</code> metadata mirroring real NSP "one benefit per fee line" rules.</div>
+    </div>
+    <div class="algo-flow">
+      <span class="algo-step">NL Input</span>
+      <span class="algo-arrow">→</span>
+      <span class="algo-step">AI Parse</span>
+      <span class="algo-arrow">→</span>
+      <span class="algo-step">30+ eligFn()</span>
+      <span class="algo-arrow">→</span>
+      <span class="algo-step">MWIS</span>
+      <span class="algo-arrow">→</span>
+      <span class="algo-step">₹ Best Combo</span>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span>SchemeMatch — Project Presentation</span>
+    <div class="slide-num">3</div>
+  </div>
+</div>
+
+<!-- ═══════════ SLIDE 4: SCALABILITY ═══════════ -->
+<div class="slide s4">
+  <div class="slide-label">Scalability</div>
+  <div class="slide-title">Built to Scale — From Tamil Nadu to All of India</div>
+
+  <div class="scale-grid">
+    <div class="scale-card">
+      <div class="sc-icon sc-i1">📝</div>
+      <div>
+        <div class="sc-title">Declarative JSON Rule Schema</div>
+        <div class="sc-desc">Scheme rules are <strong>not hard-coded in logic</strong>. Eligibility conditions, income ceilings, community gates, and conflict edges are parameterized in JSON. Adding a new scheme takes <strong>2 minutes</strong> — change a config file, no code redeployment needed.</div>
+      </div>
+    </div>
+    <div class="scale-card">
+      <div class="sc-icon sc-i2">🔄</div>
+      <div>
+        <div class="sc-title">Auto-Ingestion Pipeline</div>
+        <div class="sc-desc">Daily cron job crawls official government portals (HTML + PDF), extracts structured data via LLM, and proposes updates. <strong>High-confidence extractions auto-apply</strong>; medium/low go to human review queue with full audit trail.</div>
+      </div>
+    </div>
+    <div class="scale-card">
+      <div class="sc-icon sc-i3">🌍</div>
+      <div>
+        <div class="sc-title">State-Agnostic Architecture</div>
+        <div class="sc-desc">TN-specific categories (BC/MBC/DNC) are in the data layer, not the engine. Adding Karnataka, Maharashtra, or any state is just adding a new <code style="color:#6ee7b7;background:rgba(16,185,129,0.15);padding:1px 5px;border-radius:3px;font-size:10px;">stateSchemes.js</code> file with eligFn definitions — same engine, same conflict resolution.</div>
+      </div>
+    </div>
+    <div class="scale-card">
+      <div class="sc-icon sc-i4">🔌</div>
+      <div>
+        <div class="sc-title">API-First Design</div>
+        <div class="sc-desc">RESTful backend with <code style="color:#fbbf24;background:rgba(245,158,11,0.12);padding:1px 5px;border-radius:3px;font-size:10px;">POST /schemes/match</code> and <code style="color:#fbbf24;background:rgba(245,158,11,0.12);padding:1px 5px;border-radius:3px;font-size:10px;">POST /profile/parse</code> endpoints — can be plugged into TN e-District, UMANG, Naan Mudhalvan, or any govt portal with a single API webhook.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scale-footer">
+    <div class="sf-item"><div class="sf-val">30+</div><div class="sf-label">Schemes Today</div></div>
+    <div class="sf-item"><div class="sf-val">2 min</div><div class="sf-label">To Add a Scheme</div></div>
+    <div class="sf-item"><div class="sf-val">12</div><div class="sf-label">REST API Endpoints</div></div>
+    <div class="sf-item"><div class="sf-val">100%</div><div class="sf-label">Offline Resilient</div></div>
+  </div>
+
+  <div class="slide-footer">
+    <span>SchemeMatch — Project Presentation</span>
+    <div class="slide-num">4</div>
+  </div>
+</div>
+
+<!-- ═══════════ SLIDE 5: IMPACT ═══════════ -->
+<div class="slide s5">
+  <div class="slide-label">Impact</div>
+  <div class="slide-title">Real Impact — Measurable, Immediate, Equitable</div>
+
+  <div class="impact-metrics">
+    <div class="im">
+      <div class="im-val im-v1">₹62,000</div>
+      <div class="im-label">Annual aid identified for<br>a sample TN student profile</div>
+    </div>
+    <div class="im">
+      <div class="im-val im-v2">Zero</div>
+      <div class="im-label">Rejections from<br>double-dipping conflicts</div>
+    </div>
+    <div class="im">
+      <div class="im-val im-v3">&lt;50ms</div>
+      <div class="im-label">Full evaluation of<br>30+ schemes</div>
+    </div>
+    <div class="im">
+      <div class="im-val im-v4">&lt;1 sec</div>
+      <div class="im-label">Page load time<br>on 3G connections</div>
+    </div>
+  </div>
+
+  <div class="impact-compare">
+    <div class="ic-header">
+      <div>Feature</div>
+      <div>SchemeMatch</div>
+      <div>Govt Portal</div>
+      <div>Other Projects</div>
+    </div>
+    <div class="ic-row">
+      <div class="ic-feat">Conflict Detection</div>
+      <div class="ic-yes">✅ MWIS Algorithm</div>
+      <div class="ic-no">❌ None</div>
+      <div class="ic-no">❌ None</div>
+    </div>
+    <div class="ic-row">
+      <div class="ic-feat">Optimal Combination</div>
+      <div class="ic-yes">✅ Max-value subset</div>
+      <div class="ic-no">❌ Flat list only</div>
+      <div class="ic-no">❌ Flat list only</div>
+    </div>
+    <div class="ic-row">
+      <div class="ic-feat">Natural Language Input</div>
+      <div class="ic-yes">✅ AI + regex fallback</div>
+      <div class="ic-no">❌ Complex forms</div>
+      <div class="ic-partial">⚠️ AI only (no fallback)</div>
+    </div>
+    <div class="ic-row">
+      <div class="ic-feat">Offline Capability</div>
+      <div class="ic-yes">✅ 100% client-side</div>
+      <div class="ic-no">❌ Server-dependent</div>
+      <div class="ic-no">❌ API-dependent</div>
+    </div>
+    <div class="ic-row">
+      <div class="ic-feat">Auto Data Freshness</div>
+      <div class="ic-yes">✅ Ingestion pipeline</div>
+      <div class="ic-no">❌ Manual updates</div>
+      <div class="ic-no">❌ Static data</div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span>SchemeMatch — Project Presentation</span>
+    <div class="slide-num">5</div>
+  </div>
+</div>
+
+<!-- ═══════════ SLIDE 6: REFERENCES ═══════════ -->
+<div class="slide s6">
+  <div class="slide-label">References</div>
+  <div class="slide-title">Data Sources & Technology References</div>
+
+  <div class="ref-grid">
+    <div class="ref-card">
+      <div class="ref-icon">🏛️</div>
+      <div>
+        <div class="ref-title">Adi Dravidar & Tribal Welfare Dept, TN</div>
+        <div class="ref-url">tnadw.tn.gov.in</div>
+        <div class="ref-note">SC/ST scholarship schemes, eligibility criteria</div>
+      </div>
+    </div>
+    <div class="ref-card">
+      <div class="ref-icon">🏛️</div>
+      <div>
+        <div class="ref-title">BC, MBC & Minorities Welfare Dept, TN</div>
+        <div class="ref-url">bcw.tn.gov.in</div>
+        <div class="ref-note">BC/MBC/DNC post-matric & welfare schemes</div>
+      </div>
+    </div>
+    <div class="ref-card">
+      <div class="ref-icon">🎓</div>
+      <div>
+        <div class="ref-title">National Scholarship Portal (NSP)</div>
+        <div class="ref-url">scholarships.gov.in</div>
+        <div class="ref-note">Central govt schemes, "one benefit per fee line" rule</div>
+      </div>
+    </div>
+    <div class="ref-card">
+      <div class="ref-icon">🏫</div>
+      <div>
+        <div class="ref-title">AICTE Official Portal</div>
+        <div class="ref-url">aicte-india.org</div>
+        <div class="ref-note">Pragati & Saksham scholarship criteria</div>
+      </div>
+    </div>
+    <div class="ref-card">
+      <div class="ref-icon">📊</div>
+      <div>
+        <div class="ref-title">TN Govt Scheme Catalog</div>
+        <div class="ref-url">tn.gov.in/scheme_beneficiary_list.php</div>
+        <div class="ref-note">488+ statewide schemes (filtered to education)</div>
+      </div>
+    </div>
+    <div class="ref-card">
+      <div class="ref-icon">🔬</div>
+      <div>
+        <div class="ref-title">DST INSPIRE & CSIR-UGC NET</div>
+        <div class="ref-url">indiascienceandtechnology.gov.in</div>
+        <div class="ref-note">Science & research fellowship criteria</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ref-tech">
+    <div class="ref-tech-title">Technology Stack</div>
+    <div class="ref-tech-grid">
+      <span class="ref-tech-tag">HTML5 / CSS3 / Vanilla ES6+</span>
+      <span class="ref-tech-tag">Node.js + Express</span>
+      <span class="ref-tech-tag">MongoDB Atlas + Mongoose</span>
+      <span class="ref-tech-tag">JWT + bcrypt Auth</span>
+      <span class="ref-tech-tag">OpenRouter LLM API</span>
+      <span class="ref-tech-tag">MWIS (Bitmask Brute Force)</span>
+      <span class="ref-tech-tag">Vercel Deployment</span>
+      <span class="ref-tech-tag">GitHub Actions CI/CD</span>
+      <span class="ref-tech-tag">node-cron Ingestion</span>
+    </div>
+  </div>
+
+  <div class="thank-box">
+    <div class="tb-title">Thank You — We're Ready for Your Questions!</div>
+    <div class="tb-sub">SchemeMatch · AI-Powered Conflict-Aware Scholarship Optimizer · MIT License · 2026</div>
+  </div>
+
+  <div class="slide-footer">
+    <span>SchemeMatch — Project Presentation</span>
+    <div class="slide-num">6</div>
+  </div>
+</div>
+
+</body>
+</html>

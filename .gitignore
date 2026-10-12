@@ -1,0 +1,65 @@
+# ════════════════════════════════════════════
+# Scheme Finder — .gitignore
+# ════════════════════════════════════════════
+
+# ── Environment variables — NEVER commit these ──
+.env*
+*.env
+*.env.*
+
+# Local credentials and private keys
+*.pem
+*.key
+credentials.json
+service-account*.json
+
+# ── Node.js ──
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+
+# ── Build outputs (Stage 2+) ──
+dist/
+build/
+out/
+.cache/
+.parcel-cache/
+.vite/
+
+# ── OS generated files ──
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini
+
+# ── Editor / IDE configs ──
+.idea/
+.vscode/
+*.suo
+*.swp
+*.swo
+*~
+
+# ── Logs ──
+logs/
+*.log
+
+# ── Test coverage (Stage 2+) ──
+coverage/
+.nyc_output/
+
+# ── Deployment tools ──
+.vercel/
+.netlify/
+
+# ── Zip archives (don't commit builds) ──
+*.zip
+*.tar.gz
+
+# ── Local duplicate folder ──
+schemematch-main/
+backend/shared/

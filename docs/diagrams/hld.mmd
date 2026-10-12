@@ -1,0 +1,56 @@
+graph TB
+    subgraph Client["Student's Browser"]
+        SPA["Static SPA<br/>index.html + CSS/JS<br/>(Dashboard, Eligibility, Chat,<br/>Schemes, Tracker, Deadlines)"]
+        LS[("localStorage<br/>profile, checklist,<br/>applications")]
+    end
+
+    subgraph FE["Frontend — static hosting"]
+        Eligibility["Eligibility Checker"]
+        Chat["AI Assistant"]
+        Tracker["Application Tracker"]
+        Browse["Schemes / Deadlines / Compare"]
+    end
+
+    subgraph BE["Backend API — Express (Node)"]
+        API["REST API /api/v1/*"]
+        Elig["Eligibility Engine<br/>(deterministic eligFn per scheme)"]
+        Conflict["Conflict-Aware<br/>Best-Fit Engine"]
+        AIExplain["AI Explanation Layer<br/>(phrasing only)"]
+        ChatSvc["Chat Reply Service"]
+        Auth["Auth / User Profile"]
+        Ingestion["Ingestion Pipeline<br/>(daily cron)"]
+    end
+
+    subgraph Data["Data Layer"]
+        Mongo[("MongoDB Atlas<br/>Scheme, User,<br/>SchemeChangeProposal")]
+        StaticData["Hand-curated Scheme Datasets<br/>National + Tamil Nadu"]
+    end
+
+    subgraph Ext["External Services"]
+        OpenRouter["OpenRouter LLM API<br/>(free-tier model)"]
+        GovPortals["Official Govt Portals<br/>NSP · TN e-Sevai · AICTE · TNEA"]
+    end
+
+    SPA --> Eligibility & Chat & Tracker & Browse
+    Tracker <-.->|read/write, no backend| LS
+    Eligibility <-.->|profile cache| LS
+
+    Eligibility -->|"POST /schemes/match"| API
+    Chat -->|"POST /chat, POST /profile/parse"| API
+    Browse -->|"GET /schemes"| API
+
+    API --> Elig --> Conflict --> AIExplain
+    API --> ChatSvc
+    API --> Auth
+    AIExplain --> OpenRouter
+    ChatSvc --> OpenRouter
+
+    Elig -.->|reads| StaticData
+    Conflict -.->|reads| StaticData
+    API <--> Mongo
+    Auth <--> Mongo
+
+    Ingestion -->|"cron: daily 03:00"| Ingestion
+    Ingestion -->|"fetch HTML/PDF"| GovPortals
+    Ingestion -->|"structure extraction"| OpenRouter
+    Ingestion -->|"high-confidence auto-apply"| Mongo

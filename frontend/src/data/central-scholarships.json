@@ -1,0 +1,4025 @@
+[
+  {
+    "type": "scholarship",
+    "col": "bl",
+    "ico": "🎓",
+    "amt": "₹12,000 or ₹20,000/year according to course and year",
+    "amtNum": 0,
+    "sector": "students",
+    "source": "https://scholarships.gov.in/public/schemeGuidelines/CSSS_GUIDLINES_07022024_updated.pdf",
+    "portal": "https://scholarships.gov.in/ApplicationForm/",
+    "applicationUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "sourceChecked": "2026-10-09",
+    "lastChecked": "2026-10-09",
+    "sourceVerification": "official-reference-checked",
+    "verificationScope": "Published screening conditions, course/year rates and fresh/renewal documents reviewed. The current NSP notice establishes renewal only.",
+    "eligibilityVerification": "published-conditions-reviewed",
+    "matchingEnabled": true,
+    "status": "published-window",
+    "academicYear": "2026-27",
+    "deadline": "2026-10-31",
+    "deadlineVerified": true,
+    "deadlineSource": "https://scholarships.gov.in/All-Scholarships",
+    "deadlineChecked": "2026-10-09",
+    "accessNote": "Public NSP catalogue readable. Login, applicant verification and submission not tested.",
+    "beneficiaryVerification": "not-independently-verified",
+    "documentsNote": "Use the document list for the named programme and application route; NSP is a portal, not one scholarship.",
+    "id": "central-sector",
+    "name": "PM-USP CSSS — College and University Students",
+    "by": "Department of Higher Education",
+    "department": "Department of Higher Education",
+    "tags": [
+      "Central",
+      "Merit",
+      "Undergraduate",
+      "Postgraduate"
+    ],
+    "applicationRoute": "renewal",
+    "evidenceSummary": "NSP 2026–27 publishes a renewal window closing 31 October 2026. A fresh application window has not been confirmed.",
+    "benefitSource": "https://scholarships.gov.in/public/schemeGuidelines/CSSS_GUIDLINES_07022024_updated.pdf",
+    "benefitVerified": true,
+    "reviewedConditions": {
+      "categories": [
+        "*"
+      ],
+      "education": [
+        "ug-arts",
+        "ug-tech",
+        "ug-medical",
+        "pg"
+      ],
+      "source": "https://scholarships.gov.in/public/schemeGuidelines/CSSS_GUIDLINES_07022024_updated.pdf",
+      "checkedOn": "2026-10-09",
+      "reviewNote": "Necessary conditions from the guideline linked by current NSP; this is not a selection decision. Fresh and renewal criteria differ. Current NSP notice confirms renewal only.",
+      "checks": [
+        {
+          "field": "applicationRoute",
+          "op": "oneOf",
+          "values": [
+            "fresh",
+            "renewal"
+          ],
+          "reason": "Fresh applications and renewals have different academic checks."
+        },
+        {
+          "field": "annualIncomeRupees",
+          "op": "incomeMax",
+          "max": 450000,
+          "reason": "The published gross family-income ceiling is ₹4.5 lakh per year."
+        },
+        {
+          "field": "regularDegree",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "A recognised regular degree course is required; correspondence, distance and diploma courses are excluded."
+        },
+        {
+          "field": "recognisedInstitution",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "The institution/course must be recognised by the relevant regulatory body."
+        },
+        {
+          "field": "otherScholarship",
+          "op": "oneOf",
+          "values": [
+            "No"
+          ],
+          "reason": "The guideline excludes another merit/state scholarship, fee waiver or reimbursement."
+        },
+        {
+          "field": "boardAbove80Percentile",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "when": {
+            "applicationRoute": [
+              "fresh"
+            ]
+          },
+          "reason": "Fresh applicants must be above the 80th percentile of their Class XII board and stream. This is not 80% marks."
+        },
+        {
+          "field": "attendancePercent",
+          "op": "minimum",
+          "min": 75,
+          "when": {
+            "applicationRoute": [
+              "renewal"
+            ]
+          },
+          "reason": "Renewal requires at least 75% attendance."
+        },
+        {
+          "field": "annualExamPercent",
+          "op": "minimum",
+          "min": 50,
+          "when": {
+            "applicationRoute": [
+              "renewal"
+            ]
+          },
+          "reason": "Renewal requires at least 50% in the annual examination."
+        },
+        {
+          "field": "csssCourse",
+          "op": "oneOf",
+          "values": [
+            "general",
+            "technical",
+            "professional-5",
+            "pg"
+          ],
+          "reason": "Select the degree branch for the published rate."
+        },
+        {
+          "field": "csssTenure",
+          "op": "maximum",
+          "max": 5,
+          "reason": "CSSS support cannot exceed five years."
+        },
+        {
+          "field": "csssAishe",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "The institution/course must have a valid active AISHE route."
+        },
+        {
+          "field": "csssAward",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "Renewal requires a previous CSSS award.",
+          "when": {
+            "applicationRoute": [
+              "renewal"
+            ]
+          }
+        },
+        {
+          "field": "csssConduct",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "Renewal can be forfeited for disqualifying conduct.",
+          "when": {
+            "applicationRoute": [
+              "renewal"
+            ]
+          }
+        },
+        {
+          "field": "csssFreshCohort",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "Fresh applicants must enter year one after the last Class XII academic year without a gap.",
+          "when": {
+            "applicationRoute": [
+              "fresh"
+            ]
+          }
+        },
+        {
+          "field": "courseYear",
+          "op": "maximum",
+          "max": 1,
+          "reason": "Fresh applicants must be in first-year graduation.",
+          "when": {
+            "applicationRoute": [
+              "fresh"
+            ]
+          }
+        },
+        {
+          "field": "courseYear",
+          "op": "maximum",
+          "max": 3,
+          "reason": "General undergraduate rate covers the first three course years.",
+          "when": {
+            "csssCourse": [
+              "general"
+            ]
+          }
+        },
+        {
+          "field": "courseYear",
+          "op": "maximum",
+          "max": 4,
+          "reason": "BTech / BEngg support ends at graduation in year four.",
+          "when": {
+            "csssCourse": [
+              "technical"
+            ]
+          }
+        },
+        {
+          "field": "courseYear",
+          "op": "maximum",
+          "max": 5,
+          "reason": "Five-year professional / integrated degree rate covers up to year five.",
+          "when": {
+            "csssCourse": [
+              "professional-5"
+            ]
+          }
+        },
+        {
+          "field": "courseYear",
+          "op": "maximum",
+          "max": 2,
+          "reason": "Postgraduate support is limited by the five-year total tenure.",
+          "when": {
+            "csssCourse": [
+              "pg"
+            ]
+          }
+        },
+        {
+          "field": "csssCourse",
+          "op": "oneOf",
+          "values": [
+            "general",
+            "technical",
+            "professional-5",
+            "pg"
+          ],
+          "reason": "Select the degree branch for the published rate."
+        },
+        {
+          "field": "csssTenure",
+          "op": "maximum",
+          "max": 5,
+          "reason": "CSSS support cannot exceed five years."
+        },
+        {
+          "field": "csssAishe",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "The institution/course must have a valid active AISHE route."
+        },
+        {
+          "field": "csssAward",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "Renewal requires a previous CSSS award.",
+          "when": {
+            "applicationRoute": [
+              "renewal"
+            ]
+          }
+        },
+        {
+          "field": "csssConduct",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "Renewal can be forfeited for disqualifying conduct.",
+          "when": {
+            "applicationRoute": [
+              "renewal"
+            ]
+          }
+        },
+        {
+          "field": "csssFreshCohort",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "Fresh applicants must enter year one after the last Class XII academic year without a gap.",
+          "when": {
+            "applicationRoute": [
+              "fresh"
+            ]
+          }
+        },
+        {
+          "field": "courseYear",
+          "op": "maximum",
+          "max": 1,
+          "reason": "Fresh applicants must be in first-year graduation.",
+          "when": {
+            "applicationRoute": [
+              "fresh"
+            ]
+          }
+        },
+        {
+          "field": "courseYear",
+          "op": "maximum",
+          "max": 3,
+          "reason": "General undergraduate rate covers the first three course years.",
+          "when": {
+            "csssCourse": [
+              "general"
+            ]
+          }
+        },
+        {
+          "field": "courseYear",
+          "op": "maximum",
+          "max": 4,
+          "reason": "BTech / BEngg support ends at graduation in year four.",
+          "when": {
+            "csssCourse": [
+              "technical"
+            ]
+          }
+        },
+        {
+          "field": "courseYear",
+          "op": "maximum",
+          "max": 5,
+          "reason": "Five-year professional / integrated degree rate covers up to year five.",
+          "when": {
+            "csssCourse": [
+              "professional-5"
+            ]
+          }
+        },
+        {
+          "field": "courseYear",
+          "op": "maximum",
+          "max": 2,
+          "reason": "Postgraduate support is limited by the five-year total tenure.",
+          "when": {
+            "csssCourse": [
+              "pg"
+            ]
+          }
+        }
+      ],
+      "complete": true
+    },
+    "audience": {
+      "education": [
+        "ug-arts",
+        "ug-tech",
+        "ug-medical",
+        "pg"
+      ]
+    },
+    "nspId": "nsp-0776d2f5b947d1ba",
+    "publishedName": "PM-USP – Central Sector Scheme Of Scholarship For College And University Students (CSSS) (Merit Based Scheme)",
+    "nspClassification": "central-sector",
+    "guidelineUrl": "https://scholarships.gov.in/public/schemeGuidelines/CSSS_GUIDLINES_07022024_updated.pdf",
+    "faqUrl": "https://scholarships.gov.in/public/schemeGuidelines/FAQ_DOHE_CSSS.pdf",
+    "opensOn": "2026-06-01",
+    "verificationWindows": [
+      {
+        "label": "Defective Application Verification Open till (for Renewal)",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Institute Verification Open till (for Renewal)",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "DNO/SNO/MNO Verification Open till (for Renewal)",
+        "date": "2026-11-30"
+      }
+    ],
+    "benefit": {
+      "kind": "csss",
+      "source": "https://scholarships.gov.in/public/schemeGuidelines/CSSS_GUIDLINES_07022024_updated.pdf",
+      "checkedOn": "2026-10-09"
+    },
+    "ruleSourceVersion": "Guideline applicable from 2022-23; 2025-26 FAQ linked by current NSP",
+    "documentChecklist": [
+      {
+        "id": "otr",
+        "label": "NSP OTR and Aadhaar / permitted enrolment route",
+        "help": "Use NSP to complete OTR authentication. Keep an active mobile number; enter identity details only on the official portal.",
+        "source": "https://scholarships.gov.in/home"
+      },
+      {
+        "id": "bank",
+        "label": "Aadhaar-seeded savings account in your own name",
+        "help": "Confirm DBT seeding with the bank; enter bank details only on the official portal.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/FAQ_DOHE_CSSS.pdf"
+      },
+      {
+        "id": "hsc",
+        "label": "Class XII marksheet",
+        "help": "Use the record matching your board and applicant details.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/FAQ_DOHE_CSSS.pdf",
+        "when": {
+          "applicationRoute": [
+            "fresh"
+          ]
+        }
+      },
+      {
+        "id": "income",
+        "label": "Family income certificate",
+        "help": "A competent-authority income certificate is required for fresh applications.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/CSSS_GUIDLINES_07022024_updated.pdf",
+        "when": {
+          "applicationRoute": [
+            "fresh"
+          ]
+        }
+      },
+      {
+        "id": "category",
+        "label": "Category / caste certificate, if claiming reservation",
+        "help": "Use the appropriate reserved-category certificate.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/FAQ_DOHE_CSSS.pdf",
+        "when": {
+          "applicationRoute": [
+            "fresh"
+          ],
+          "cat": [
+            "SC",
+            "ST",
+            "OBC",
+            "BC",
+            "MBC",
+            "DNC"
+          ]
+        }
+      },
+      {
+        "id": "disability",
+        "label": "Disability certificate, if applicable",
+        "help": "Use your competent-authority certificate.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/FAQ_DOHE_CSSS.pdf",
+        "when": {
+          "applicationRoute": [
+            "fresh"
+          ],
+          "disability": [
+            "Yes"
+          ]
+        }
+      },
+      {
+        "id": "marks",
+        "label": "Previous-year marksheet",
+        "help": "Renewal requires the previous-year academic record.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/FAQ_DOHE_CSSS.pdf",
+        "when": {
+          "applicationRoute": [
+            "renewal"
+          ]
+        }
+      }
+    ],
+    "checklistContext": [
+      "applicationRoute"
+    ],
+    "applicationSource": "https://scholarships.gov.in/Students",
+    "applicationChecked": "2026-10-10",
+    "registrationUrl": "https://scholarships.gov.in/otrapplication/",
+    "applicationAccess": "login",
+    "applicationNote": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration.",
+    "applicationAudited": "2026-10-10"
+  },
+  {
+    "type": "scholarship",
+    "col": "bl",
+    "ico": "🎓",
+    "amt": "₹50,000/year",
+    "amtNum": 0,
+    "sector": "students",
+    "source": "https://scholarships.gov.in/All-Scholarships",
+    "portal": "https://scholarships.gov.in/ApplicationForm/",
+    "applicationUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "sourceChecked": "2026-10-09",
+    "lastChecked": "2026-10-09",
+    "sourceVerification": "official-reference-checked",
+    "verificationScope": "Published screening rules, annual rate and linked document requirements reviewed. Selection, evidence verification and payment are decided by the authority.",
+    "eligibilityVerification": "published-conditions-reviewed",
+    "matchingEnabled": true,
+    "status": "published-window",
+    "academicYear": "2026-27",
+    "deadline": "2026-10-31",
+    "deadlineVerified": true,
+    "deadlineSource": "https://scholarships.gov.in/All-Scholarships",
+    "deadlineChecked": "2026-10-09",
+    "accessNote": "Public NSP catalogue readable. Login, applicant verification and submission not tested.",
+    "beneficiaryVerification": "not-independently-verified",
+    "documentsNote": "Use the document list for the named programme and application route; NSP is a portal, not one scholarship.",
+    "id": "aicte-pragati",
+    "name": "AICTE Pragati — Technical Degree",
+    "by": "AICTE",
+    "department": "AICTE",
+    "tags": [
+      "Central",
+      "Girls",
+      "Technical"
+    ],
+    "applicationRoute": "student",
+    "evidenceSummary": "NSP 2026–27 lists this named programme with a student closing date of 31 October 2026. Verify the notice and your application route before submitting.",
+    "audience": {
+      "education": [
+        "ug-arts",
+        "ug-tech",
+        "ug-medical"
+      ],
+      "genders": [
+        "Female"
+      ]
+    },
+    "nspId": "nsp-a8c66c24b9835fba",
+    "publishedName": "AICTE - Pragati Scholarship Scheme For Girl Students ( Technical Degree) (Merit Based Scheme)",
+    "nspClassification": "central-sector",
+    "guidelineUrl": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2010_G.pdf",
+    "faqUrl": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2010_F.pdf",
+    "opensOn": "2026-06-01",
+    "verificationWindows": [
+      {
+        "label": "Defective Application Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Institute Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "DNO/SNO/MNO Verification Open till",
+        "date": "2026-11-30"
+      }
+    ],
+    "reviewedConditions": {
+      "categories": [
+        "*"
+      ],
+      "education": [
+        "ug-arts",
+        "ug-tech",
+        "ug-medical"
+      ],
+      "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2010_G.pdf",
+      "checkedOn": "2026-10-09",
+      "complete": true,
+      "reviewNote": "Published screening conditions on self-reported answers. Authority verifies evidence and selection. Guideline income boundary takes precedence over older FAQ wording. Fresh and renewal routes are checked separately.",
+      "checks": [
+        {
+          "field": "aicte-pragati_route",
+          "op": "oneOf",
+          "values": [
+            "fresh",
+            "renewal"
+          ],
+          "reason": "Choose this programme’s application route."
+        },
+        {
+          "field": "annualIncomeRupees",
+          "op": "incomeMax",
+          "max": 800000,
+          "reason": "Annual family income must be at most ₹8 lakh under the guideline."
+        },
+        {
+          "field": "aicteApproved",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "AICTE approval of both course and institution is required."
+        },
+        {
+          "field": "regularTechnical",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "A regular technical course is required."
+        },
+        {
+          "field": "dualDegree",
+          "op": "oneOf",
+          "values": [
+            "No"
+          ],
+          "reason": "The linked FAQ excludes dual-degree and postgraduate courses."
+        },
+        {
+          "field": "otherFinancialAssistance",
+          "op": "oneOf",
+          "values": [
+            "No"
+          ],
+          "reason": "The scheme excludes other scholarship, salary, stipend or financial assistance."
+        },
+        {
+          "field": "courseYear",
+          "op": "maximum",
+          "max": 4,
+          "reason": "The course year exceeds this programme’s supported duration."
+        },
+        {
+          "field": "aicte-pragati_award",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "Renewal requires a previous award of this specific programme.",
+          "when": {
+            "aicte-pragati_route": [
+              "renewal"
+            ]
+          }
+        },
+        {
+          "field": "promoted",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "Renewal requires passing and promotion.",
+          "when": {
+            "aicte-pragati_route": [
+              "renewal"
+            ]
+          }
+        },
+        {
+          "field": "gender",
+          "op": "oneOf",
+          "values": [
+            "Female"
+          ],
+          "reason": "Pragati is for girl students."
+        },
+        {
+          "field": "pragatiGirls",
+          "op": "maximum",
+          "max": 2,
+          "reason": "A maximum of two girls per family can use Pragati."
+        },
+        {
+          "field": "studyGapYears",
+          "op": "maximum",
+          "max": 2,
+          "reason": "The qualifying-examination to admission gap must not exceed two years."
+        },
+        {
+          "field": "admissionEntry",
+          "op": "oneOf",
+          "values": [
+            "first",
+            "lateral"
+          ],
+          "reason": "Admission must be first-year or second-year lateral entry."
+        },
+        {
+          "field": "courseYear",
+          "op": "maximum",
+          "max": 1,
+          "reason": "Fresh first-year applicants must be in year one.",
+          "when": {
+            "aicte-pragati_route": [
+              "fresh"
+            ],
+            "admissionEntry": [
+              "first"
+            ]
+          }
+        },
+        {
+          "field": "courseYear",
+          "op": "oneOf",
+          "values": [
+            "2"
+          ],
+          "reason": "Fresh lateral-entry applicants must be in year two.",
+          "when": {
+            "aicte-pragati_route": [
+              "fresh"
+            ],
+            "admissionEntry": [
+              "lateral"
+            ]
+          }
+        },
+        {
+          "field": "courseYear",
+          "op": "minimum",
+          "min": 2,
+          "reason": "Renewal follows an award in an earlier course year.",
+          "when": {
+            "aicte-pragati_route": [
+              "renewal"
+            ]
+          }
+        }
+      ]
+    },
+    "benefitVerified": true,
+    "benefit": {
+      "kind": "annual-fixed",
+      "amount": 50000,
+      "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2010_G.pdf",
+      "checkedOn": "2026-10-09"
+    },
+    "ruleSourceVersion": "July 2020 guideline; FAQ linked by current NSP",
+    "documentChecklist": [
+      {
+        "id": "otr",
+        "label": "NSP OTR and Aadhaar / permitted enrolment route",
+        "help": "Use NSP to complete OTR authentication. Keep an active mobile number; enter identity details only on the official portal.",
+        "source": "https://scholarships.gov.in/home"
+      },
+      {
+        "id": "aadhaar",
+        "label": "Applicant Aadhaar",
+        "help": "The linked AICTE FAQ requires Aadhaar. Use the official NSP route for authentication.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2010_F.pdf"
+      },
+      {
+        "id": "bank",
+        "label": "Aadhaar-seeded savings account in your own name",
+        "help": "Ask your bank to confirm DBT seeding and account eligibility. Do not share account details here.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2010_F.pdf"
+      },
+      {
+        "id": "ssc",
+        "label": "Class X certificate and marksheet",
+        "help": "Keep a clear copy matching the applicant’s name.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2010_F.pdf"
+      },
+      {
+        "id": "hsc",
+        "label": "Class XII / equivalent certificate and marksheet",
+        "help": "Use the qualifying-examination record accepted for your admission.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2010_F.pdf"
+      },
+      {
+        "id": "bonafide",
+        "label": "Institution bonafide / study certificate",
+        "help": "Request the institution’s signed, stamped programme format.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2010_F.pdf"
+      },
+      {
+        "id": "income",
+        "label": "Current-year family income certificate",
+        "help": "Use a competent-authority certificate in the programme’s required format.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2010_F.pdf"
+      },
+      {
+        "id": "category",
+        "label": "Category certificate, if claiming reservation",
+        "help": "Use the certificate for the category you claim.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2010_F.pdf",
+        "when": {
+          "cat": [
+            "SC",
+            "ST",
+            "OBC",
+            "BC",
+            "MBC",
+            "DNC"
+          ]
+        }
+      },
+      {
+        "id": "lateral",
+        "label": "Diploma qualification for lateral entry",
+        "help": "Keep the qualifying certificate and marksheet.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2010_F.pdf",
+        "when": {
+          "admissionEntry": [
+            "lateral"
+          ]
+        }
+      },
+      {
+        "id": "declaration",
+        "label": "Parent declaration",
+        "help": "Use the declaration format in the official FAQ.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2010_F.pdf"
+      },
+      {
+        "id": "promotion",
+        "label": "Promotion certificate / previous-year passing record",
+        "help": "Ask the head of institution for the renewal evidence.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2010_G.pdf",
+        "when": {
+          "aicte-pragati_route": [
+            "renewal"
+          ]
+        }
+      }
+    ],
+    "checklistContext": [
+      "aicte-pragati_route",
+      "admissionEntry"
+    ],
+    "applicationSource": "https://scholarships.gov.in/Students",
+    "applicationChecked": "2026-10-10",
+    "registrationUrl": "https://scholarships.gov.in/otrapplication/",
+    "applicationAccess": "login",
+    "applicationNote": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration.",
+    "applicationAudited": "2026-10-10"
+  },
+  {
+    "type": "scholarship",
+    "col": "bl",
+    "ico": "🎓",
+    "amt": "₹50,000/year",
+    "amtNum": 0,
+    "sector": "students",
+    "source": "https://scholarships.gov.in/All-Scholarships",
+    "portal": "https://scholarships.gov.in/ApplicationForm/",
+    "applicationUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "sourceChecked": "2026-10-09",
+    "lastChecked": "2026-10-09",
+    "sourceVerification": "official-reference-checked",
+    "verificationScope": "Published screening rules, annual rate and linked document requirements reviewed. Selection, evidence verification and payment are decided by the authority.",
+    "eligibilityVerification": "published-conditions-reviewed",
+    "matchingEnabled": true,
+    "status": "published-window",
+    "academicYear": "2026-27",
+    "deadline": "2026-10-31",
+    "deadlineVerified": true,
+    "deadlineSource": "https://scholarships.gov.in/All-Scholarships",
+    "deadlineChecked": "2026-10-09",
+    "accessNote": "Public NSP catalogue readable. Login, applicant verification and submission not tested.",
+    "beneficiaryVerification": "not-independently-verified",
+    "documentsNote": "Use the document list for the named programme and application route; NSP is a portal, not one scholarship.",
+    "id": "aicte-pragati-diploma",
+    "name": "AICTE Pragati — Technical Diploma",
+    "by": "AICTE",
+    "department": "AICTE",
+    "tags": [
+      "Central",
+      "Girls",
+      "Technical",
+      "Diploma"
+    ],
+    "applicationRoute": "student",
+    "evidenceSummary": "NSP 2026–27 lists this named programme with a student closing date of 31 October 2026. Verify the notice and your application route before submitting.",
+    "audience": {
+      "education": [
+        "diploma"
+      ],
+      "genders": [
+        "Female"
+      ]
+    },
+    "nspId": "nsp-f33c4962dd27f016",
+    "publishedName": "AICTE - Pragati Scholarship Scheme For Girl Students ( Technical Diploma) (Merit Based Scheme)",
+    "nspClassification": "central-sector",
+    "guidelineUrl": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2011_G.pdf",
+    "faqUrl": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2011_F.pdf",
+    "opensOn": "2026-06-01",
+    "verificationWindows": [
+      {
+        "label": "Defective Application Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Institute Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "DNO/SNO/MNO Verification Open till",
+        "date": "2026-11-30"
+      }
+    ],
+    "reviewedConditions": {
+      "categories": [
+        "*"
+      ],
+      "education": [
+        "diploma"
+      ],
+      "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2011_G.pdf",
+      "checkedOn": "2026-10-09",
+      "complete": true,
+      "reviewNote": "Published screening conditions on self-reported answers. Authority verifies evidence and selection. Guideline income boundary takes precedence over older FAQ wording. Fresh and renewal routes are checked separately.",
+      "checks": [
+        {
+          "field": "aicte-pragati-diploma_route",
+          "op": "oneOf",
+          "values": [
+            "fresh",
+            "renewal"
+          ],
+          "reason": "Choose this programme’s application route."
+        },
+        {
+          "field": "annualIncomeRupees",
+          "op": "incomeMax",
+          "max": 800000,
+          "reason": "Annual family income must be at most ₹8 lakh under the guideline."
+        },
+        {
+          "field": "aicteApproved",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "AICTE approval of both course and institution is required."
+        },
+        {
+          "field": "regularTechnical",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "A regular technical course is required."
+        },
+        {
+          "field": "dualDegree",
+          "op": "oneOf",
+          "values": [
+            "No"
+          ],
+          "reason": "The linked FAQ excludes dual-degree and postgraduate courses."
+        },
+        {
+          "field": "otherFinancialAssistance",
+          "op": "oneOf",
+          "values": [
+            "No"
+          ],
+          "reason": "The scheme excludes other scholarship, salary, stipend or financial assistance."
+        },
+        {
+          "field": "courseYear",
+          "op": "maximum",
+          "max": 3,
+          "reason": "The course year exceeds this programme’s supported duration."
+        },
+        {
+          "field": "aicte-pragati-diploma_award",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "Renewal requires a previous award of this specific programme.",
+          "when": {
+            "aicte-pragati-diploma_route": [
+              "renewal"
+            ]
+          }
+        },
+        {
+          "field": "promoted",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "Renewal requires passing and promotion.",
+          "when": {
+            "aicte-pragati-diploma_route": [
+              "renewal"
+            ]
+          }
+        },
+        {
+          "field": "gender",
+          "op": "oneOf",
+          "values": [
+            "Female"
+          ],
+          "reason": "Pragati is for girl students."
+        },
+        {
+          "field": "pragatiGirls",
+          "op": "maximum",
+          "max": 2,
+          "reason": "A maximum of two girls per family can use Pragati."
+        },
+        {
+          "field": "studyGapYears",
+          "op": "maximum",
+          "max": 2,
+          "reason": "The qualifying-examination to admission gap must not exceed two years."
+        },
+        {
+          "field": "admissionEntry",
+          "op": "oneOf",
+          "values": [
+            "first",
+            "lateral"
+          ],
+          "reason": "Admission must be first-year or second-year lateral entry."
+        },
+        {
+          "field": "courseYear",
+          "op": "maximum",
+          "max": 1,
+          "reason": "Fresh first-year applicants must be in year one.",
+          "when": {
+            "aicte-pragati-diploma_route": [
+              "fresh"
+            ],
+            "admissionEntry": [
+              "first"
+            ]
+          }
+        },
+        {
+          "field": "courseYear",
+          "op": "oneOf",
+          "values": [
+            "2"
+          ],
+          "reason": "Fresh lateral-entry applicants must be in year two.",
+          "when": {
+            "aicte-pragati-diploma_route": [
+              "fresh"
+            ],
+            "admissionEntry": [
+              "lateral"
+            ]
+          }
+        },
+        {
+          "field": "courseYear",
+          "op": "minimum",
+          "min": 2,
+          "reason": "Renewal follows an award in an earlier course year.",
+          "when": {
+            "aicte-pragati-diploma_route": [
+              "renewal"
+            ]
+          }
+        }
+      ]
+    },
+    "benefitVerified": true,
+    "benefit": {
+      "kind": "annual-fixed",
+      "amount": 50000,
+      "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2011_G.pdf",
+      "checkedOn": "2026-10-09"
+    },
+    "ruleSourceVersion": "July 2020 guideline; FAQ linked by current NSP",
+    "documentChecklist": [
+      {
+        "id": "otr",
+        "label": "NSP OTR and Aadhaar / permitted enrolment route",
+        "help": "Use NSP to complete OTR authentication. Keep an active mobile number; enter identity details only on the official portal.",
+        "source": "https://scholarships.gov.in/home"
+      },
+      {
+        "id": "aadhaar",
+        "label": "Applicant Aadhaar",
+        "help": "The linked AICTE FAQ requires Aadhaar. Use the official NSP route for authentication.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2011_F.pdf"
+      },
+      {
+        "id": "bank",
+        "label": "Aadhaar-seeded savings account in your own name",
+        "help": "Ask your bank to confirm DBT seeding and account eligibility. Do not share account details here.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2011_F.pdf"
+      },
+      {
+        "id": "ssc",
+        "label": "Class X certificate and marksheet",
+        "help": "Keep a clear copy matching the applicant’s name.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2011_F.pdf"
+      },
+      {
+        "id": "bonafide",
+        "label": "Institution bonafide / study certificate",
+        "help": "Request the institution’s signed, stamped programme format.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2011_F.pdf"
+      },
+      {
+        "id": "income",
+        "label": "Current-year family income certificate",
+        "help": "Use a competent-authority certificate in the programme’s required format.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2011_F.pdf"
+      },
+      {
+        "id": "category",
+        "label": "Category certificate, if claiming reservation",
+        "help": "Use the certificate for the category you claim.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2011_F.pdf",
+        "when": {
+          "cat": [
+            "SC",
+            "ST",
+            "OBC",
+            "BC",
+            "MBC",
+            "DNC"
+          ]
+        }
+      },
+      {
+        "id": "lateral",
+        "label": "ITI qualification for lateral entry",
+        "help": "Keep the qualifying certificate and marksheet.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2011_F.pdf",
+        "when": {
+          "admissionEntry": [
+            "lateral"
+          ]
+        }
+      },
+      {
+        "id": "declaration",
+        "label": "Parent declaration",
+        "help": "Use the declaration format in the official FAQ.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2011_F.pdf"
+      },
+      {
+        "id": "promotion",
+        "label": "Promotion certificate / previous-year passing record",
+        "help": "Ask the head of institution for the renewal evidence.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2011_G.pdf",
+        "when": {
+          "aicte-pragati-diploma_route": [
+            "renewal"
+          ]
+        }
+      }
+    ],
+    "checklistContext": [
+      "aicte-pragati-diploma_route",
+      "admissionEntry"
+    ],
+    "applicationSource": "https://scholarships.gov.in/Students",
+    "applicationChecked": "2026-10-10",
+    "registrationUrl": "https://scholarships.gov.in/otrapplication/",
+    "applicationAccess": "login",
+    "applicationNote": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration.",
+    "applicationAudited": "2026-10-10"
+  },
+  {
+    "type": "scholarship",
+    "col": "bl",
+    "ico": "🎓",
+    "amt": "₹50,000/year",
+    "amtNum": 0,
+    "sector": "students",
+    "source": "https://scholarships.gov.in/All-Scholarships",
+    "portal": "https://scholarships.gov.in/ApplicationForm/",
+    "applicationUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "sourceChecked": "2026-10-09",
+    "lastChecked": "2026-10-09",
+    "sourceVerification": "official-reference-checked",
+    "verificationScope": "Published screening rules, annual rate and linked document requirements reviewed. Selection, evidence verification and payment are decided by the authority.",
+    "eligibilityVerification": "published-conditions-reviewed",
+    "matchingEnabled": true,
+    "status": "published-window",
+    "academicYear": "2026-27",
+    "deadline": "2026-10-31",
+    "deadlineVerified": true,
+    "deadlineSource": "https://scholarships.gov.in/All-Scholarships",
+    "deadlineChecked": "2026-10-09",
+    "accessNote": "Public NSP catalogue readable. Login, applicant verification and submission not tested.",
+    "beneficiaryVerification": "not-independently-verified",
+    "documentsNote": "Use the document list for the named programme and application route; NSP is a portal, not one scholarship.",
+    "id": "aicte-saksham",
+    "name": "AICTE Saksham — Technical Degree",
+    "by": "AICTE",
+    "department": "AICTE",
+    "tags": [
+      "Central",
+      "Disability",
+      "Technical"
+    ],
+    "applicationRoute": "student",
+    "evidenceSummary": "NSP 2026–27 lists this named programme with a student closing date of 31 October 2026. Verify the notice and your application route before submitting.",
+    "audience": {
+      "education": [
+        "ug-arts",
+        "ug-tech",
+        "ug-medical"
+      ]
+    },
+    "nspId": "nsp-0c3a3eb7a79a5f24",
+    "publishedName": "AICTE - Saksham Scholarship Scheme For Specially Abled Student ( Technical Degree) (Welfare Based Scheme)",
+    "nspClassification": "central-sector",
+    "guidelineUrl": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2012_G.pdf",
+    "faqUrl": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2012_F.pdf",
+    "opensOn": "2026-06-01",
+    "verificationWindows": [
+      {
+        "label": "Defective Application Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Institute Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "DNO/SNO/MNO Verification Open till",
+        "date": "2026-11-30"
+      }
+    ],
+    "reviewedConditions": {
+      "categories": [
+        "*"
+      ],
+      "education": [
+        "ug-arts",
+        "ug-tech",
+        "ug-medical"
+      ],
+      "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2012_G.pdf",
+      "checkedOn": "2026-10-09",
+      "complete": true,
+      "reviewNote": "Published screening conditions on self-reported answers. Authority verifies evidence and selection. Guideline income boundary takes precedence over older FAQ wording. Fresh and renewal routes are checked separately.",
+      "checks": [
+        {
+          "field": "aicte-saksham_route",
+          "op": "oneOf",
+          "values": [
+            "fresh",
+            "renewal"
+          ],
+          "reason": "Choose this programme’s application route."
+        },
+        {
+          "field": "annualIncomeRupees",
+          "op": "incomeMax",
+          "max": 800000,
+          "reason": "Annual family income must be at most ₹8 lakh under the guideline."
+        },
+        {
+          "field": "aicteApproved",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "AICTE approval of both course and institution is required."
+        },
+        {
+          "field": "regularTechnical",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "A regular technical course is required."
+        },
+        {
+          "field": "dualDegree",
+          "op": "oneOf",
+          "values": [
+            "No"
+          ],
+          "reason": "The linked FAQ excludes dual-degree and postgraduate courses."
+        },
+        {
+          "field": "otherFinancialAssistance",
+          "op": "oneOf",
+          "values": [
+            "No"
+          ],
+          "reason": "The scheme excludes other scholarship, salary, stipend or financial assistance."
+        },
+        {
+          "field": "courseYear",
+          "op": "maximum",
+          "max": 4,
+          "reason": "The course year exceeds this programme’s supported duration."
+        },
+        {
+          "field": "aicte-saksham_award",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "Renewal requires a previous award of this specific programme.",
+          "when": {
+            "aicte-saksham_route": [
+              "renewal"
+            ]
+          }
+        },
+        {
+          "field": "promoted",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "Renewal requires passing and promotion.",
+          "when": {
+            "aicte-saksham_route": [
+              "renewal"
+            ]
+          }
+        },
+        {
+          "field": "disability",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "Saksham requires a recognised disability."
+        },
+        {
+          "field": "disabilityPercent",
+          "op": "minimum",
+          "min": 40,
+          "reason": "A competent-authority disability certificate must show at least 40%."
+        },
+        {
+          "field": "studyGapYears",
+          "op": "maximum",
+          "max": 2,
+          "reason": "The qualifying-examination to admission gap must not exceed two years."
+        },
+        {
+          "field": "admissionEntry",
+          "op": "oneOf",
+          "values": [
+            "first",
+            "lateral"
+          ],
+          "reason": "Admission must be first-year or second-year lateral entry."
+        },
+        {
+          "field": "courseYear",
+          "op": "maximum",
+          "max": 1,
+          "reason": "Fresh first-year applicants must be in year one.",
+          "when": {
+            "aicte-saksham_route": [
+              "fresh"
+            ],
+            "admissionEntry": [
+              "first"
+            ]
+          }
+        },
+        {
+          "field": "courseYear",
+          "op": "oneOf",
+          "values": [
+            "2"
+          ],
+          "reason": "Fresh lateral-entry applicants must be in year two.",
+          "when": {
+            "aicte-saksham_route": [
+              "fresh"
+            ],
+            "admissionEntry": [
+              "lateral"
+            ]
+          }
+        },
+        {
+          "field": "courseYear",
+          "op": "minimum",
+          "min": 2,
+          "reason": "Renewal follows an award in an earlier course year.",
+          "when": {
+            "aicte-saksham_route": [
+              "renewal"
+            ]
+          }
+        }
+      ]
+    },
+    "benefitVerified": true,
+    "benefit": {
+      "kind": "annual-fixed",
+      "amount": 50000,
+      "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2012_G.pdf",
+      "checkedOn": "2026-10-09"
+    },
+    "ruleSourceVersion": "July 2020 guideline; FAQ linked by current NSP",
+    "documentChecklist": [
+      {
+        "id": "otr",
+        "label": "NSP OTR and Aadhaar / permitted enrolment route",
+        "help": "Use NSP to complete OTR authentication. Keep an active mobile number; enter identity details only on the official portal.",
+        "source": "https://scholarships.gov.in/home"
+      },
+      {
+        "id": "aadhaar",
+        "label": "Applicant Aadhaar",
+        "help": "The linked AICTE FAQ requires Aadhaar. Use the official NSP route for authentication.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2012_F.pdf"
+      },
+      {
+        "id": "bank",
+        "label": "Aadhaar-seeded savings account in your own name",
+        "help": "Ask your bank to confirm DBT seeding and account eligibility. Do not share account details here.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2012_F.pdf"
+      },
+      {
+        "id": "ssc",
+        "label": "Class X certificate and marksheet",
+        "help": "Keep a clear copy matching the applicant’s name.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2012_F.pdf"
+      },
+      {
+        "id": "hsc",
+        "label": "Class XII / equivalent certificate and marksheet",
+        "help": "Use the qualifying-examination record accepted for your admission.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2012_F.pdf"
+      },
+      {
+        "id": "bonafide",
+        "label": "Institution bonafide / study certificate",
+        "help": "Request the institution’s signed, stamped programme format.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2012_F.pdf"
+      },
+      {
+        "id": "income",
+        "label": "Current-year family income certificate",
+        "help": "Use a competent-authority certificate in the programme’s required format.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2012_F.pdf"
+      },
+      {
+        "id": "category",
+        "label": "Category certificate, if claiming reservation",
+        "help": "Use the certificate for the category you claim.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2012_F.pdf",
+        "when": {
+          "cat": [
+            "SC",
+            "ST",
+            "OBC",
+            "BC",
+            "MBC",
+            "DNC"
+          ]
+        }
+      },
+      {
+        "id": "lateral",
+        "label": "Diploma qualification for lateral entry",
+        "help": "Keep the qualifying certificate and marksheet.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2012_F.pdf",
+        "when": {
+          "admissionEntry": [
+            "lateral"
+          ]
+        }
+      },
+      {
+        "id": "disability",
+        "label": "Competent-authority disability certificate",
+        "help": "Keep a certificate confirming the disability percentage.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2012_F.pdf"
+      },
+      {
+        "id": "udid",
+        "label": "UDID consent on the official portal",
+        "help": "NSP currently asks disabled applicants to consent to UDID data sharing before submission.",
+        "source": "https://scholarships.gov.in/home"
+      },
+      {
+        "id": "promotion",
+        "label": "Promotion certificate / previous-year passing record",
+        "help": "Ask the head of institution for the renewal evidence.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2012_G.pdf",
+        "when": {
+          "aicte-saksham_route": [
+            "renewal"
+          ]
+        }
+      }
+    ],
+    "checklistContext": [
+      "aicte-saksham_route",
+      "admissionEntry"
+    ],
+    "applicationSource": "https://scholarships.gov.in/Students",
+    "applicationChecked": "2026-10-10",
+    "registrationUrl": "https://scholarships.gov.in/otrapplication/",
+    "applicationAccess": "login",
+    "applicationNote": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration.",
+    "applicationAudited": "2026-10-10"
+  },
+  {
+    "type": "scholarship",
+    "col": "bl",
+    "ico": "🎓",
+    "amt": "₹50,000/year",
+    "amtNum": 0,
+    "sector": "students",
+    "source": "https://scholarships.gov.in/All-Scholarships",
+    "portal": "https://scholarships.gov.in/ApplicationForm/",
+    "applicationUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "sourceChecked": "2026-10-09",
+    "lastChecked": "2026-10-09",
+    "sourceVerification": "official-reference-checked",
+    "verificationScope": "Published screening rules, annual rate and linked document requirements reviewed. Selection, evidence verification and payment are decided by the authority.",
+    "eligibilityVerification": "published-conditions-reviewed",
+    "matchingEnabled": true,
+    "status": "published-window",
+    "academicYear": "2026-27",
+    "deadline": "2026-10-31",
+    "deadlineVerified": true,
+    "deadlineSource": "https://scholarships.gov.in/All-Scholarships",
+    "deadlineChecked": "2026-10-09",
+    "accessNote": "Public NSP catalogue readable. Login, applicant verification and submission not tested.",
+    "beneficiaryVerification": "not-independently-verified",
+    "documentsNote": "Use the document list for the named programme and application route; NSP is a portal, not one scholarship.",
+    "id": "aicte-saksham-diploma",
+    "name": "AICTE Saksham — Technical Diploma",
+    "by": "AICTE",
+    "department": "AICTE",
+    "tags": [
+      "Central",
+      "Disability",
+      "Technical",
+      "Diploma"
+    ],
+    "applicationRoute": "student",
+    "evidenceSummary": "NSP 2026–27 lists this named programme with a student closing date of 31 October 2026. Verify the notice and your application route before submitting.",
+    "audience": {
+      "education": [
+        "diploma"
+      ]
+    },
+    "nspId": "nsp-80716ce8c3469036",
+    "publishedName": "AICTE - Saksham Scholarship Scheme For Specially Abled Student ( Technical Diploma) (Welfare Based Scheme)",
+    "nspClassification": "central-sector",
+    "guidelineUrl": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2013_G.pdf",
+    "faqUrl": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2013_F.pdf",
+    "opensOn": "2026-06-01",
+    "verificationWindows": [
+      {
+        "label": "Defective Application Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Institute Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "DNO/SNO/MNO Verification Open till",
+        "date": "2026-11-30"
+      }
+    ],
+    "reviewedConditions": {
+      "categories": [
+        "*"
+      ],
+      "education": [
+        "diploma"
+      ],
+      "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2013_G.pdf",
+      "checkedOn": "2026-10-09",
+      "complete": true,
+      "reviewNote": "Published screening conditions on self-reported answers. Authority verifies evidence and selection. Guideline income boundary takes precedence over older FAQ wording. Fresh and renewal routes are checked separately.",
+      "checks": [
+        {
+          "field": "aicte-saksham-diploma_route",
+          "op": "oneOf",
+          "values": [
+            "fresh",
+            "renewal"
+          ],
+          "reason": "Choose this programme’s application route."
+        },
+        {
+          "field": "annualIncomeRupees",
+          "op": "incomeMax",
+          "max": 800000,
+          "reason": "Annual family income must be at most ₹8 lakh under the guideline."
+        },
+        {
+          "field": "aicteApproved",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "AICTE approval of both course and institution is required."
+        },
+        {
+          "field": "regularTechnical",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "A regular technical course is required."
+        },
+        {
+          "field": "dualDegree",
+          "op": "oneOf",
+          "values": [
+            "No"
+          ],
+          "reason": "The linked FAQ excludes dual-degree and postgraduate courses."
+        },
+        {
+          "field": "otherFinancialAssistance",
+          "op": "oneOf",
+          "values": [
+            "No"
+          ],
+          "reason": "The scheme excludes other scholarship, salary, stipend or financial assistance."
+        },
+        {
+          "field": "courseYear",
+          "op": "maximum",
+          "max": 3,
+          "reason": "The course year exceeds this programme’s supported duration."
+        },
+        {
+          "field": "aicte-saksham-diploma_award",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "Renewal requires a previous award of this specific programme.",
+          "when": {
+            "aicte-saksham-diploma_route": [
+              "renewal"
+            ]
+          }
+        },
+        {
+          "field": "promoted",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "Renewal requires passing and promotion.",
+          "when": {
+            "aicte-saksham-diploma_route": [
+              "renewal"
+            ]
+          }
+        },
+        {
+          "field": "disability",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "Saksham requires a recognised disability."
+        },
+        {
+          "field": "disabilityPercent",
+          "op": "minimum",
+          "min": 40,
+          "reason": "A competent-authority disability certificate must show at least 40%."
+        },
+        {
+          "field": "studyGapYears",
+          "op": "maximum",
+          "max": 2,
+          "reason": "The qualifying-examination to admission gap must not exceed two years."
+        },
+        {
+          "field": "admissionEntry",
+          "op": "oneOf",
+          "values": [
+            "first",
+            "lateral"
+          ],
+          "reason": "Admission must be first-year or second-year lateral entry."
+        },
+        {
+          "field": "courseYear",
+          "op": "maximum",
+          "max": 1,
+          "reason": "Fresh first-year applicants must be in year one.",
+          "when": {
+            "aicte-saksham-diploma_route": [
+              "fresh"
+            ],
+            "admissionEntry": [
+              "first"
+            ]
+          }
+        },
+        {
+          "field": "courseYear",
+          "op": "oneOf",
+          "values": [
+            "2"
+          ],
+          "reason": "Fresh lateral-entry applicants must be in year two.",
+          "when": {
+            "aicte-saksham-diploma_route": [
+              "fresh"
+            ],
+            "admissionEntry": [
+              "lateral"
+            ]
+          }
+        },
+        {
+          "field": "courseYear",
+          "op": "minimum",
+          "min": 2,
+          "reason": "Renewal follows an award in an earlier course year.",
+          "when": {
+            "aicte-saksham-diploma_route": [
+              "renewal"
+            ]
+          }
+        }
+      ]
+    },
+    "benefitVerified": true,
+    "benefit": {
+      "kind": "annual-fixed",
+      "amount": 50000,
+      "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2013_G.pdf",
+      "checkedOn": "2026-10-09"
+    },
+    "ruleSourceVersion": "July 2020 guideline; FAQ linked by current NSP",
+    "documentChecklist": [
+      {
+        "id": "otr",
+        "label": "NSP OTR and Aadhaar / permitted enrolment route",
+        "help": "Use NSP to complete OTR authentication. Keep an active mobile number; enter identity details only on the official portal.",
+        "source": "https://scholarships.gov.in/home"
+      },
+      {
+        "id": "aadhaar",
+        "label": "Applicant Aadhaar",
+        "help": "The linked AICTE FAQ requires Aadhaar. Use the official NSP route for authentication.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2013_F.pdf"
+      },
+      {
+        "id": "bank",
+        "label": "Aadhaar-seeded savings account in your own name",
+        "help": "Ask your bank to confirm DBT seeding and account eligibility. Do not share account details here.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2013_F.pdf"
+      },
+      {
+        "id": "ssc",
+        "label": "Class X certificate and marksheet",
+        "help": "Keep a clear copy matching the applicant’s name.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2013_F.pdf"
+      },
+      {
+        "id": "bonafide",
+        "label": "Institution bonafide / study certificate",
+        "help": "Request the institution’s signed, stamped programme format.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2013_F.pdf"
+      },
+      {
+        "id": "income",
+        "label": "Current-year family income certificate",
+        "help": "Use a competent-authority certificate in the programme’s required format.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2013_F.pdf"
+      },
+      {
+        "id": "category",
+        "label": "Category certificate, if claiming reservation",
+        "help": "Use the certificate for the category you claim.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2013_F.pdf",
+        "when": {
+          "cat": [
+            "SC",
+            "ST",
+            "OBC",
+            "BC",
+            "MBC",
+            "DNC"
+          ]
+        }
+      },
+      {
+        "id": "lateral",
+        "label": "ITI qualification for lateral entry",
+        "help": "Keep the qualifying certificate and marksheet.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2013_F.pdf",
+        "when": {
+          "admissionEntry": [
+            "lateral"
+          ]
+        }
+      },
+      {
+        "id": "disability",
+        "label": "Competent-authority disability certificate",
+        "help": "Keep a certificate confirming the disability percentage.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2013_F.pdf"
+      },
+      {
+        "id": "udid",
+        "label": "UDID consent on the official portal",
+        "help": "NSP currently asks disabled applicants to consent to UDID data sharing before submission.",
+        "source": "https://scholarships.gov.in/home"
+      },
+      {
+        "id": "promotion",
+        "label": "Promotion certificate / previous-year passing record",
+        "help": "Ask the head of institution for the renewal evidence.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2013_G.pdf",
+        "when": {
+          "aicte-saksham-diploma_route": [
+            "renewal"
+          ]
+        }
+      }
+    ],
+    "checklistContext": [
+      "aicte-saksham-diploma_route",
+      "admissionEntry"
+    ],
+    "applicationSource": "https://scholarships.gov.in/Students",
+    "applicationChecked": "2026-10-10",
+    "registrationUrl": "https://scholarships.gov.in/otrapplication/",
+    "applicationAccess": "login",
+    "applicationNote": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration.",
+    "applicationAudited": "2026-10-10"
+  },
+  {
+    "type": "scholarship",
+    "col": "bl",
+    "ico": "🎓",
+    "amt": "₹50,000/year",
+    "amtNum": 0,
+    "sector": "students",
+    "source": "https://scholarships.gov.in/All-Scholarships",
+    "portal": "https://scholarships.gov.in/ApplicationForm/",
+    "applicationUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "sourceChecked": "2026-10-09",
+    "lastChecked": "2026-10-09",
+    "sourceVerification": "official-reference-checked",
+    "verificationScope": "Published screening rules, annual rate and linked document requirements reviewed. Selection, evidence verification and payment are decided by the authority.",
+    "eligibilityVerification": "published-conditions-reviewed",
+    "matchingEnabled": true,
+    "status": "published-window",
+    "academicYear": "2026-27",
+    "deadline": "2026-10-31",
+    "deadlineVerified": true,
+    "deadlineSource": "https://scholarships.gov.in/All-Scholarships",
+    "deadlineChecked": "2026-10-09",
+    "accessNote": "Public NSP catalogue readable. Login, applicant verification and submission not tested.",
+    "beneficiaryVerification": "not-independently-verified",
+    "documentsNote": "Use the document list for the named programme and application route; NSP is a portal, not one scholarship.",
+    "id": "aicte-swanath-degree",
+    "name": "AICTE Swanath — Technical Degree",
+    "by": "AICTE",
+    "department": "AICTE",
+    "tags": [
+      "Central",
+      "Technical",
+      "Welfare"
+    ],
+    "applicationRoute": "student",
+    "evidenceSummary": "NSP 2026–27 lists this named programme with a student closing date of 31 October 2026. Verify the notice and your application route before submitting.",
+    "audience": {
+      "education": [
+        "ug-arts",
+        "ug-tech",
+        "ug-medical"
+      ]
+    },
+    "nspId": "nsp-978db036f44360d8",
+    "publishedName": "AICTE - Swanath Scholarship Scheme ( Technical Degree) (Welfare Based Scheme)",
+    "nspClassification": "central-sector",
+    "guidelineUrl": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3039_G.pdf",
+    "faqUrl": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3039_F.pdf",
+    "opensOn": "2026-06-01",
+    "verificationWindows": [
+      {
+        "label": "Defective Application Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Institute Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "DNO/SNO/MNO Verification Open till",
+        "date": "2026-11-30"
+      }
+    ],
+    "reviewedConditions": {
+      "categories": [
+        "*"
+      ],
+      "education": [
+        "ug-arts",
+        "ug-tech",
+        "ug-medical"
+      ],
+      "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3039_G.pdf",
+      "checkedOn": "2026-10-09",
+      "complete": true,
+      "reviewNote": "Published screening conditions on self-reported answers. Authority verifies evidence and selection. Guideline income boundary takes precedence over older FAQ wording. Medical/accident branch needs a current checklist.",
+      "checks": [
+        {
+          "field": "aicte-swanath-degree_route",
+          "op": "oneOf",
+          "values": [
+            "fresh",
+            "renewal"
+          ],
+          "reason": "Choose this programme’s application route."
+        },
+        {
+          "field": "annualIncomeRupees",
+          "op": "incomeMax",
+          "max": 800000,
+          "reason": "Annual family income must be at most ₹8 lakh under the guideline."
+        },
+        {
+          "field": "aicteApproved",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "AICTE approval of both course and institution is required."
+        },
+        {
+          "field": "regularTechnical",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "A regular technical course is required."
+        },
+        {
+          "field": "dualDegree",
+          "op": "oneOf",
+          "values": [
+            "No"
+          ],
+          "reason": "The linked FAQ excludes dual-degree and postgraduate courses."
+        },
+        {
+          "field": "otherFinancialAssistance",
+          "op": "oneOf",
+          "values": [
+            "No"
+          ],
+          "reason": "The scheme excludes other scholarship, salary, stipend or financial assistance."
+        },
+        {
+          "field": "courseYear",
+          "op": "maximum",
+          "max": 4,
+          "reason": "The course year exceeds this programme’s supported duration."
+        },
+        {
+          "field": "aicte-swanath-degree_award",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "Renewal requires a previous award of this specific programme.",
+          "when": {
+            "aicte-swanath-degree_route": [
+              "renewal"
+            ]
+          }
+        },
+        {
+          "field": "promoted",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "Renewal requires passing and promotion.",
+          "when": {
+            "aicte-swanath-degree_route": [
+              "renewal"
+            ]
+          }
+        },
+        {
+          "field": "swanathFamily",
+          "op": "oneOf",
+          "values": [
+            "orphan",
+            "covid",
+            "martyr",
+            "medical"
+          ],
+          "reason": "Swanath requires a specified family circumstance."
+        },
+        {
+          "field": "swanathFamily",
+          "op": "route",
+          "values": [
+            "orphan",
+            "covid",
+            "martyr"
+          ],
+          "reason": "Confirm the applicable family branch.",
+          "manualNote": "The May 2025 guideline adds medical/accident circumstances. The older FAQ has no checklist for that branch; ask the institution for its current evidence requirements."
+        },
+        {
+          "field": "courseYear",
+          "op": "minimum",
+          "min": 2,
+          "reason": "Renewal follows an award in an earlier course year.",
+          "when": {
+            "aicte-swanath-degree_route": [
+              "renewal"
+            ]
+          }
+        }
+      ]
+    },
+    "benefitVerified": true,
+    "benefit": {
+      "kind": "annual-fixed",
+      "amount": 50000,
+      "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3039_G.pdf",
+      "checkedOn": "2026-10-09"
+    },
+    "ruleSourceVersion": "May 2025 guideline; older FAQ linked by current NSP",
+    "documentChecklist": [
+      {
+        "id": "otr",
+        "label": "NSP OTR and Aadhaar / permitted enrolment route",
+        "help": "Use NSP to complete OTR authentication. Keep an active mobile number; enter identity details only on the official portal.",
+        "source": "https://scholarships.gov.in/home"
+      },
+      {
+        "id": "aadhaar",
+        "label": "Applicant Aadhaar",
+        "help": "The linked AICTE FAQ requires Aadhaar. Use the official NSP route for authentication.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3039_F.pdf"
+      },
+      {
+        "id": "bank",
+        "label": "Aadhaar-seeded savings account in your own name",
+        "help": "Ask your bank to confirm DBT seeding and account eligibility. Do not share account details here.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3039_F.pdf"
+      },
+      {
+        "id": "ssc",
+        "label": "Class X certificate and marksheet",
+        "help": "Keep a clear copy matching the applicant’s name.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3039_F.pdf"
+      },
+      {
+        "id": "hsc",
+        "label": "Class XII / equivalent certificate and marksheet",
+        "help": "Use the qualifying-examination record accepted for your admission.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3039_F.pdf"
+      },
+      {
+        "id": "bonafide",
+        "label": "Institution bonafide / study certificate",
+        "help": "Request the institution’s signed, stamped programme format.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3039_F.pdf"
+      },
+      {
+        "id": "income",
+        "label": "Current-year family income certificate",
+        "help": "Use a competent-authority certificate in the programme’s required format.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3039_F.pdf"
+      },
+      {
+        "id": "category",
+        "label": "Category certificate, if claiming reservation",
+        "help": "Use the certificate for the category you claim.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3039_F.pdf",
+        "when": {
+          "cat": [
+            "SC",
+            "ST",
+            "OBC",
+            "BC",
+            "MBC",
+            "DNC"
+          ]
+        }
+      },
+      {
+        "id": "orphan",
+        "label": "Orphan evidence",
+        "help": "Use parents’ death certificates or the Tehsildar / SDM certificate allowed in the guideline.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3039_G.pdf",
+        "when": {
+          "swanathFamily": [
+            "orphan"
+          ]
+        }
+      },
+      {
+        "id": "covid",
+        "label": "Parent death certificate stating COVID-19",
+        "help": "Use the evidence specified in the guideline.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3039_G.pdf",
+        "when": {
+          "swanathFamily": [
+            "covid"
+          ]
+        }
+      },
+      {
+        "id": "martyr",
+        "label": "Death and Shaheed certificates",
+        "help": "Use the official Armed Forces / central paramilitary evidence.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3039_G.pdf",
+        "when": {
+          "swanathFamily": [
+            "martyr"
+          ]
+        }
+      },
+      {
+        "id": "promotion",
+        "label": "Promotion certificate / previous-year passing record",
+        "help": "Ask the head of institution for the renewal evidence.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3039_G.pdf",
+        "when": {
+          "aicte-swanath-degree_route": [
+            "renewal"
+          ]
+        }
+      }
+    ],
+    "checklistContext": [
+      "aicte-swanath-degree_route",
+      "swanathFamily"
+    ],
+    "applicationSource": "https://scholarships.gov.in/Students",
+    "applicationChecked": "2026-10-10",
+    "registrationUrl": "https://scholarships.gov.in/otrapplication/",
+    "applicationAccess": "login",
+    "applicationNote": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration.",
+    "applicationAudited": "2026-10-10"
+  },
+  {
+    "type": "scholarship",
+    "col": "bl",
+    "ico": "🎓",
+    "amt": "₹50,000/year",
+    "amtNum": 0,
+    "sector": "students",
+    "source": "https://scholarships.gov.in/All-Scholarships",
+    "portal": "https://scholarships.gov.in/ApplicationForm/",
+    "applicationUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "sourceChecked": "2026-10-09",
+    "lastChecked": "2026-10-09",
+    "sourceVerification": "official-reference-checked",
+    "verificationScope": "Published screening rules, annual rate and linked document requirements reviewed. Selection, evidence verification and payment are decided by the authority.",
+    "eligibilityVerification": "published-conditions-reviewed",
+    "matchingEnabled": true,
+    "status": "published-window",
+    "academicYear": "2026-27",
+    "deadline": "2026-10-31",
+    "deadlineVerified": true,
+    "deadlineSource": "https://scholarships.gov.in/All-Scholarships",
+    "deadlineChecked": "2026-10-09",
+    "accessNote": "Public NSP catalogue readable. Login, applicant verification and submission not tested.",
+    "beneficiaryVerification": "not-independently-verified",
+    "documentsNote": "Use the document list for the named programme and application route; NSP is a portal, not one scholarship.",
+    "id": "aicte-swanath-diploma",
+    "name": "AICTE Swanath — Technical Diploma",
+    "by": "AICTE",
+    "department": "AICTE",
+    "tags": [
+      "Central",
+      "Technical",
+      "Diploma",
+      "Welfare"
+    ],
+    "applicationRoute": "student",
+    "evidenceSummary": "NSP 2026–27 lists this named programme with a student closing date of 31 October 2026. Verify the notice and your application route before submitting.",
+    "audience": {
+      "education": [
+        "diploma"
+      ]
+    },
+    "nspId": "nsp-3ae60dccc2c470bf",
+    "publishedName": "AICTE - Swanath Scholarship Scheme (Technical Diploma) (Welfare Based Scheme)",
+    "nspClassification": "central-sector",
+    "guidelineUrl": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3038_G.pdf",
+    "faqUrl": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3038_F.pdf",
+    "opensOn": "2026-06-01",
+    "verificationWindows": [
+      {
+        "label": "Defective Application Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Institute Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "DNO/SNO/MNO Verification Open till",
+        "date": "2026-11-30"
+      }
+    ],
+    "reviewedConditions": {
+      "categories": [
+        "*"
+      ],
+      "education": [
+        "diploma"
+      ],
+      "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3038_G.pdf",
+      "checkedOn": "2026-10-09",
+      "complete": true,
+      "reviewNote": "Published screening conditions on self-reported answers. Authority verifies evidence and selection. Guideline income boundary takes precedence over older FAQ wording. Medical/accident branch needs a current checklist.",
+      "checks": [
+        {
+          "field": "aicte-swanath-diploma_route",
+          "op": "oneOf",
+          "values": [
+            "fresh",
+            "renewal"
+          ],
+          "reason": "Choose this programme’s application route."
+        },
+        {
+          "field": "annualIncomeRupees",
+          "op": "incomeMax",
+          "max": 800000,
+          "reason": "Annual family income must be at most ₹8 lakh under the guideline."
+        },
+        {
+          "field": "aicteApproved",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "AICTE approval of both course and institution is required."
+        },
+        {
+          "field": "regularTechnical",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "A regular technical course is required."
+        },
+        {
+          "field": "dualDegree",
+          "op": "oneOf",
+          "values": [
+            "No"
+          ],
+          "reason": "The linked FAQ excludes dual-degree and postgraduate courses."
+        },
+        {
+          "field": "otherFinancialAssistance",
+          "op": "oneOf",
+          "values": [
+            "No"
+          ],
+          "reason": "The scheme excludes other scholarship, salary, stipend or financial assistance."
+        },
+        {
+          "field": "courseYear",
+          "op": "maximum",
+          "max": 3,
+          "reason": "The course year exceeds this programme’s supported duration."
+        },
+        {
+          "field": "aicte-swanath-diploma_award",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "Renewal requires a previous award of this specific programme.",
+          "when": {
+            "aicte-swanath-diploma_route": [
+              "renewal"
+            ]
+          }
+        },
+        {
+          "field": "promoted",
+          "op": "oneOf",
+          "values": [
+            "Yes"
+          ],
+          "reason": "Renewal requires passing and promotion.",
+          "when": {
+            "aicte-swanath-diploma_route": [
+              "renewal"
+            ]
+          }
+        },
+        {
+          "field": "swanathFamily",
+          "op": "oneOf",
+          "values": [
+            "orphan",
+            "covid",
+            "martyr",
+            "medical"
+          ],
+          "reason": "Swanath requires a specified family circumstance."
+        },
+        {
+          "field": "swanathFamily",
+          "op": "route",
+          "values": [
+            "orphan",
+            "covid",
+            "martyr"
+          ],
+          "reason": "Confirm the applicable family branch.",
+          "manualNote": "The May 2025 guideline adds medical/accident circumstances. The older FAQ has no checklist for that branch; ask the institution for its current evidence requirements."
+        },
+        {
+          "field": "courseYear",
+          "op": "minimum",
+          "min": 2,
+          "reason": "Renewal follows an award in an earlier course year.",
+          "when": {
+            "aicte-swanath-diploma_route": [
+              "renewal"
+            ]
+          }
+        }
+      ]
+    },
+    "benefitVerified": true,
+    "benefit": {
+      "kind": "annual-fixed",
+      "amount": 50000,
+      "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3038_G.pdf",
+      "checkedOn": "2026-10-09"
+    },
+    "ruleSourceVersion": "May 2025 guideline; older FAQ linked by current NSP",
+    "documentChecklist": [
+      {
+        "id": "otr",
+        "label": "NSP OTR and Aadhaar / permitted enrolment route",
+        "help": "Use NSP to complete OTR authentication. Keep an active mobile number; enter identity details only on the official portal.",
+        "source": "https://scholarships.gov.in/home"
+      },
+      {
+        "id": "aadhaar",
+        "label": "Applicant Aadhaar",
+        "help": "The linked AICTE FAQ requires Aadhaar. Use the official NSP route for authentication.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3038_F.pdf"
+      },
+      {
+        "id": "bank",
+        "label": "Aadhaar-seeded savings account in your own name",
+        "help": "Ask your bank to confirm DBT seeding and account eligibility. Do not share account details here.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3038_F.pdf"
+      },
+      {
+        "id": "ssc",
+        "label": "Class X certificate and marksheet",
+        "help": "Keep a clear copy matching the applicant’s name.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3038_F.pdf"
+      },
+      {
+        "id": "bonafide",
+        "label": "Institution bonafide / study certificate",
+        "help": "Request the institution’s signed, stamped programme format.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3038_F.pdf"
+      },
+      {
+        "id": "income",
+        "label": "Current-year family income certificate",
+        "help": "Use a competent-authority certificate in the programme’s required format.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3038_F.pdf"
+      },
+      {
+        "id": "category",
+        "label": "Category certificate, if claiming reservation",
+        "help": "Use the certificate for the category you claim.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3038_F.pdf",
+        "when": {
+          "cat": [
+            "SC",
+            "ST",
+            "OBC",
+            "BC",
+            "MBC",
+            "DNC"
+          ]
+        }
+      },
+      {
+        "id": "orphan",
+        "label": "Orphan evidence",
+        "help": "Use parents’ death certificates or the Tehsildar / SDM certificate allowed in the guideline.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3038_G.pdf",
+        "when": {
+          "swanathFamily": [
+            "orphan"
+          ]
+        }
+      },
+      {
+        "id": "covid",
+        "label": "Parent death certificate stating COVID-19",
+        "help": "Use the evidence specified in the guideline.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3038_G.pdf",
+        "when": {
+          "swanathFamily": [
+            "covid"
+          ]
+        }
+      },
+      {
+        "id": "martyr",
+        "label": "Death and Shaheed certificates",
+        "help": "Use the official Armed Forces / central paramilitary evidence.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3038_G.pdf",
+        "when": {
+          "swanathFamily": [
+            "martyr"
+          ]
+        }
+      },
+      {
+        "id": "promotion",
+        "label": "Promotion certificate / previous-year passing record",
+        "help": "Ask the head of institution for the renewal evidence.",
+        "source": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3038_G.pdf",
+        "when": {
+          "aicte-swanath-diploma_route": [
+            "renewal"
+          ]
+        }
+      }
+    ],
+    "checklistContext": [
+      "aicte-swanath-diploma_route",
+      "swanathFamily"
+    ],
+    "applicationSource": "https://scholarships.gov.in/Students",
+    "applicationChecked": "2026-10-10",
+    "registrationUrl": "https://scholarships.gov.in/otrapplication/",
+    "applicationAccess": "login",
+    "applicationNote": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration.",
+    "applicationAudited": "2026-10-10"
+  },
+  {
+    "type": "scholarship",
+    "col": "bl",
+    "ico": "🎓",
+    "amt": "See the official programme guidelines",
+    "amtNum": 0,
+    "sector": "students",
+    "source": "https://scholarships.gov.in/All-Scholarships",
+    "portal": "https://scholarships.gov.in/ApplicationForm/",
+    "applicationUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "sourceChecked": "2026-10-09",
+    "lastChecked": "2026-10-09",
+    "sourceVerification": "official-reference-checked",
+    "verificationScope": "Programme identity and published 2026–27 NSP window checked. Full eligibility review remains pending.",
+    "eligibilityVerification": "pending",
+    "matchingEnabled": false,
+    "status": "published-window",
+    "academicYear": "2026-27",
+    "deadline": "2026-10-31",
+    "deadlineVerified": true,
+    "deadlineSource": "https://scholarships.gov.in/All-Scholarships",
+    "deadlineChecked": "2026-10-09",
+    "accessNote": "Public NSP catalogue readable. Login, applicant verification and submission not tested.",
+    "beneficiaryVerification": "not-independently-verified",
+    "documentsNote": "Use the document list for the named programme and application route; NSP is a portal, not one scholarship.",
+    "id": "ugc-pg-national",
+    "name": "National Scholarship for Post Graduate Studies",
+    "by": "UGC",
+    "department": "UGC",
+    "tags": [
+      "Central",
+      "Postgraduate"
+    ],
+    "applicationRoute": "student",
+    "evidenceSummary": "NSP 2026–27 lists this named programme with a student closing date of 31 October 2026. Verify the notice and your application route before submitting.",
+    "audience": {
+      "education": [
+        "pg"
+      ]
+    },
+    "nspId": "nsp-8e51a25a9e6e5d00",
+    "publishedName": "National Scholarship For Post Graduate Studies (Merit Based Scheme)",
+    "nspClassification": "central-sector",
+    "guidelineUrl": "https://scholarships.gov.in/public/schemeGuidelines/Guidelines_NATIONAL_SCHOLARSHIP_FOR_POSTGRADUATE_STUDIES_UGC_2324.pdf",
+    "faqUrl": "https://scholarships.gov.in/public/FAQ/FAQ_NSPG.pdf",
+    "opensOn": "2026-09-16",
+    "verificationWindows": [
+      {
+        "label": "Defective Application Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Institute Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "DNO/SNO/MNO Verification Open till",
+        "date": "2026-11-30"
+      }
+    ],
+    "applicationSource": "https://scholarships.gov.in/Students",
+    "applicationChecked": "2026-10-10",
+    "registrationUrl": "https://scholarships.gov.in/otrapplication/",
+    "applicationAccess": "login",
+    "applicationNote": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration.",
+    "applicationAudited": "2026-10-10"
+  },
+  {
+    "type": "scholarship",
+    "col": "bl",
+    "ico": "🎓",
+    "amt": "See the official programme guidelines",
+    "amtNum": 0,
+    "sector": "students",
+    "source": "https://scholarships.gov.in/All-Scholarships",
+    "portal": "https://scholarships.gov.in/ApplicationForm/",
+    "applicationUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "sourceChecked": "2026-10-09",
+    "lastChecked": "2026-10-09",
+    "sourceVerification": "official-reference-checked",
+    "verificationScope": "Programme identity and published 2026–27 NSP window checked. Full eligibility review remains pending.",
+    "eligibilityVerification": "pending",
+    "matchingEnabled": false,
+    "status": "published-window",
+    "academicYear": "2026-27",
+    "deadline": "2026-10-31",
+    "deadlineVerified": true,
+    "deadlineSource": "https://scholarships.gov.in/All-Scholarships",
+    "deadlineChecked": "2026-10-09",
+    "accessNote": "Public NSP catalogue readable. Login, applicant verification and submission not tested.",
+    "beneficiaryVerification": "not-independently-verified",
+    "documentsNote": "Use the document list for the named programme and application route; NSP is a portal, not one scholarship.",
+    "id": "ishan-uday",
+    "name": "Ishan Uday — Special Scholarship Scheme for NER",
+    "by": "UGC",
+    "department": "UGC",
+    "tags": [
+      "Central",
+      "North-East",
+      "Undergraduate"
+    ],
+    "applicationRoute": "student",
+    "evidenceSummary": "NSP 2026–27 lists this named programme with a student closing date of 31 October 2026. Verify the notice and your application route before submitting.",
+    "audience": {
+      "education": [
+        "ug-arts",
+        "ug-tech",
+        "ug-medical"
+      ],
+      "domicileStates": [
+        "Arunachal Pradesh",
+        "Assam",
+        "Manipur",
+        "Meghalaya",
+        "Mizoram",
+        "Nagaland",
+        "Sikkim",
+        "Tripura"
+      ]
+    },
+    "nspId": "nsp-ca3c47f4d0b7120a",
+    "publishedName": "Ishan Uday Special Scholarship Scheme For NER (Merit Based Scheme)",
+    "nspClassification": "central-sector",
+    "guidelineUrl": "https://scholarships.gov.in/public/schemeGuidelines/Guidelines_ISHAN%20UDAY_2324.pdf",
+    "faqUrl": "https://scholarships.gov.in/public/FAQ/FAQ_Ishanuday.pdf",
+    "opensOn": "2026-09-16",
+    "verificationWindows": [
+      {
+        "label": "Defective Application Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Institute Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "DNO/SNO/MNO Verification Open till",
+        "date": "2026-11-30"
+      }
+    ],
+    "applicationSource": "https://scholarships.gov.in/Students",
+    "applicationChecked": "2026-10-10",
+    "registrationUrl": "https://scholarships.gov.in/otrapplication/",
+    "applicationAccess": "login",
+    "applicationNote": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration.",
+    "applicationAudited": "2026-10-10"
+  },
+  {
+    "type": "scholarship",
+    "col": "bl",
+    "ico": "🎓",
+    "amt": "See the official programme guidelines",
+    "amtNum": 0,
+    "sector": "students",
+    "source": "https://scholarships.gov.in/All-Scholarships",
+    "portal": "https://scholarships.gov.in/ApplicationForm/",
+    "applicationUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "sourceChecked": "2026-10-09",
+    "lastChecked": "2026-10-09",
+    "sourceVerification": "official-reference-checked",
+    "verificationScope": "Programme identity and published 2026–27 NSP window checked. Full eligibility review remains pending.",
+    "eligibilityVerification": "pending",
+    "matchingEnabled": false,
+    "status": "published-window",
+    "academicYear": "2026-27",
+    "deadline": "2026-10-31",
+    "deadlineVerified": true,
+    "deadlineSource": "https://scholarships.gov.in/All-Scholarships",
+    "deadlineChecked": "2026-10-09",
+    "accessNote": "Public NSP catalogue readable. Login, applicant verification and submission not tested.",
+    "beneficiaryVerification": "not-independently-verified",
+    "documentsNote": "Use the document list for the named programme and application route; NSP is a portal, not one scholarship.",
+    "id": "pm-yasasvi-college",
+    "name": "PM YASASVI — Top Class Education in College",
+    "by": "Department of Social Justice and Empowerment",
+    "department": "Department of Social Justice and Empowerment",
+    "tags": [
+      "Central",
+      "OBC",
+      "EBC",
+      "DNT",
+      "College"
+    ],
+    "applicationRoute": "student",
+    "evidenceSummary": "NSP 2026–27 lists this named programme with a student closing date of 31 October 2026. Verify the notice and your application route before submitting.",
+    "nspId": "nsp-09df4ca0d123c958",
+    "publishedName": "PM YASASVI Central Sector Scheme Of Top Class Education In College For OBC, EBC And DNT Students (Merit Based Scheme)",
+    "nspClassification": "central-sector",
+    "guidelineUrl": "https://scholarships.gov.in/public/schemeGuidelines/ApprovedmodifieddraftofTopClassCollege.pdf",
+    "opensOn": "2026-06-01",
+    "verificationWindows": [
+      {
+        "label": "Defective Application Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Institute Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "DNO/SNO/MNO Verification Open till",
+        "date": "2026-11-30"
+      }
+    ],
+    "applicationSource": "https://scholarships.gov.in/Students",
+    "applicationChecked": "2026-10-10",
+    "registrationUrl": "https://scholarships.gov.in/otrapplication/",
+    "applicationAccess": "login",
+    "applicationNote": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration.",
+    "applicationAudited": "2026-10-10"
+  },
+  {
+    "type": "scholarship",
+    "col": "bl",
+    "ico": "🎓",
+    "amt": "See the official programme guidelines",
+    "amtNum": 0,
+    "sector": "students",
+    "source": "https://scholarships.gov.in/All-Scholarships",
+    "portal": "https://scholarships.gov.in/ApplicationForm/",
+    "applicationUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "sourceChecked": "2026-10-09",
+    "lastChecked": "2026-10-09",
+    "sourceVerification": "official-reference-checked",
+    "verificationScope": "Programme identity and published 2026–27 NSP window checked. Full eligibility review remains pending.",
+    "eligibilityVerification": "pending",
+    "matchingEnabled": false,
+    "status": "published-window",
+    "academicYear": "2026-27",
+    "deadline": "2026-10-31",
+    "deadlineVerified": true,
+    "deadlineSource": "https://scholarships.gov.in/All-Scholarships",
+    "deadlineChecked": "2026-10-09",
+    "accessNote": "Public NSP catalogue readable. Login, applicant verification and submission not tested.",
+    "beneficiaryVerification": "not-independently-verified",
+    "documentsNote": "Use the document list for the named programme and application route; NSP is a portal, not one scholarship.",
+    "id": "pm-yasasvi-school",
+    "name": "PM YASASVI — Top Class Education in Schools",
+    "by": "Department of Social Justice and Empowerment",
+    "department": "Department of Social Justice and Empowerment",
+    "tags": [
+      "Central",
+      "OBC",
+      "EBC",
+      "DNT",
+      "School"
+    ],
+    "applicationRoute": "renewal",
+    "evidenceSummary": "NSP 2026–27 publishes a renewal window closing 31 October 2026. A fresh application window has not been confirmed.",
+    "audience": {
+      "education": [
+        "9-10",
+        "11-12"
+      ]
+    },
+    "nspId": "nsp-f0b027a7f06d53a8",
+    "publishedName": "PM YASASVI Central Sector Scheme Of Top Class Education In Schools For OBC, EBC And DNT Students (Merit Based Scheme)",
+    "nspClassification": "central-sector",
+    "guidelineUrl": "https://scholarships.gov.in/public/schemeGuidelines/3061_G.pdf",
+    "opensOn": "2026-06-01",
+    "verificationWindows": [
+      {
+        "label": "Defective Application Verification Open till (for Renewal)",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Institute Verification Open till (for Renewal)",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "DNO/SNO/MNO Verification Open till (for Renewal)",
+        "date": "2026-11-30"
+      }
+    ],
+    "applicationSource": "https://scholarships.gov.in/Students",
+    "applicationChecked": "2026-10-10",
+    "registrationUrl": "https://scholarships.gov.in/otrapplication/",
+    "applicationAccess": "login",
+    "applicationNote": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration.",
+    "applicationAudited": "2026-10-10"
+  },
+  {
+    "type": "scholarship",
+    "col": "bl",
+    "ico": "🎓",
+    "amt": "See the official programme guidelines",
+    "amtNum": 0,
+    "sector": "students",
+    "source": "https://scholarships.gov.in/All-Scholarships",
+    "portal": "https://scholarships.gov.in/ApplicationForm/",
+    "applicationUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "sourceChecked": "2026-10-09",
+    "lastChecked": "2026-10-09",
+    "sourceVerification": "official-reference-checked",
+    "verificationScope": "Programme identity and published 2026–27 NSP window checked. Full eligibility review remains pending.",
+    "eligibilityVerification": "pending",
+    "matchingEnabled": false,
+    "status": "published-window",
+    "academicYear": "2026-27",
+    "deadline": "2026-10-31",
+    "deadlineVerified": true,
+    "deadlineSource": "https://scholarships.gov.in/All-Scholarships",
+    "deadlineChecked": "2026-10-09",
+    "accessNote": "Public NSP catalogue readable. Login, applicant verification and submission not tested.",
+    "beneficiaryVerification": "not-independently-verified",
+    "documentsNote": "Use the document list for the named programme and application route; NSP is a portal, not one scholarship.",
+    "id": "nmms",
+    "name": "National Means Cum Merit Scholarship",
+    "by": "Department of School Education and Literacy",
+    "department": "Department of School Education and Literacy",
+    "tags": [
+      "Central",
+      "School",
+      "Merit"
+    ],
+    "applicationRoute": "student",
+    "evidenceSummary": "NSP 2026–27 lists this named programme with a student closing date of 31 October 2026. Verify the notice and your application route before submitting.",
+    "audience": {
+      "education": [
+        "9-10",
+        "11-12"
+      ]
+    },
+    "nspId": "nsp-65618b5b5e197d78",
+    "publishedName": "National Means Cum Merit Scholarship (Merit Based Scheme)",
+    "nspClassification": "central-sector",
+    "guidelineUrl": "https://scholarships.gov.in/public/schemeGuidelines/NMMSSGuidelines.pdf",
+    "faqUrl": "https://scholarships.gov.in/public/FAQ/NMSSS_FAQ.pdf",
+    "opensOn": "2026-06-01",
+    "verificationWindows": [
+      {
+        "label": "Defective Application Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Institute Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "DNO/SNO/MNO Verification Open till",
+        "date": "2026-11-30"
+      }
+    ],
+    "applicationSource": "https://scholarships.gov.in/Students",
+    "applicationChecked": "2026-10-10",
+    "registrationUrl": "https://scholarships.gov.in/otrapplication/",
+    "applicationAccess": "login",
+    "applicationNote": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration.",
+    "applicationAudited": "2026-10-10"
+  },
+  {
+    "type": "scholarship",
+    "col": "bl",
+    "ico": "🎓",
+    "amt": "See the official programme guidelines",
+    "amtNum": 0,
+    "sector": "students",
+    "source": "https://scholarships.gov.in/All-Scholarships",
+    "portal": "https://scholarships.gov.in/ApplicationForm/",
+    "applicationUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "sourceChecked": "2026-10-09",
+    "lastChecked": "2026-10-09",
+    "sourceVerification": "official-reference-checked",
+    "verificationScope": "Programme identity and published 2026–27 NSP window checked. Full eligibility review remains pending.",
+    "eligibilityVerification": "pending",
+    "matchingEnabled": false,
+    "status": "published-window",
+    "academicYear": "2026-27",
+    "deadline": "2026-10-31",
+    "deadlineVerified": true,
+    "deadlineSource": "https://scholarships.gov.in/All-Scholarships",
+    "deadlineChecked": "2026-10-09",
+    "accessNote": "Public NSP catalogue readable. Login, applicant verification and submission not tested.",
+    "beneficiaryVerification": "not-independently-verified",
+    "documentsNote": "Use the document list for the named programme and application route; NSP is a portal, not one scholarship.",
+    "id": "sc-topclass",
+    "name": "Top Class Education Scholarship for SC Students",
+    "by": "Department of Social Justice and Empowerment",
+    "department": "Department of Social Justice and Empowerment",
+    "tags": [
+      "Central",
+      "SC",
+      "College"
+    ],
+    "applicationRoute": "student",
+    "evidenceSummary": "NSP 2026–27 lists this named programme with a student closing date of 31 October 2026. Verify the notice and your application route before submitting.",
+    "audience": {
+      "categories": [
+        "SC"
+      ]
+    },
+    "nspId": "nsp-2828a739f8a37fbe",
+    "publishedName": "National Fellowship And Scholarship For Higher Education Of ST Students - Scholarship (Formally Top Class Education For Schedule Tribe Students) (Merit Based Scheme)",
+    "nspClassification": "central-sector",
+    "guidelineUrl": "https://scholarships.gov.in/public/schemeGuidelines/tribalfellowshipguideline.pdf",
+    "faqUrl": "https://scholarships.gov.in/public/schemeGuidelines/tribalfellowshipfaq.pdf",
+    "opensOn": "2026-06-01",
+    "verificationWindows": [
+      {
+        "label": "Defective Application Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Institute Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "DNO/SNO/MNO Verification Open till",
+        "date": "2026-11-30"
+      }
+    ],
+    "applicationSource": "https://scholarships.gov.in/Students",
+    "applicationChecked": "2026-10-10",
+    "registrationUrl": "https://scholarships.gov.in/otrapplication/",
+    "applicationAccess": "login",
+    "applicationNote": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration.",
+    "applicationAudited": "2026-10-10"
+  },
+  {
+    "type": "scholarship",
+    "col": "bl",
+    "ico": "🎓",
+    "amt": "See the official programme guidelines",
+    "amtNum": 0,
+    "sector": "students",
+    "source": "https://scholarships.gov.in/All-Scholarships",
+    "portal": "https://scholarships.gov.in/ApplicationForm/",
+    "applicationUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "sourceChecked": "2026-10-09",
+    "lastChecked": "2026-10-09",
+    "sourceVerification": "official-reference-checked",
+    "verificationScope": "Programme identity and published 2026–27 NSP window checked. Full eligibility review remains pending.",
+    "eligibilityVerification": "pending",
+    "matchingEnabled": false,
+    "status": "unknown",
+    "academicYear": "2026-27",
+    "deadline": "2026-10-31",
+    "deadlineVerified": true,
+    "deadlineSource": "https://scholarships.gov.in/All-Scholarships",
+    "deadlineChecked": "2026-10-09",
+    "accessNote": "Public NSP catalogue readable. Login, applicant verification and submission not tested.",
+    "beneficiaryVerification": "not-independently-verified",
+    "documentsNote": "Use the document list for the named programme and application route; NSP is a portal, not one scholarship.",
+    "id": "st-topclass",
+    "name": "National Scholarship for Higher Education of ST Students",
+    "by": "Ministry of Tribal Affairs",
+    "department": "Ministry of Tribal Affairs",
+    "tags": [
+      "Central",
+      "ST",
+      "College"
+    ],
+    "applicationRoute": "student",
+    "evidenceSummary": "NSP 2026–27 lists this named programme with a student closing date of 31 October 2026. Verify the notice and your application route before submitting.",
+    "audience": {
+      "categories": [
+        "ST"
+      ]
+    },
+    "applicationSource": "https://scholarships.gov.in/Students",
+    "applicationChecked": "2026-10-10",
+    "registrationUrl": "https://scholarships.gov.in/otrapplication/",
+    "applicationAccess": "login",
+    "applicationNote": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration.",
+    "applicationAudited": "2026-10-10"
+  },
+  {
+    "id": "nsp-54ed40efae68bf43",
+    "name": "Prime Minister'S Scholarship Scheme For Wards Of States/UTs Police Personnel Martyred During Terror/Naxal Attacks",
+    "by": "Ministry of Home Affairs",
+    "department": "Ministry of Home Affairs",
+    "sector": "students",
+    "type": "scholarship",
+    "col": "bl",
+    "ico": "🎓",
+    "amt": "See the programme-specific guideline and current notice",
+    "amtNum": 0,
+    "tags": [
+      "Central",
+      "Students",
+      "Official source",
+      "Rules need review"
+    ],
+    "source": "https://scholarships.gov.in/All-Scholarships",
+    "portal": "https://scholarships.gov.in/ApplicationForm/",
+    "applicationUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "sourceVerification": "official-reference-checked",
+    "verificationScope": "NSP listing, department, published student window and guideline/FAQ links checked. Linked full rules have not been reviewed.",
+    "eligibilityVerification": "pending",
+    "matchingEnabled": false,
+    "accessNote": "NSP public catalogue readable. Applicant login, submission and benefit receipt not tested.",
+    "evidenceSummary": "Programme listed in the NSP public central-sector catalogue for 2026-27. Student and officer verification dates are stored separately.",
+    "beneficiaryVerification": "not-independently-verified",
+    "documentsNote": "Read the exact programme guideline and current-cycle notification; documents are not inferred.",
+    "nspId": "nsp-54ed40efae68bf43",
+    "publishedName": "Prime Minister'S Scholarship Scheme For Wards Of States/UTs Police Personnel Martyred During Terror/Naxal Attacks (Merit Based Scheme)",
+    "nspClassification": "central-sector",
+    "guidelineUrl": "https://scholarships.gov.in/public/schemeGuidelines/warb/PMSS_Guidelines_1197_3001-2023-24.pdf",
+    "faqUrl": "https://scholarships.gov.in/public/FAQ/FAQonPMSSS.pdf",
+    "academicYear": "2026-27",
+    "applicationRoute": "student",
+    "opensOn": "2026-06-01",
+    "deadline": "2026-10-31",
+    "deadlineVerified": true,
+    "deadlineSource": "https://scholarships.gov.in/All-Scholarships",
+    "deadlineChecked": "2026-10-09",
+    "status": "published-window",
+    "verificationWindows": [
+      {
+        "label": "Defective Application Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Institute Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "DNO/SNO/MNO Verification Open till",
+        "date": "2026-11-30"
+      }
+    ],
+    "sourceChecked": "2026-10-09",
+    "lastChecked": "2026-10-09",
+    "applicationSource": "https://scholarships.gov.in/Students",
+    "applicationChecked": "2026-10-10",
+    "registrationUrl": "https://scholarships.gov.in/otrapplication/",
+    "applicationAccess": "login",
+    "applicationNote": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration.",
+    "applicationAudited": "2026-10-10"
+  },
+  {
+    "id": "nsp-57b5cc835f9fee06",
+    "name": "Prime Minister'S Scholarship Scheme For Central Armed Police Forces And Assam Rifles",
+    "by": "Ministry of Home Affairs",
+    "department": "Ministry of Home Affairs",
+    "sector": "students",
+    "type": "scholarship",
+    "col": "bl",
+    "ico": "🎓",
+    "amt": "See the programme-specific guideline and current notice",
+    "amtNum": 0,
+    "tags": [
+      "Central",
+      "Students",
+      "Official source",
+      "Rules need review"
+    ],
+    "source": "https://scholarships.gov.in/All-Scholarships",
+    "portal": "https://scholarships.gov.in/ApplicationForm/",
+    "applicationUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "sourceVerification": "official-reference-checked",
+    "verificationScope": "NSP listing, department, published student window and guideline/FAQ links checked. Linked full rules have not been reviewed.",
+    "eligibilityVerification": "pending",
+    "matchingEnabled": false,
+    "accessNote": "NSP public catalogue readable. Applicant login, submission and benefit receipt not tested.",
+    "evidenceSummary": "Programme listed in the NSP public central-sector catalogue for 2026-27. Student and officer verification dates are stored separately.",
+    "beneficiaryVerification": "not-independently-verified",
+    "documentsNote": "Read the exact programme guideline and current-cycle notification; documents are not inferred.",
+    "nspId": "nsp-57b5cc835f9fee06",
+    "publishedName": "Prime Minister'S Scholarship Scheme For Central Armed Police Forces And Assam Rifles (Merit Based Scheme)",
+    "nspClassification": "central-sector",
+    "guidelineUrl": "https://scholarships.gov.in/public/schemeGuidelines/warb/PMSS_Guidelines_1197_3001-2023-24.pdf",
+    "faqUrl": "https://scholarships.gov.in/public/FAQ/FAQonPMSSS.pdf",
+    "academicYear": "2026-27",
+    "applicationRoute": "student",
+    "opensOn": "2026-06-01",
+    "deadline": "2026-10-31",
+    "deadlineVerified": true,
+    "deadlineSource": "https://scholarships.gov.in/All-Scholarships",
+    "deadlineChecked": "2026-10-09",
+    "status": "published-window",
+    "verificationWindows": [
+      {
+        "label": "Defective Application Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Institute Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "DNO/SNO/MNO Verification Open till",
+        "date": "2026-11-30"
+      }
+    ],
+    "sourceChecked": "2026-10-09",
+    "lastChecked": "2026-10-09",
+    "applicationSource": "https://scholarships.gov.in/Students",
+    "applicationChecked": "2026-10-10",
+    "registrationUrl": "https://scholarships.gov.in/otrapplication/",
+    "applicationAccess": "login",
+    "applicationNote": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration.",
+    "applicationAudited": "2026-10-10"
+  },
+  {
+    "id": "nsp-dfa85afbfeaabc57",
+    "name": "PM USP Special Scholarship Scheme For Jammu Kashmir And Ladakh",
+    "by": "All India Council For Technical Education",
+    "department": "All India Council For Technical Education",
+    "sector": "students",
+    "type": "scholarship",
+    "col": "bl",
+    "ico": "🎓",
+    "amt": "See the programme-specific guideline and current notice",
+    "amtNum": 0,
+    "tags": [
+      "Central",
+      "Students",
+      "Official source",
+      "Rules need review"
+    ],
+    "source": "https://scholarships.gov.in/All-Scholarships",
+    "portal": "https://scholarships.gov.in/ApplicationForm/",
+    "applicationUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "sourceVerification": "official-reference-checked",
+    "verificationScope": "NSP listing, department, published student window and guideline/FAQ links checked. Linked full rules have not been reviewed.",
+    "eligibilityVerification": "pending",
+    "matchingEnabled": false,
+    "accessNote": "NSP public catalogue readable. Applicant login, submission and benefit receipt not tested.",
+    "evidenceSummary": "Programme listed in the NSP public central-sector catalogue for 2026-27. Student and officer verification dates are stored separately.",
+    "beneficiaryVerification": "not-independently-verified",
+    "documentsNote": "Read the exact programme guideline and current-cycle notification; documents are not inferred.",
+    "nspId": "nsp-dfa85afbfeaabc57",
+    "publishedName": "PM USP Special Scholarship Scheme For Jammu Kashmir And Ladakh (Merit Based Scheme)",
+    "nspClassification": "central-sector",
+    "guidelineUrl": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/PM_USPY(SSSJKL)SchemeSpecifications.pdf",
+    "faqUrl": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/PM_USPY(SSSJKL)SchemeSpecifications.pdf",
+    "academicYear": "2026-27",
+    "applicationRoute": "renewal",
+    "opensOn": "2026-06-01",
+    "deadline": "2026-10-31",
+    "deadlineVerified": true,
+    "deadlineSource": "https://scholarships.gov.in/All-Scholarships",
+    "deadlineChecked": "2026-10-09",
+    "status": "published-window",
+    "verificationWindows": [
+      {
+        "label": "Defective Application Verification Open till (for Renewal)",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Institute Verification Open till (for Renewal)",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "DNO/SNO/MNO Verification Open till (for Renewal)",
+        "date": "2026-11-30"
+      }
+    ],
+    "sourceChecked": "2026-10-09",
+    "lastChecked": "2026-10-09",
+    "audience": {
+      "domicileStates": [
+        "Jammu and Kashmir",
+        "Ladakh"
+      ]
+    },
+    "applicationSource": "https://scholarships.gov.in/Students",
+    "applicationChecked": "2026-10-10",
+    "registrationUrl": "https://scholarships.gov.in/otrapplication/",
+    "applicationAccess": "login",
+    "applicationNote": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration.",
+    "applicationAudited": "2026-10-10"
+  },
+  {
+    "id": "nsp-6d6f77dc3a12ac77",
+    "name": "Financial Assistance For Education To The Wards Of Beedi/Cine/Iomc/Lsdm- Pre Matric",
+    "by": "Ministry of Labour & Employment",
+    "department": "Ministry of Labour & Employment",
+    "sector": "students",
+    "type": "scholarship",
+    "col": "bl",
+    "ico": "🎓",
+    "amt": "See the programme-specific guideline and current notice",
+    "amtNum": 0,
+    "tags": [
+      "Central",
+      "Students",
+      "Official source",
+      "Rules need review"
+    ],
+    "source": "https://scholarships.gov.in/All-Scholarships",
+    "portal": "https://scholarships.gov.in/ApplicationForm/",
+    "applicationUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "sourceVerification": "official-reference-checked",
+    "verificationScope": "NSP listing, department, published student window and guideline/FAQ links checked. Linked full rules have not been reviewed.",
+    "eligibilityVerification": "pending",
+    "matchingEnabled": false,
+    "accessNote": "NSP public catalogue readable. Applicant login, submission and benefit receipt not tested.",
+    "evidenceSummary": "Programme listed in the NSP public central-sector catalogue for 2026-27. Student and officer verification dates are stored separately.",
+    "beneficiaryVerification": "not-independently-verified",
+    "documentsNote": "Read the exact programme guideline and current-cycle notification; documents are not inferred.",
+    "nspId": "nsp-6d6f77dc3a12ac77",
+    "publishedName": "Financial Assistance For Education To The Wards Of Beedi/Cine/Iomc/Lsdm- Pre Matric (Welfare Based Scheme)",
+    "nspClassification": "central-sector",
+    "guidelineUrl": "https://scholarships.gov.in/public/schemeGuidelines/Labour_Ministry_Guidelines_of_scholarhsips%20schemes.pdf",
+    "faqUrl": "https://scholarships.gov.in/public/FAQ/MinistryofLabour_FAQ.pdf",
+    "academicYear": "2026-27",
+    "applicationRoute": "student",
+    "opensOn": "2026-06-01",
+    "deadline": "2026-10-31",
+    "deadlineVerified": true,
+    "deadlineSource": "https://scholarships.gov.in/All-Scholarships",
+    "deadlineChecked": "2026-10-09",
+    "status": "published-window",
+    "verificationWindows": [
+      {
+        "label": "Defective Application Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Institute Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "DNO/SNO/MNO Verification Open till",
+        "date": "2026-11-30"
+      }
+    ],
+    "sourceChecked": "2026-10-09",
+    "lastChecked": "2026-10-09",
+    "applicationSource": "https://scholarships.gov.in/Students",
+    "applicationChecked": "2026-10-10",
+    "registrationUrl": "https://scholarships.gov.in/otrapplication/",
+    "applicationAccess": "login",
+    "applicationNote": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration.",
+    "applicationAudited": "2026-10-10"
+  },
+  {
+    "id": "nsp-111650636ef12bd4",
+    "name": "Financial Assistance For Education To The Wards Of Beedi/Cine/Iomc/Lsdm- Post Matric",
+    "by": "Ministry of Labour & Employment",
+    "department": "Ministry of Labour & Employment",
+    "sector": "students",
+    "type": "scholarship",
+    "col": "bl",
+    "ico": "🎓",
+    "amt": "See the programme-specific guideline and current notice",
+    "amtNum": 0,
+    "tags": [
+      "Central",
+      "Students",
+      "Official source",
+      "Rules need review"
+    ],
+    "source": "https://scholarships.gov.in/All-Scholarships",
+    "portal": "https://scholarships.gov.in/ApplicationForm/",
+    "applicationUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "sourceVerification": "official-reference-checked",
+    "verificationScope": "NSP listing, department, published student window and guideline/FAQ links checked. Linked full rules have not been reviewed.",
+    "eligibilityVerification": "pending",
+    "matchingEnabled": false,
+    "accessNote": "NSP public catalogue readable. Applicant login, submission and benefit receipt not tested.",
+    "evidenceSummary": "Programme listed in the NSP public central-sector catalogue for 2026-27. Student and officer verification dates are stored separately.",
+    "beneficiaryVerification": "not-independently-verified",
+    "documentsNote": "Read the exact programme guideline and current-cycle notification; documents are not inferred.",
+    "nspId": "nsp-111650636ef12bd4",
+    "publishedName": "Financial Assistance For Education To The Wards Of Beedi/Cine/Iomc/Lsdm- Post Matric (Welfare Based Scheme)",
+    "nspClassification": "central-sector",
+    "guidelineUrl": "https://scholarships.gov.in/public/schemeGuidelines/Labour_Ministry_Guidelines_of_scholarhsips%20schemes.pdf",
+    "faqUrl": "https://scholarships.gov.in/public/FAQ/MinistryofLabour_FAQ.pdf",
+    "academicYear": "2026-27",
+    "applicationRoute": "student",
+    "opensOn": "2026-06-01",
+    "deadline": "2026-10-31",
+    "deadlineVerified": true,
+    "deadlineSource": "https://scholarships.gov.in/All-Scholarships",
+    "deadlineChecked": "2026-10-09",
+    "status": "published-window",
+    "verificationWindows": [
+      {
+        "label": "Defective Application Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Institute Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "DNO/SNO/MNO Verification Open till",
+        "date": "2026-11-30"
+      }
+    ],
+    "sourceChecked": "2026-10-09",
+    "lastChecked": "2026-10-09",
+    "applicationSource": "https://scholarships.gov.in/Students",
+    "applicationChecked": "2026-10-10",
+    "registrationUrl": "https://scholarships.gov.in/otrapplication/",
+    "applicationAccess": "login",
+    "applicationNote": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration.",
+    "applicationAudited": "2026-10-10"
+  },
+  {
+    "id": "nsp-a27bb96e7fc877c0",
+    "name": "National Renewable Energy Fellowship Scheme",
+    "by": "Ministry of New And Renewable Energy",
+    "department": "Ministry of New And Renewable Energy",
+    "sector": "students",
+    "type": "fellowship",
+    "col": "bl",
+    "ico": "🎓",
+    "amt": "See the programme-specific guideline and current notice",
+    "amtNum": 0,
+    "tags": [
+      "Central",
+      "Students",
+      "Official source",
+      "Rules need review"
+    ],
+    "source": "https://scholarships.gov.in/All-Scholarships",
+    "portal": "https://scholarships.gov.in/ApplicationForm/",
+    "applicationUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "sourceVerification": "official-reference-checked",
+    "verificationScope": "NSP listing, department, published student window and guideline/FAQ links checked. Linked full rules have not been reviewed.",
+    "eligibilityVerification": "pending",
+    "matchingEnabled": false,
+    "accessNote": "NSP public catalogue readable. Applicant login, submission and benefit receipt not tested.",
+    "evidenceSummary": "Programme listed in the NSP public central-sector catalogue for 2026-27. Student and officer verification dates are stored separately.",
+    "beneficiaryVerification": "not-independently-verified",
+    "documentsNote": "Read the exact programme guideline and current-cycle notification; documents are not inferred.",
+    "nspId": "nsp-a27bb96e7fc877c0",
+    "publishedName": "National Renewable Energy Fellowship Scheme (Merit Based Scheme)",
+    "nspClassification": "central-sector",
+    "academicYear": "2026-27",
+    "applicationRoute": "student",
+    "opensOn": "2026-06-01",
+    "deadline": "2026-10-31",
+    "deadlineVerified": true,
+    "deadlineSource": "https://scholarships.gov.in/All-Scholarships",
+    "deadlineChecked": "2026-10-09",
+    "status": "published-window",
+    "verificationWindows": [
+      {
+        "label": "Defective Application Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Institute Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "DNO/SNO/MNO Verification Open till",
+        "date": "2026-11-30"
+      }
+    ],
+    "sourceChecked": "2026-10-09",
+    "lastChecked": "2026-10-09",
+    "applicationSource": "https://scholarships.gov.in/Students",
+    "applicationChecked": "2026-10-10",
+    "registrationUrl": "https://scholarships.gov.in/otrapplication/",
+    "applicationAccess": "login",
+    "applicationNote": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration.",
+    "applicationAudited": "2026-10-10"
+  },
+  {
+    "id": "nsp-33709d3058fb47be",
+    "name": "Stipend Scheme For Under Graduate And Post Graduate Studies In Indian Statistical Institute-Kolkata",
+    "by": "Ministry of Statistics and Programme Implementation",
+    "department": "Ministry of Statistics and Programme Implementation",
+    "sector": "students",
+    "type": "scholarship",
+    "col": "bl",
+    "ico": "🎓",
+    "amt": "See the programme-specific guideline and current notice",
+    "amtNum": 0,
+    "tags": [
+      "Central",
+      "Students",
+      "Official source",
+      "Rules need review"
+    ],
+    "source": "https://scholarships.gov.in/All-Scholarships",
+    "portal": "https://scholarships.gov.in/ApplicationForm/",
+    "applicationUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "sourceVerification": "official-reference-checked",
+    "verificationScope": "NSP listing, department, published student window and guideline/FAQ links checked. Linked full rules have not been reviewed.",
+    "eligibilityVerification": "pending",
+    "matchingEnabled": false,
+    "accessNote": "NSP public catalogue readable. Applicant login, submission and benefit receipt not tested.",
+    "evidenceSummary": "Programme listed in the NSP public central-sector catalogue for 2026-27. Student and officer verification dates are stored separately.",
+    "beneficiaryVerification": "not-independently-verified",
+    "documentsNote": "Read the exact programme guideline and current-cycle notification; documents are not inferred.",
+    "nspId": "nsp-33709d3058fb47be",
+    "publishedName": "Stipend Scheme For Under Graduate And Post Graduate Studies In Indian Statistical Institute-Kolkata (Merit Based Scheme)",
+    "nspClassification": "central-sector",
+    "guidelineUrl": "https://scholarships.gov.in/public/schemeGuidelines/STIPEND_STATICAL_GUIDLLINES.pdf",
+    "academicYear": "2026-27",
+    "applicationRoute": "student",
+    "opensOn": "2026-06-01",
+    "deadline": "2026-10-31",
+    "deadlineVerified": true,
+    "deadlineSource": "https://scholarships.gov.in/All-Scholarships",
+    "deadlineChecked": "2026-10-09",
+    "status": "published-window",
+    "verificationWindows": [
+      {
+        "label": "Defective Application Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Institute Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "DNO/SNO/MNO Verification Open till",
+        "date": "2026-11-30"
+      }
+    ],
+    "sourceChecked": "2026-10-09",
+    "lastChecked": "2026-10-09",
+    "applicationSource": "https://scholarships.gov.in/Students",
+    "applicationChecked": "2026-10-10",
+    "registrationUrl": "https://scholarships.gov.in/otrapplication/",
+    "applicationAccess": "login",
+    "applicationNote": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration.",
+    "applicationAudited": "2026-10-10"
+  },
+  {
+    "id": "nsp-e2b17f9bf92ce073",
+    "name": "Icar National Talent Scholarship(Nts-Ug)",
+    "by": "Department of Agriculture Research and Education",
+    "department": "Department of Agriculture Research and Education",
+    "sector": "students",
+    "type": "scholarship",
+    "col": "bl",
+    "ico": "🎓",
+    "amt": "See the programme-specific guideline and current notice",
+    "amtNum": 0,
+    "tags": [
+      "Central",
+      "Students",
+      "Official source",
+      "Rules need review"
+    ],
+    "source": "https://scholarships.gov.in/All-Scholarships",
+    "portal": "https://scholarships.gov.in/ApplicationForm/",
+    "applicationUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "sourceVerification": "official-reference-checked",
+    "verificationScope": "NSP listing, department, published student window and guideline/FAQ links checked. Linked full rules have not been reviewed.",
+    "eligibilityVerification": "pending",
+    "matchingEnabled": false,
+    "accessNote": "NSP public catalogue readable. Applicant login, submission and benefit receipt not tested.",
+    "evidenceSummary": "Programme listed in the NSP public central-sector catalogue for 2026-27. Student and officer verification dates are stored separately.",
+    "beneficiaryVerification": "not-independently-verified",
+    "documentsNote": "Read the exact programme guideline and current-cycle notification; documents are not inferred.",
+    "nspId": "nsp-e2b17f9bf92ce073",
+    "publishedName": "Icar National Talent Scholarship(Nts-Ug) (Merit Based Scheme)",
+    "nspClassification": "central-sector",
+    "guidelineUrl": "https://scholarships.gov.in/public/schemeGuidelines/GuidelinesforICAR_NTS_Scholarship_3103_3104.pdf",
+    "faqUrl": "https://scholarships.gov.in/public/FAQ/FAQsforICAR_NTS-UG_3103.pdf",
+    "academicYear": "2026-27",
+    "applicationRoute": "student",
+    "opensOn": "2026-06-01",
+    "deadline": "2026-10-31",
+    "deadlineVerified": true,
+    "deadlineSource": "https://scholarships.gov.in/All-Scholarships",
+    "deadlineChecked": "2026-10-09",
+    "status": "published-window",
+    "verificationWindows": [
+      {
+        "label": "Defective Application Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Institute Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "DNO/SNO/MNO Verification Open till",
+        "date": "2026-11-30"
+      }
+    ],
+    "sourceChecked": "2026-10-09",
+    "lastChecked": "2026-10-09",
+    "applicationSource": "https://scholarships.gov.in/Students",
+    "applicationChecked": "2026-10-10",
+    "registrationUrl": "https://scholarships.gov.in/otrapplication/",
+    "applicationAccess": "login",
+    "applicationNote": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration.",
+    "applicationAudited": "2026-10-10"
+  },
+  {
+    "id": "nsp-12bb10d384e84573",
+    "name": "Icar Post Graduate Scholarship(Pgs)",
+    "by": "Department of Agriculture Research and Education",
+    "department": "Department of Agriculture Research and Education",
+    "sector": "students",
+    "type": "scholarship",
+    "col": "bl",
+    "ico": "🎓",
+    "amt": "See the programme-specific guideline and current notice",
+    "amtNum": 0,
+    "tags": [
+      "Central",
+      "Students",
+      "Official source",
+      "Rules need review"
+    ],
+    "source": "https://scholarships.gov.in/All-Scholarships",
+    "portal": "https://scholarships.gov.in/ApplicationForm/",
+    "applicationUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "sourceVerification": "official-reference-checked",
+    "verificationScope": "NSP listing, department, published student window and guideline/FAQ links checked. Linked full rules have not been reviewed.",
+    "eligibilityVerification": "pending",
+    "matchingEnabled": false,
+    "accessNote": "NSP public catalogue readable. Applicant login, submission and benefit receipt not tested.",
+    "evidenceSummary": "Programme listed in the NSP public central-sector catalogue for 2026-27. Student and officer verification dates are stored separately.",
+    "beneficiaryVerification": "not-independently-verified",
+    "documentsNote": "Read the exact programme guideline and current-cycle notification; documents are not inferred.",
+    "nspId": "nsp-12bb10d384e84573",
+    "publishedName": "Icar Post Graduate Scholarship(Pgs) (Merit Based Scheme)",
+    "nspClassification": "central-sector",
+    "guidelineUrl": "https://scholarships.gov.in/public/schemeGuidelines/RevisedGuidelinesforICAR_JRF_SRFandPG_Scholarship_3105_3106.pdf",
+    "faqUrl": "https://scholarships.gov.in/public/FAQ/FAQsforICAR%20_PGS_Scholarship_3105.pdf",
+    "academicYear": "2026-27",
+    "applicationRoute": "student",
+    "opensOn": "2026-06-01",
+    "deadline": "2026-10-31",
+    "deadlineVerified": true,
+    "deadlineSource": "https://scholarships.gov.in/All-Scholarships",
+    "deadlineChecked": "2026-10-09",
+    "status": "published-window",
+    "verificationWindows": [
+      {
+        "label": "Defective Application Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Institute Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "DNO/SNO/MNO Verification Open till",
+        "date": "2026-11-30"
+      }
+    ],
+    "sourceChecked": "2026-10-09",
+    "lastChecked": "2026-10-09",
+    "applicationSource": "https://scholarships.gov.in/Students",
+    "applicationChecked": "2026-10-10",
+    "registrationUrl": "https://scholarships.gov.in/otrapplication/",
+    "applicationAccess": "login",
+    "applicationNote": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration.",
+    "applicationAudited": "2026-10-10"
+  },
+  {
+    "id": "nsp-01a6ea472c1dfb0b",
+    "name": "Icar National Talent Scholarship(Nts-Pg)",
+    "by": "Department of Agriculture Research and Education",
+    "department": "Department of Agriculture Research and Education",
+    "sector": "students",
+    "type": "scholarship",
+    "col": "bl",
+    "ico": "🎓",
+    "amt": "See the programme-specific guideline and current notice",
+    "amtNum": 0,
+    "tags": [
+      "Central",
+      "Students",
+      "Official source",
+      "Rules need review"
+    ],
+    "source": "https://scholarships.gov.in/All-Scholarships",
+    "portal": "https://scholarships.gov.in/ApplicationForm/",
+    "applicationUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "sourceVerification": "official-reference-checked",
+    "verificationScope": "NSP listing, department, published student window and guideline/FAQ links checked. Linked full rules have not been reviewed.",
+    "eligibilityVerification": "pending",
+    "matchingEnabled": false,
+    "accessNote": "NSP public catalogue readable. Applicant login, submission and benefit receipt not tested.",
+    "evidenceSummary": "Programme listed in the NSP public central-sector catalogue for 2026-27. Student and officer verification dates are stored separately.",
+    "beneficiaryVerification": "not-independently-verified",
+    "documentsNote": "Read the exact programme guideline and current-cycle notification; documents are not inferred.",
+    "nspId": "nsp-01a6ea472c1dfb0b",
+    "publishedName": "Icar National Talent Scholarship(Nts-Pg) (Merit Based Scheme)",
+    "nspClassification": "central-sector",
+    "guidelineUrl": "https://scholarships.gov.in/public/schemeGuidelines/GuidelinesforICAR_NTS_Scholarship_3103_3104.pdf",
+    "faqUrl": "https://scholarships.gov.in/public/FAQ/FAQsforICAR_NTS-PG_3104.pdf",
+    "academicYear": "2026-27",
+    "applicationRoute": "student",
+    "opensOn": "2026-06-01",
+    "deadline": "2026-10-31",
+    "deadlineVerified": true,
+    "deadlineSource": "https://scholarships.gov.in/All-Scholarships",
+    "deadlineChecked": "2026-10-09",
+    "status": "published-window",
+    "verificationWindows": [
+      {
+        "label": "Defective Application Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Institute Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "DNO/SNO/MNO Verification Open till",
+        "date": "2026-11-30"
+      }
+    ],
+    "sourceChecked": "2026-10-09",
+    "lastChecked": "2026-10-09",
+    "applicationSource": "https://scholarships.gov.in/Students",
+    "applicationChecked": "2026-10-10",
+    "registrationUrl": "https://scholarships.gov.in/otrapplication/",
+    "applicationAccess": "login",
+    "applicationNote": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration.",
+    "applicationAudited": "2026-10-10"
+  },
+  {
+    "id": "nsp-ca2119f8ee0544ba",
+    "name": "Icar Junior Research Fellowships(Jrf) And Senior Research Fellowships(Srf)",
+    "by": "Department of Agriculture Research and Education",
+    "department": "Department of Agriculture Research and Education",
+    "sector": "students",
+    "type": "fellowship",
+    "col": "bl",
+    "ico": "🎓",
+    "amt": "See the programme-specific guideline and current notice",
+    "amtNum": 0,
+    "tags": [
+      "Central",
+      "Students",
+      "Official source",
+      "Rules need review"
+    ],
+    "source": "https://scholarships.gov.in/All-Scholarships",
+    "portal": "https://scholarships.gov.in/ApplicationForm/",
+    "applicationUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "sourceVerification": "official-reference-checked",
+    "verificationScope": "NSP listing, department, published student window and guideline/FAQ links checked. Linked full rules have not been reviewed.",
+    "eligibilityVerification": "pending",
+    "matchingEnabled": false,
+    "accessNote": "NSP public catalogue readable. Applicant login, submission and benefit receipt not tested.",
+    "evidenceSummary": "Programme listed in the NSP public central-sector catalogue for 2026-27. Student and officer verification dates are stored separately.",
+    "beneficiaryVerification": "not-independently-verified",
+    "documentsNote": "Read the exact programme guideline and current-cycle notification; documents are not inferred.",
+    "nspId": "nsp-ca2119f8ee0544ba",
+    "publishedName": "Icar Junior Research Fellowships(Jrf) And Senior Research Fellowships(Srf) (Merit Based Scheme)",
+    "nspClassification": "central-sector",
+    "guidelineUrl": "https://scholarships.gov.in/public/schemeGuidelines/RevisedGuidelinesforICAR_JRF_SRFandPG_Scholarship_3105_3106.pdf",
+    "faqUrl": "https://scholarships.gov.in/public/FAQ/FAQsforICAR_JRF(PGS)_SRF(PGS)forPh.Dstudents_3106.pdf",
+    "academicYear": "2026-27",
+    "applicationRoute": "student",
+    "opensOn": "2026-06-01",
+    "deadline": "2026-10-31",
+    "deadlineVerified": true,
+    "deadlineSource": "https://scholarships.gov.in/All-Scholarships",
+    "deadlineChecked": "2026-10-09",
+    "status": "published-window",
+    "verificationWindows": [
+      {
+        "label": "Defective Application Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Institute Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "DNO/SNO/MNO Verification Open till",
+        "date": "2026-11-30"
+      }
+    ],
+    "sourceChecked": "2026-10-09",
+    "lastChecked": "2026-10-09",
+    "applicationSource": "https://scholarships.gov.in/Students",
+    "applicationChecked": "2026-10-10",
+    "registrationUrl": "https://scholarships.gov.in/otrapplication/",
+    "applicationAccess": "login",
+    "applicationNote": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration.",
+    "applicationAudited": "2026-10-10"
+  },
+  {
+    "id": "nsp-3d67a56cf3741823",
+    "name": "Free Coaching For Scs OBCs And Beneficiaries Of PM Cares Children Scheme",
+    "by": "Department of Social Justice & Empowerment",
+    "department": "Department of Social Justice & Empowerment",
+    "sector": "students",
+    "type": "grant",
+    "col": "bl",
+    "ico": "🎓",
+    "amt": "See the programme-specific guideline and current notice",
+    "amtNum": 0,
+    "tags": [
+      "Central",
+      "Students",
+      "Official source",
+      "Rules need review"
+    ],
+    "source": "https://scholarships.gov.in/All-Scholarships",
+    "portal": "https://scholarships.gov.in/ApplicationForm/",
+    "applicationUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "sourceVerification": "official-reference-checked",
+    "verificationScope": "NSP listing, department, published student window and guideline/FAQ links checked. Linked full rules have not been reviewed.",
+    "eligibilityVerification": "pending",
+    "matchingEnabled": false,
+    "accessNote": "NSP public catalogue readable. Applicant login, submission and benefit receipt not tested.",
+    "evidenceSummary": "Programme listed in the NSP public central-sector catalogue for 2026-27. Student and officer verification dates are stored separately.",
+    "beneficiaryVerification": "not-independently-verified",
+    "documentsNote": "Read the exact programme guideline and current-cycle notification; documents are not inferred.",
+    "nspId": "nsp-3d67a56cf3741823",
+    "publishedName": "Free Coaching For Scs OBCs And Beneficiaries Of PM Cares Children Scheme (Welfare Based Scheme)",
+    "nspClassification": "central-sector",
+    "guidelineUrl": "https://scholarships.gov.in/public/schemeGuidelines/guid_3108.pdf",
+    "faqUrl": "https://scholarships.gov.in/public/schemeGuidelines/faq_3108.pdf",
+    "academicYear": "2026-27",
+    "applicationRoute": "student",
+    "opensOn": "2026-08-03",
+    "deadline": "2026-10-31",
+    "deadlineVerified": true,
+    "deadlineSource": "https://scholarships.gov.in/All-Scholarships",
+    "deadlineChecked": "2026-10-09",
+    "status": "published-window",
+    "verificationWindows": [
+      {
+        "label": "Defective Application Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Institute Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "DNO/SNO/MNO Verification Open till",
+        "date": "2026-11-30"
+      }
+    ],
+    "sourceChecked": "2026-10-09",
+    "lastChecked": "2026-10-09",
+    "applicationSource": "https://scholarships.gov.in/Students",
+    "applicationChecked": "2026-10-10",
+    "registrationUrl": "https://scholarships.gov.in/otrapplication/",
+    "applicationAccess": "login",
+    "applicationNote": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration.",
+    "applicationAudited": "2026-10-10"
+  },
+  {
+    "id": "nsp-2fdf27aba21951b0",
+    "name": "Pre Matric Scholarship For Students With Disabilities",
+    "by": "Department of Empowerment of Persons with Disabilities",
+    "department": "Department of Empowerment of Persons with Disabilities",
+    "sector": "students",
+    "type": "scholarship",
+    "col": "bl",
+    "ico": "🎓",
+    "amt": "See the programme-specific guideline and current notice",
+    "amtNum": 0,
+    "tags": [
+      "Central",
+      "Students",
+      "Official source",
+      "Rules need review",
+      "Disability"
+    ],
+    "source": "https://scholarships.gov.in/All-Scholarships",
+    "portal": "https://scholarships.gov.in/ApplicationForm/",
+    "applicationUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "sourceVerification": "official-reference-checked",
+    "verificationScope": "NSP listing, department, published student window and guideline/FAQ links checked. Linked full rules have not been reviewed.",
+    "eligibilityVerification": "pending",
+    "matchingEnabled": false,
+    "accessNote": "NSP public catalogue readable. Applicant login, submission and benefit receipt not tested.",
+    "evidenceSummary": "Programme listed in the NSP public central-sector catalogue for 2026-27. Student and officer verification dates are stored separately.",
+    "beneficiaryVerification": "not-independently-verified",
+    "documentsNote": "Read the exact programme guideline and current-cycle notification; documents are not inferred.",
+    "nspId": "nsp-2fdf27aba21951b0",
+    "publishedName": "Pre Matric Scholarship For Students With Disabilities (Welfare Based Scheme)",
+    "nspClassification": "central-sector",
+    "guidelineUrl": "https://scholarships.gov.in/public/schemeGuidelines/DEPDGuidelines_1.pdf",
+    "faqUrl": "https://scholarships.gov.in/public/schemeGuidelines/DEPDFAQ.pdf",
+    "academicYear": "2026-27",
+    "applicationRoute": "student",
+    "opensOn": "2026-07-25",
+    "deadline": "2026-10-31",
+    "deadlineVerified": true,
+    "deadlineSource": "https://scholarships.gov.in/All-Scholarships",
+    "deadlineChecked": "2026-10-09",
+    "status": "published-window",
+    "verificationWindows": [
+      {
+        "label": "Defective Application Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Institute Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "DNO/SNO/MNO Verification Open till",
+        "date": "2026-11-30"
+      }
+    ],
+    "sourceChecked": "2026-10-09",
+    "lastChecked": "2026-10-09",
+    "applicationSource": "https://scholarships.gov.in/Students",
+    "applicationChecked": "2026-10-10",
+    "registrationUrl": "https://scholarships.gov.in/otrapplication/",
+    "applicationAccess": "login",
+    "applicationNote": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration.",
+    "applicationAudited": "2026-10-10"
+  },
+  {
+    "id": "nsp-c850d66b651b747b",
+    "name": "Post Matric Scholarship For Students With Disabilities",
+    "by": "Department of Empowerment of Persons with Disabilities",
+    "department": "Department of Empowerment of Persons with Disabilities",
+    "sector": "students",
+    "type": "scholarship",
+    "col": "bl",
+    "ico": "🎓",
+    "amt": "See the programme-specific guideline and current notice",
+    "amtNum": 0,
+    "tags": [
+      "Central",
+      "Students",
+      "Official source",
+      "Rules need review",
+      "Disability"
+    ],
+    "source": "https://scholarships.gov.in/All-Scholarships",
+    "portal": "https://scholarships.gov.in/ApplicationForm/",
+    "applicationUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "sourceVerification": "official-reference-checked",
+    "verificationScope": "NSP listing, department, published student window and guideline/FAQ links checked. Linked full rules have not been reviewed.",
+    "eligibilityVerification": "pending",
+    "matchingEnabled": false,
+    "accessNote": "NSP public catalogue readable. Applicant login, submission and benefit receipt not tested.",
+    "evidenceSummary": "Programme listed in the NSP public central-sector catalogue for 2026-27. Student and officer verification dates are stored separately.",
+    "beneficiaryVerification": "not-independently-verified",
+    "documentsNote": "Read the exact programme guideline and current-cycle notification; documents are not inferred.",
+    "nspId": "nsp-c850d66b651b747b",
+    "publishedName": "Post Matric Scholarship For Students With Disabilities (Welfare Based Scheme)",
+    "nspClassification": "central-sector",
+    "guidelineUrl": "https://scholarships.gov.in/public/schemeGuidelines/DEPDGuidelines_1.pdf",
+    "faqUrl": "https://scholarships.gov.in/public/schemeGuidelines/DEPDFAQ.pdf",
+    "academicYear": "2026-27",
+    "applicationRoute": "student",
+    "opensOn": "2026-07-25",
+    "deadline": "2026-10-31",
+    "deadlineVerified": true,
+    "deadlineSource": "https://scholarships.gov.in/All-Scholarships",
+    "deadlineChecked": "2026-10-09",
+    "status": "published-window",
+    "verificationWindows": [
+      {
+        "label": "Defective Application Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Institute Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "DNO/SNO/MNO Verification Open till",
+        "date": "2026-11-30"
+      }
+    ],
+    "sourceChecked": "2026-10-09",
+    "lastChecked": "2026-10-09",
+    "applicationSource": "https://scholarships.gov.in/Students",
+    "applicationChecked": "2026-10-10",
+    "registrationUrl": "https://scholarships.gov.in/otrapplication/",
+    "applicationAccess": "login",
+    "applicationNote": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration.",
+    "applicationAudited": "2026-10-10"
+  },
+  {
+    "id": "nsp-3588466b4f2d14ff",
+    "name": "Scholarship For Top Class Education For Students With Disabilities",
+    "by": "Department of Empowerment of Persons with Disabilities",
+    "department": "Department of Empowerment of Persons with Disabilities",
+    "sector": "students",
+    "type": "scholarship",
+    "col": "bl",
+    "ico": "🎓",
+    "amt": "See the programme-specific guideline and current notice",
+    "amtNum": 0,
+    "tags": [
+      "Central",
+      "Students",
+      "Official source",
+      "Rules need review",
+      "Disability"
+    ],
+    "source": "https://scholarships.gov.in/All-Scholarships",
+    "portal": "https://scholarships.gov.in/ApplicationForm/",
+    "applicationUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "sourceVerification": "official-reference-checked",
+    "verificationScope": "NSP listing, department, published student window and guideline/FAQ links checked. Linked full rules have not been reviewed.",
+    "eligibilityVerification": "pending",
+    "matchingEnabled": false,
+    "accessNote": "NSP public catalogue readable. Applicant login, submission and benefit receipt not tested.",
+    "evidenceSummary": "Programme listed in the NSP public central-sector catalogue for 2026-27. Student and officer verification dates are stored separately.",
+    "beneficiaryVerification": "not-independently-verified",
+    "documentsNote": "Read the exact programme guideline and current-cycle notification; documents are not inferred.",
+    "nspId": "nsp-3588466b4f2d14ff",
+    "publishedName": "Scholarship For Top Class Education For Students With Disabilities (Welfare Based Scheme)",
+    "nspClassification": "central-sector",
+    "guidelineUrl": "https://scholarships.gov.in/public/schemeGuidelines/DEPDGuidelines_1.pdf",
+    "faqUrl": "https://scholarships.gov.in/public/schemeGuidelines/DEPDFAQ.pdf",
+    "academicYear": "2026-27",
+    "applicationRoute": "student",
+    "opensOn": "2026-06-01",
+    "deadline": "2026-10-31",
+    "deadlineVerified": true,
+    "deadlineSource": "https://scholarships.gov.in/All-Scholarships",
+    "deadlineChecked": "2026-10-09",
+    "status": "published-window",
+    "verificationWindows": [
+      {
+        "label": "Defective Application Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Institute Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "DNO/SNO/MNO Verification Open till",
+        "date": "2026-11-30"
+      }
+    ],
+    "sourceChecked": "2026-10-09",
+    "lastChecked": "2026-10-09",
+    "applicationSource": "https://scholarships.gov.in/Students",
+    "applicationChecked": "2026-10-10",
+    "registrationUrl": "https://scholarships.gov.in/otrapplication/",
+    "applicationAccess": "login",
+    "applicationNote": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration.",
+    "applicationAudited": "2026-10-10"
+  },
+  {
+    "id": "nsp-2b6b1e48ec381753",
+    "name": "Financial Support To The Students Of NER For Higher Professional Courses(NEC Merit Scholarship)",
+    "by": "North Eastern Council(NEC),DoNER",
+    "department": "North Eastern Council(NEC),DoNER",
+    "sector": "students",
+    "type": "scholarship",
+    "col": "bl",
+    "ico": "🎓",
+    "amt": "See the programme-specific guideline and current notice",
+    "amtNum": 0,
+    "tags": [
+      "Central",
+      "Students",
+      "Official source",
+      "Rules need review"
+    ],
+    "source": "https://scholarships.gov.in/All-Scholarships",
+    "portal": "https://scholarships.gov.in/ApplicationForm/",
+    "applicationUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "sourceVerification": "official-reference-checked",
+    "verificationScope": "NSP listing, department, published student window and guideline/FAQ links checked. Linked full rules have not been reviewed.",
+    "eligibilityVerification": "pending",
+    "matchingEnabled": false,
+    "accessNote": "NSP public catalogue readable. Applicant login, submission and benefit receipt not tested.",
+    "evidenceSummary": "Programme listed in the NSP public central-sector catalogue for 2026-27. Student and officer verification dates are stored separately.",
+    "beneficiaryVerification": "not-independently-verified",
+    "documentsNote": "Read the exact programme guideline and current-cycle notification; documents are not inferred.",
+    "nspId": "nsp-2b6b1e48ec381753",
+    "publishedName": "Financial Support To The Students Of NER For Higher Professional Courses(NEC Merit Scholarship) (Merit Based Scheme)",
+    "nspClassification": "central-sector",
+    "guidelineUrl": "https://scholarships.gov.in/public/schemeGuidelines/NEC_1234_G.pdf",
+    "faqUrl": "https://scholarships.gov.in/public/schemeGuidelines/NEC_1234_F.pdf",
+    "academicYear": "2026-27",
+    "applicationRoute": "renewal",
+    "opensOn": "2026-07-15",
+    "deadline": "2026-10-31",
+    "deadlineVerified": true,
+    "deadlineSource": "https://scholarships.gov.in/All-Scholarships",
+    "deadlineChecked": "2026-10-09",
+    "status": "published-window",
+    "verificationWindows": [
+      {
+        "label": "Defective Application Verification Open till (for Renewal)",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Institute Verification Open till (for Renewal)",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "DNO/SNO/MNO Verification Open till (for Renewal)",
+        "date": "2026-11-30"
+      }
+    ],
+    "sourceChecked": "2026-10-09",
+    "lastChecked": "2026-10-09",
+    "audience": {
+      "domicileStates": [
+        "Arunachal Pradesh",
+        "Assam",
+        "Manipur",
+        "Meghalaya",
+        "Mizoram",
+        "Nagaland",
+        "Sikkim",
+        "Tripura"
+      ]
+    },
+    "applicationSource": "https://scholarships.gov.in/Students",
+    "applicationChecked": "2026-10-10",
+    "registrationUrl": "https://scholarships.gov.in/otrapplication/",
+    "applicationAccess": "login",
+    "applicationNote": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration.",
+    "applicationAudited": "2026-10-10"
+  },
+  {
+    "id": "nsp-cd2d5d377d7b56bc",
+    "name": "Prime Minister'S Scholarship Scheme For Ministry Of Railways",
+    "by": "Ministry of Railways (Railway Board)",
+    "department": "Ministry of Railways (Railway Board)",
+    "sector": "students",
+    "type": "scholarship",
+    "col": "bl",
+    "ico": "🎓",
+    "amt": "See the programme-specific guideline and current notice",
+    "amtNum": 0,
+    "tags": [
+      "Central",
+      "Students",
+      "Official source",
+      "Rules need review"
+    ],
+    "source": "https://scholarships.gov.in/All-Scholarships",
+    "portal": "https://scholarships.gov.in/ApplicationForm/",
+    "applicationUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "sourceVerification": "official-reference-checked",
+    "verificationScope": "NSP listing, department, published student window and guideline/FAQ links checked. Linked full rules have not been reviewed.",
+    "eligibilityVerification": "pending",
+    "matchingEnabled": false,
+    "accessNote": "NSP public catalogue readable. Applicant login, submission and benefit receipt not tested.",
+    "evidenceSummary": "Programme listed in the NSP public central-sector catalogue for 2026-27. Student and officer verification dates are stored separately.",
+    "beneficiaryVerification": "not-independently-verified",
+    "documentsNote": "Read the exact programme guideline and current-cycle notification; documents are not inferred.",
+    "nspId": "nsp-cd2d5d377d7b56bc",
+    "publishedName": "Prime Minister'S Scholarship Scheme For Ministry Of Railways (Merit Based Scheme)",
+    "nspClassification": "central-sector",
+    "guidelineUrl": "https://scholarships.gov.in/public/schemeGuidelines/MORB_GL.pdf",
+    "faqUrl": "https://scholarships.gov.in/public/FAQ/FAQs_1198.pdf",
+    "academicYear": "2026-27",
+    "applicationRoute": "student",
+    "opensOn": "2026-06-01",
+    "deadline": "2026-10-31",
+    "deadlineVerified": true,
+    "deadlineSource": "https://scholarships.gov.in/All-Scholarships",
+    "deadlineChecked": "2026-10-09",
+    "status": "published-window",
+    "verificationWindows": [
+      {
+        "label": "Defective Application Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Institute Verification Open till",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "DNO/SNO/MNO Verification Open till",
+        "date": "2026-11-30"
+      }
+    ],
+    "sourceChecked": "2026-10-09",
+    "lastChecked": "2026-10-09",
+    "applicationSource": "https://scholarships.gov.in/Students",
+    "applicationChecked": "2026-10-10",
+    "registrationUrl": "https://scholarships.gov.in/otrapplication/",
+    "applicationAccess": "login",
+    "applicationNote": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration.",
+    "applicationAudited": "2026-10-10"
+  }
+]

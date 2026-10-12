@@ -1,0 +1,59 @@
+{
+  "name": "scheme-finder",
+  "version": "1.0.0",
+  "description": "AI-powered platform helping Indian students discover government education scholarships",
+  "private": true,
+  "author": "Scheme Finder Contributors",
+  "license": "MIT",
+  "homepage": "https://YOUR_USERNAME.github.io/scheme-finder",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/scheme-finder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/scheme-finder/issues"
+  },
+  "keywords": [
+    "scholarship",
+    "india",
+    "education",
+    "government-schemes",
+    "ministry-of-education",
+    "nsp",
+    "aicte",
+    "eligibility",
+    "open-source"
+  ],
+  "scripts": {
+    "start": "npx serve frontend/src -p 3000",
+    "dev": "npx serve frontend/src -p 3000",
+    "backend": "cd backend && node src/server.js",
+    "backend:dev": "cd backend && npx nodemon src/server.js",
+    "test": "node --test",
+    "catalog:build": "node scripts/build-catalog.cjs",
+    "catalog:check": "node scripts/build-catalog.cjs --check",
+    "db:configure": "node scripts/configure-mongodb.cjs",
+    "mail:verify": "node scripts/verify-smtp.cjs",
+    "mail:configure": "node scripts/configure-gmail.cjs",
+    "mail:configure-vercel": "node scripts/configure-vercel-smtp.cjs",
+    "exams:build": "node scripts/build-exams.cjs",
+    "exams:check": "node scripts/build-exams.cjs --check",
+    "nsp:scrape": "node scripts/scrape-nsp.cjs",
+    "nsp:import": "node scripts/import-nsp.cjs",
+    "offline:build": "node scripts/build-offline.cjs",
+    "offline:check": "node scripts/build-offline.cjs --check",
+    "deploy:backend": "node scripts/deploy-vercel.cjs backend",
+    "deploy:frontend": "node scripts/deploy-vercel.cjs frontend"
+  },
+  "devDependencies": {
+    "jsdom": "^25.0.0",
+    "pptxgenjs": "^4.0.1",
+    "puppeteer": "^25.11.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "allowScripts": {
+    "puppeteer@25.11.0": true
+  }
+}

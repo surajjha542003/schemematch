@@ -1,0 +1,17 @@
+{
+  "scope": "arya119s-projects",
+  "projects": {
+    "frontend": {
+      "name": "schemematch",
+      "projectId": "prj_UsXDJ0ALPopU2e1PyYvjvN3gt6VO",
+      "orgId": "team_rjSFP2Vta7IDDjGblh1Ovifx",
+      "url": "https://schemematch-rosy.vercel.app"
+    },
+    "backend": {
+      "name": "schemematch-api",
+      "projectId": "prj_d4a8nxXsWuitImDzYMnJdSUmYs0C",
+      "orgId": "team_rjSFP2Vta7IDDjGblh1Ovifx",
+      "url": "https://schemematch-api.vercel.app"
+    }
+  }
+}

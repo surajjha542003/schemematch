@@ -1,0 +1,215 @@
+/* ════════════════════════════════════════════════
+   Scheme Finder — Design Tokens & Global Reset
+   Photon.codes Minimal Dark Architecture
+   ════════════════════════════════════════════════ */
+
+:root {
+  /* ── Preserved Brand Accents (Vibrant on Dark) ── */
+  --sf:  #F97316;  --sf2: #EA580C;  --sfl: rgba(249, 115, 22, 0.14);  /* Saffron */
+  --gn:  #10B981;  --gn2: #059669;  --gnl: rgba(16, 185, 129, 0.14);  /* India Green */
+  --bl:  #3B82F6;  --bl2: #2563EB;  --bll: rgba(59, 130, 246, 0.14);  /* Royal/Electric Blue */
+  --gd:  #F59E0B;  --gdl: rgba(245, 158, 11, 0.14);                   /* Gold */
+  --rd:  #EF4444;  --rdl: rgba(239, 68, 68, 0.14);                    /* Danger Red */
+  --pu:  #A855F7;  --pul: rgba(168, 85, 247, 0.14);                   /* Purple */
+  --pk:  #EC4899;  --pkl: rgba(236, 72, 153, 0.14);                   /* Pink */
+
+  /* ── Photon.codes Surfaces & Structure ── */
+  --bg:         #000000;
+  --bg-subtle:  #08080a;
+  --card:       #0d0d11;
+  --card-glass: rgba(13, 13, 17, 0.75);
+  --card-hover: #141419;
+  --bdr:        rgba(255, 255, 255, 0.08);
+  --bdr-hover:  rgba(255, 255, 255, 0.18);
+  --bdr-focus:  rgba(59, 130, 246, 0.6);
+
+  /* ── Photon.codes Typography ── */
+  --tx: #FFFFFF;  /* Primary heading & text */
+  --t2: #A1A1AA;  /* Secondary cool-gray */
+  --t3: #71717A;  /* Muted metadata */
+  --t4: #3F3F46;  /* Subdued borders & placeholder */
+
+  /* ── Shadows & Ambient Glows ── */
+  --sh:         0 4px 24px -2px rgba(0, 0, 0, 0.8);
+  --sh2:        0 12px 48px -4px rgba(0, 0, 0, 0.95);
+  --glow-blue:  0 0 50px -10px rgba(59, 130, 246, 0.25);
+  --glow-sf:    0 0 50px -10px rgba(249, 115, 22, 0.22);
+  --glow-card:  0 0 0 1px rgba(255, 255, 255, 0.08), 0 8px 30px rgba(0, 0, 0, 0.6);
+
+  /* ── Radii (Humanized 2px System) ── */
+  --r-pill:  2px;
+  --r-card:  2px;
+  --r-inner: 2px;
+}
+
+/* ── Global Reset ── */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--tx);
+  overflow: hidden;
+  letter-spacing: -0.01em;
+}
+
+::selection {
+  background: rgba(59, 130, 246, 0.35);
+  color: #FFFFFF;
+}
+
+/* Minimal Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.hidden { display: none !important; }
+
+/* ── Minimal Tricolor Accent ── */
+.flag {
+  height: 2px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  opacity: 0.85;
+}
+.flag div:nth-child(1) { flex: 1; background: var(--sf); }
+.flag div:nth-child(2) { flex: 1; background: #FFFFFF; }
+.flag div:nth-child(3) { flex: 1; background: var(--gn); }
+
+/* ── Shell Layout ── */
+.shell {
+  display: flex;
+  height: 100vh;
+  padding-top: 2px;
+  background: var(--bg);
+}
+
+.page {
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.page.active {
+  display: flex;
+}
+
+html.preload-app #pg-land {
+  display: none !important;
+}
+html.preload-app #pg-app {
+  display: flex !important;
+}
+
+/* ── Tag & Badge Helpers (Clean 2px Labels) ── */
+.badge, .hc-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 7px;
+  border-radius: 2px;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  border: 1px solid var(--bdr);
+}
+
+.b-sf { background: var(--sfl); color: #FDBA74; border-color: rgba(249, 115, 22, 0.35); }
+.b-gn { background: var(--gnl); color: #6EE7B7; border-color: rgba(16, 185, 129, 0.35); }
+.b-bl { background: var(--bll); color: #93C5FD; border-color: rgba(59, 130, 246, 0.35); }
+.b-gd { background: var(--gdl); color: #FDE047; border-color: rgba(245, 158, 11, 0.35); }
+.b-pu { background: var(--pul); color: #D8B4FE; border-color: rgba(168, 85, 247, 0.35); }
+.b-pk { background: var(--pkl); color: #F9A8D4; border-color: rgba(236, 72, 153, 0.35); }
+.b-rd { background: var(--rdl); color: #FCA5A5; border-color: rgba(239, 68, 68, 0.35); }
+
+/* ── Vector Icon Utility (No Emojis) ── */
+.v-ico {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+.fsc-ico .v-ico {
+  width: 20px;
+  height: 20px;
+}
+.erc-ico .v-ico, .qsi-ico .v-ico {
+  width: 18px;
+  height: 18px;
+}
+
+/* ── Language Switcher (Google Translate, driven by js/lang.js) ── */
+.lang-switch {
+  position: static;
+  max-width: 130px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  color: #1E293B;
+  border: 1px solid rgba(203, 213, 225, 0.8);
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+.lang-switch:hover {
+  border-color: #94A3B8;
+  background: #FFFFFF;
+}
+
+@media (max-width: 640px) {
+  .lang-switch {
+    top: 11px;
+    right: 8px;
+    padding: 5px 6px;
+    font-size: 11px;
+  }
+}
+
+/* Google injects a top banner iframe + hover tooltip on translate —
+   suppress both so it doesn't shove the page down or flash a popup. */
+.goog-te-banner-frame, .skiptranslate > iframe {
+  display: none !important;
+}
+body {
+  top: 0 !important;
+  position: static !important;
+}
+#goog-gt-tt, .goog-tooltip, .goog-tooltip:hover {
+  display: none !important;
+  visibility: hidden !important;
+}
+.goog-text-highlight {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+
+/* Header controls participate in layout, including translated text. */

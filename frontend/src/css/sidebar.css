@@ -1,0 +1,504 @@
+/* ════════════════════════════════════════════════
+   Scheme Finder — App Shell & Sidebar
+   Photon.codes Dark Aesthetic
+   ════════════════════════════════════════════════ */
+
+/* ════ APP SHELL ════ */
+#pg-app {
+  flex-direction: row;
+  background: #000000;
+}
+
+.sb {
+  width: 256px;
+  flex-shrink: 0;
+  height: 100%;
+  background: #08080a;
+  border-right: 1px solid var(--bdr);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.sb-head {
+  padding: 16px 14px 12px;
+  border-bottom: 1px solid var(--bdr);
+}
+
+.sb-brand-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.sb-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.sb-close-btn {
+  display: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--bdr);
+  color: var(--t2);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.sb-close-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
+}
+
+.sbm {
+  width: 28px;
+  height: 28px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--sf);
+}
+
+.sbm svg {
+  width: 15px;
+  height: 15px;
+}
+
+.sbn {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+
+.sbn span {
+  color: var(--sf);
+}
+
+.sb-user {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 2px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  transition: .2s ease;
+}
+
+.sb-user:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.sbav {
+  width: 28px;
+  height: 28px;
+  border-radius: 2px;
+  background: #1a1a22;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  flex-shrink: 0;
+}
+
+.sb-uname {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.sb-ucls {
+  font-size: 11px;
+  color: var(--t3);
+}
+
+.sb-nav {
+  padding: 12px 10px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.slbl {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--t3);
+  padding: 0 10px;
+  margin: 14px 0 6px;
+}
+
+.ni {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--t2);
+  transition: all .15s ease;
+  margin-bottom: 3px;
+  border: 1px solid transparent;
+}
+
+.ni:hover {
+  background: rgba(255, 255, 255, 0.04);
+  color: #FFFFFF;
+}
+
+.ni.active {
+  background: rgba(255, 255, 255, 0.08);
+  color: #FFFFFF;
+  font-weight: 600;
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.ni-ico {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--t3);
+  transition: .15s ease;
+}
+
+.ni-ico svg {
+  width: 16px;
+  height: 16px;
+}
+
+.ni:hover .ni-ico, .ni.active .ni-ico {
+  color: #FFFFFF;
+}
+
+.nibadge {
+  margin-left: auto;
+  padding: 2px 6px;
+  border-radius: 2px;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.nb-sf { background: var(--sfl); color: #FDBA74; border: 1px solid rgba(249, 115, 22, 0.3); }
+.nb-gn { background: var(--gnl); color: #6EE7B7; border: 1px solid rgba(16, 185, 129, 0.3); }
+.nb-rd { background: var(--rdl); color: #FCA5A5; border: 1px solid rgba(239, 68, 68, 0.3); }
+
+.sb-foot {
+  padding: 12px 14px;
+  border-top: 1px solid var(--bdr);
+}
+
+.sb-back {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--bdr);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--t2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  transition: all .2s ease;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.sb-back:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* ── App Main Area ── */
+.main {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #000000;
+}
+
+.abar {
+  background: rgba(8, 8, 10, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--bdr);
+  padding: 0 24px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.ab-l {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ab-menu-btn {
+  display: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--bdr);
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.ab-menu-btn svg {
+  width: 17px;
+  height: 17px;
+}
+
+.ab-menu-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.ab-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+}
+
+.ab-r {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.abchip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  border-radius: 2px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #6EE7B7;
+}
+
+.abdot {
+  width: 5px;
+  height: 5px;
+  background: #10B981;
+  border-radius: 2px;
+}
+
+.abbtn {
+  width: 32px;
+  height: 32px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--bdr);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--t2);
+  transition: all .2s ease;
+}
+
+.abbtn svg {
+  width: 15px;
+  height: 15px;
+}
+
+.abbtn:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.panel {
+  display: none;
+  flex: 1;
+  overflow-y: auto;
+  flex-direction: column;
+  background: #000000;
+}
+
+.panel.active {
+  display: flex;
+}
+
+.sb-backdrop {
+  display: none;
+}
+
+.mobile-bnav {
+  display: none;
+}
+
+/* ════ RESPONSIVE APP LAYOUT (MOBILE & TABLET) ════ */
+@media (max-width: 860px) {
+  #pg-app {
+    flex-direction: column;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  /* Slide-out Mobile Sidebar Drawer */
+  .sb {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 285px;
+    max-width: 86vw;
+    z-index: 1001;
+    background: #08080c;
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+    transform: translateX(-100%);
+    transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.95);
+  }
+
+  .sb.open {
+    transform: translateX(0);
+  }
+
+  .sb-close-btn {
+    display: flex;
+  }
+
+  .sb-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+  }
+
+  .sb-backdrop.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .ab-menu-btn {
+    display: flex;
+  }
+
+  .abchip {
+    display: none !important;
+  }
+
+  .abar {
+    padding: 0 16px;
+    height: 52px;
+  }
+
+  .main {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 58px; /* Room for floating mobile bottom bar */
+  }
+
+  /* Mobile Glass Bottom Navigation Bar */
+  .mobile-bnav {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 58px;
+    background: rgba(8, 8, 12, 0.92);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    z-index: 900;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 6px env(safe-area-inset-bottom, 0px);
+  }
+
+  .mbnav-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    flex: 1;
+    height: 100%;
+    background: none;
+    border: none;
+    color: var(--t3);
+    cursor: pointer;
+    transition: all .18s ease;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .mbnav-btn svg {
+    width: 18px;
+    height: 18px;
+    transition: transform .18s ease;
+  }
+
+  .mbnav-btn span {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+
+  .mbnav-btn:hover, .mbnav-btn.active {
+    color: #FFFFFF;
+  }
+
+  .mbnav-btn.active svg {
+    color: var(--sf);
+    transform: scale(1.1);
+  }
+
+  .mbnav-btn.active span {
+    color: #FFFFFF;
+    font-weight: 700;
+  }
+}
+
+
+

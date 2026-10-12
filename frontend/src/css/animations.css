@@ -1,0 +1,27 @@
+/* ════════════════════════════════════════════════
+   Scheme Finder — Animations & Keyframes
+   ════════════════════════════════════════════════ */
+
+/* ════ KEYFRAMES ════ */
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.4;transform:scale(.7);}}
+@keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
+@keyframes floatR{0%,100%{transform:translateY(0) rotate(2deg);}50%{transform:translateY(-10px) rotate(-1deg);}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px);}to{opacity:1;transform:translateY(0);}}
+@keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+@keyframes slideRight{from{opacity:0;transform:translateX(-24px);}to{opacity:1;transform:translateX(0);}}
+@keyframes scaleIn{from{opacity:0;transform:scale(.88);}to{opacity:1;transform:scale(1);}}
+@keyframes cardEntrance{from{opacity:0;transform:translateY(40px) scale(.96);}to{opacity:1;transform:translateY(0) scale(1);}}
+@keyframes chipPop{0%{opacity:0;transform:translateY(14px) scale(.8);}60%{transform:translateY(-4px) scale(1.05);}100%{opacity:1;transform:translateY(0) scale(1);}}
+@keyframes barFill{from{width:0%;}to{width:92%;}}
+@keyframes countUp{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}
+@keyframes glowPulse{0%,100%{box-shadow:0 4px 18px rgba(232,97,10,.25),0 0 0 0 rgba(232,97,10,.15);}50%{box-shadow:0 4px 18px rgba(232,97,10,.35),0 0 0 10px rgba(232,97,10,0);}}
+@keyframes shimmer{0%{background-position:-200% 0;}100%{background-position:200% 0;}}
+@keyframes orbitSpin{from{transform:rotate(0deg) translateX(140px) rotate(0deg);}to{transform:rotate(360deg) translateX(140px) rotate(-360deg);}}
+@keyframes bgDrift{0%,100%{transform:translate(0,0) scale(1);}33%{transform:translate(30px,-20px) scale(1.05);}66%{transform:translate(-20px,30px) scale(.97);}}
+@keyframes navSlide{from{opacity:0;transform:translateY(-100%);}to{opacity:1;transform:translateY(0);}}
+@keyframes featureStagger{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+@keyframes badgeBounce{0%,100%{transform:translateY(0);}40%{transform:translateY(-3px);}70%{transform:translateY(1px);}}
+@keyframes textReveal{from{clip-path:inset(0 100% 0 0);}to{clip-path:inset(0 0% 0 0);}}
+@keyframes rotateSlow{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
+@keyframes particleDrift{0%{opacity:0;transform:translateY(0) scale(0);}20%{opacity:1;}80%{opacity:.6;}100%{opacity:0;transform:translateY(-120px) scale(1.5);}}
+

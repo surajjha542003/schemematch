@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<!--
+  ╔══════════════════════════════════════════════════════════════╗
+  ║  SchemeMatch — Ministry of Education Schemes                ║
+  ║  Photon.codes Dark Aesthetic · Zero Emojis                   ║
+  ╚══════════════════════════════════════════════════════════════╝
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SchemeMatch — AI-powered platform to find, match and apply for Indian government education scholarships.">
+  <meta name="keywords" content="scholarship india, NSP scholarship, education schemes, AICTE pragati, JRF fellowship">
+  <meta property="og:title" content="SchemeMatch — Your Education Scholarship Guide">
+  <meta property="og:description" content="Discover official scholarship sources across 15 states and central programmes.">
+  <title>SchemeMatch — Education Schemes for Every Indian Student</title>
+
+  <!-- Google Fonts: Modern Clean Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- ── Stylesheets ── -->
+  <link rel="stylesheet" href="css/tokens.css?v=6">
+  <link rel="stylesheet" href="css/animations.css?v=6">
+  <link rel="stylesheet" href="css/landing.css?v=6">
+  <link rel="stylesheet" href="css/sidebar.css?v=6">
+  <link rel="stylesheet" href="css/dashboard.css?v=6">
+  <link rel="stylesheet" href="css/chat.css?v=6">
+  <link rel="stylesheet" href="css/eligibility.css?v=6">
+  <link rel="stylesheet" href="css/schemes.css?v=6">
+  <link rel="stylesheet" href="css/modal.css?v=6">
+  <link rel="stylesheet" href="css/layout.css?v=6">
+  <script>
+    (function(){
+      try {
+        if(sessionStorage.getItem('sf_view') === 'app'){
+          document.documentElement.classList.add('preload-app');
+        }
+      } catch(e){}
+    })();
+  </script>
+</head>
+
+<body>
+<div class="flag"><div></div><div></div><div></div></div>
+
+<!-- One language control follows the active page header. -->
+<div id="google_translate_element" style="display:none"></div>
+<div id="languageControl" class="language-control notranslate" translate="no"><select id="langSwitch" class="lang-switch" aria-label="Choose page language"></select><span id="langStatus" class="lang-status" role="status" aria-live="polite"></span></div>
+
+<div class="shell">
+
+
+<!-- ═══ LANDING ═══ -->
+<div class="page active" id="pg-land">
+  <nav class="lnav">
+    <div class="lbrand" onclick="goLand()">
+      <div class="lbmark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+      </div>
+      <div class="lbn notranslate" translate="no" aria-label="SchemeMatch">Scheme<span>Match</span></div>
+    </div>
+    <div class="lnav-actions"><button class="lnav-cta" onclick="goApp()">Get Started Free &rarr;</button></div>
+  </nav>
+  <div style="overflow-y:auto;flex:1;min-height:0;">
+
+    <!-- ── HERO ── -->
+    <div class="hero-wrap">
+      <!-- Floating ambient particles -->
+      <div class="hero-particles">
+        <div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div><div class="particle"></div>
+      </div>
+      <div class="hero">
+        <!-- Left: copy -->
+        <div>
+          <div class="hbadge"><div class="hdot"></div>Independent scholarship prototype</div>
+          <h1 class="hh1">Find your <span class="ac" id="dynamicHeroWord">scholarship</span><br>the <span class="ug">smart</span> way</h1>
+          <p class="hsub">Discover central programmes and student scholarships across 15 states. Check published conditions and open the official source before applying.</p>
+          <div class="hacts">
+            <button class="btnp" onclick="goApp()">
+              Check My Eligibility
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <button class="btns" onclick="goApp(); setTimeout(()=>goPanel('schemes'),200)">Browse Schemes</button>
+          </div>
+          <div class="hstats">
+            <div class="hstat-item"><div class="hstat-n notranslate" translate="no" data-scheme-count>—</div><div class="hstat-l">Official-source Listings</div></div>
+            <div class="hdiv"></div>
+            <div class="hstat-item"><div class="hstat-n">11</div><div class="hstat-l">Voice Language Options</div></div>
+            <div class="hdiv"></div>
+            <div class="hstat-item"><div class="hstat-n">15</div><div class="hstat-l">States Covered</div></div>
+          </div>
+        </div>
+
+        <!-- Right: animated card stack -->
+        <div class="hcard-w">
+          <!-- Shadow cards behind -->
+          <div class="hcard hc-b2"></div>
+          <div class="hcard hc-b1"></div>
+          <!-- Main card -->
+          <div class="hcard hc-main">
+            <div class="hc-lbl">
+              <span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--sf);"></span>
+              Scholarship Spotlight
+            </div>
+            <div class="hc-name">PM-USP CSSS Scholarship</div>
+            <div class="hc-by">National Scholarship Portal · Ministry of Education</div>
+            <div class="hc-amt">₹12,000–₹20,000 <span style="font-size:14px;color:#64748B;font-weight:400">/ year</span></div>
+            <div class="hc-bar-wrap">
+              <div class="hc-bar-top"><span>Published renewal window</span><span id="hero-window-date">31 Oct</span></div>
+              <div class="hc-bar"><div class="hc-bar-fill" id="hero-window-progress" style="width:0"></div></div>
+            </div>
+            <div class="hc-tags">
+              <div class="hc-tag b-sf">All Categories</div>
+              <div class="hc-tag b-gn">Income ≤ ₹4.5L</div>
+              <div class="hc-tag b-bl">Regular Degree</div>
+            </div>
+            <div class="hc-benefit-note">Published rates vary by course and year. Eligibility and selection must be checked.</div>
+            <button class="hc-apply" onclick="sendQ('Tell me about PM-USP CSSS')">Explore Scholarship &rarr;</button>
+          <div class="hero-chip-row" aria-label="SchemeMatch features">
+          <!-- Aligned feature chips -->
+          <div class="float-chip fc1">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color:var(--gn)"><polyline points="20 6 9 17 4 12"/></svg>
+            Official Source Links
+          </div>
+          <div class="float-chip fc2">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color:var(--sf)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            State-aware Listings
+          </div>
+          <div class="float-chip fc3">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color:var(--bl)"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Fast Match
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── MARQUEE STRIP (scrolling schemes ticker) ── -->
+    <div class="marquee-strip">
+      <div class="marquee-track">
+        <div class="marquee-item"><div class="marquee-dot" style="background:#F97316"></div><span>NSP Post-Matric</span> · Official rules require review</div>
+        <div class="marquee-item"><div class="marquee-dot" style="background:#F59E0B"></div><span>AICTE Pragati</span> · Official rules require review</div>
+        <div class="marquee-item"><div class="marquee-dot" style="background:#3B82F6"></div><span>INSPIRE</span> · Official rules require review</div>
+        <div class="marquee-item"><div class="marquee-dot" style="background:#A855F7"></div><span>CSIR-UGC JRF</span> · Official rules require review</div>
+        <div class="marquee-item"><div class="marquee-dot" style="background:#10B981"></div><span>PM Research Fellowship</span> · Official rules require review</div>
+        <div class="marquee-item"><div class="marquee-dot" style="background:#EC4899"></div><span>Begum Hazrat Mahal</span> · Official rules require review</div>
+        <div class="marquee-item"><div class="marquee-dot" style="background:#F97316"></div><span>Central Sector</span> · Official rules require review</div>
+        <div class="marquee-item"><div class="marquee-dot" style="background:#F59E0B"></div><span>Ishan Uday</span> · Official rules require review</div>
+        <div class="marquee-item"><div class="marquee-dot" style="background:#3B82F6"></div><span>PM-YASASVI</span> · Official rules require review</div>
+        <div class="marquee-item"><div class="marquee-dot" style="background:#10B981"></div><span>AICTE Saksham</span> · Official rules require review</div>
+        <div class="marquee-item"><div class="marquee-dot" style="background:#F97316"></div><span>NSP Pre-Matric</span> · Official rules require review</div>
+        <!-- Duplicate for seamless infinite loop -->
+        <div class="marquee-item"><div class="marquee-dot" style="background:#F97316"></div><span>NSP Post-Matric</span> · Official rules require review</div>
+        <div class="marquee-item"><div class="marquee-dot" style="background:#F59E0B"></div><span>AICTE Pragati</span> · Official rules require review</div>
+        <div class="marquee-item"><div class="marquee-dot" style="background:#3B82F6"></div><span>INSPIRE</span> · Official rules require review</div>
+        <div class="marquee-item"><div class="marquee-dot" style="background:#A855F7"></div><span>CSIR-UGC JRF</span> · Official rules require review</div>
+        <div class="marquee-item"><div class="marquee-dot" style="background:#10B981"></div><span>PM Research Fellowship</span> · Official rules require review</div>
+        <div class="marquee-item"><div class="marquee-dot" style="background:#EC4899"></div><span>Begum Hazrat Mahal</span> · Official rules require review</div>
+        <div class="marquee-item"><div class="marquee-dot" style="background:#F97316"></div><span>Central Sector</span> · Official rules require review</div>
+        <div class="marquee-item"><div class="marquee-dot" style="background:#F59E0B"></div><span>Ishan Uday</span> · Official rules require review</div>
+        <div class="marquee-item"><div class="marquee-dot" style="background:#3B82F6"></div><span>PM-YASASVI</span> · Official rules require review</div>
+        <div class="marquee-item"><div class="marquee-dot" style="background:#10B981"></div><span>AICTE Saksham</span> · Official rules require review</div>
+        <div class="marquee-item"><div class="marquee-dot" style="background:#F97316"></div><span>NSP Pre-Matric</span> · Official rules require review</div>
+      </div>
+    </div>
+
+    <!-- ── HOW IT WORKS ── -->
+    <div class="fsec">
+      <div class="secin">
+        <div class="sec-lbl anim-reveal">How It Works</div>
+        <h2 class="sec-h anim-reveal">Scholarship found in &lt;5 minutes</h2>
+        <p class="sec-sub anim-reveal">No jargon. No confusing portals. Just tell us about yourself.</p>
+        <div class="fgrid">
+          <div class="fc anim-card">
+            <div class="fc-ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <div class="fc-t">1. Build Your Profile</div>
+            <div class="fc-d">Name, state, category, class, income — 2 minutes, no Aadhaar needed.</div>
+          </div>
+          <div class="fc anim-card">
+            <div class="fc-ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            </div>
+            <div class="fc-t">2. AI Matches Schemes</div>
+            <div class="fc-d">State-aware listings and source-backed checks explain which details still need review.</div>
+          </div>
+          <div class="fc anim-card">
+            <div class="fc-ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <div class="fc-t">3. Apply Step-by-Step</div>
+            <div class="fc-d">Exact documents, portal links, deadlines and guidance — all in one place.</div>
+          </div>
+          <div class="fc anim-card">
+            <div class="fc-ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8M15 18h-5M10 6h8v4h-8V6Z"/></svg>
+            </div>
+            <div class="fc-t">Live Education News</div>
+            <div class="fc-d">Latest MoE notifications, new scheme launches, policy changes.</div>
+          </div>
+          <div class="fc anim-card">
+            <div class="fc-ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+            </div>
+            <div class="fc-t">Exam Calendar</div>
+            <div class="fc-d">State and national exam notices, with published dates and clearly labelled unconfirmed schedules.</div>
+          </div>
+          <div class="fc anim-card">
+            <div class="fc-ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="18"/><path d="M16 10h.01M12 10h.01M8 10h.01M12 14h.01M8 14h.01M12 18h.01M8 18h.01"/></svg>
+            </div>
+            <div class="fc-t">Scholarship Calculator</div>
+            <div class="fc-d">Estimate how much you can earn in scholarships over your degree.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── CTA ── -->
+    <div class="cta-sec">
+      <div class="cta-in">
+        <div class="cta-flag">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+        </div>
+        <h2 class="cta-h anim-reveal">Your education. Your right.</h2>
+        <p class="cta-sub anim-reveal">Thousands miss scholarships every year simply because they don't know they exist. Don't be one of them.</p>
+        <button class="btnw anim-reveal" onclick="goApp()">Find My Schemes — It's Free &rarr;</button>
+        <div class="cta-trust">
+          <div class="trust-badge anim-reveal">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color:var(--gn)"><polyline points="20 6 9 17 4 12"/></svg>
+            Official Government Schemes
+          </div>
+          <div class="trust-badge anim-reveal">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color:var(--bl)"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            No Sign-up Required
+          </div>
+          <div class="trust-badge anim-reveal">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color:var(--sf)"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            Results in 30 Seconds
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="translation-credit landing-credit notranslate" translate="no">Translation powered by <a href="https://translate.google.com/" target="_blank" rel="noopener noreferrer">Google Translate</a></div>
+
+  </div>
+</div>
+
+<!-- ═══ APP ═══ -->
+<div class="page" id="pg-app">
+  <div class="sb-backdrop" id="sbBackdrop" onclick="toggleMobileSidebar(false)"></div>
+  <aside class="sb" id="appSidebar">
+    <div class="sb-head">
+      <div class="sb-brand-row">
+        <div class="sb-brand" onclick="goLand()">
+          <div class="sbm">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div class="sbn notranslate" translate="no" aria-label="SchemeMatch">Scheme<span>Match</span></div>
+        </div>
+        <button class="sb-close-btn" onclick="toggleMobileSidebar(false)" aria-label="Close menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="sb-user" onclick="goPanel('profile')">
+        <div class="sbav" id="sbAv">S</div>
+        <div><div class="sb-uname" id="sbName">Student</div><div class="sb-ucls" id="sbCls">Set up profile &rarr;</div></div>
+      </div>
+    </div>
+    <div class="sb-nav">
+      <div class="slbl">Main</div>
+      <div class="ni active" data-panel="dashboard" onclick="goPanel('dashboard')">
+        <div class="ni-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        Dashboard
+      </div>
+      <div class="ni" data-panel="chat" onclick="goPanel('chat')">
+        <div class="ni-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="12" x="3" y="6" rx="2"/><path d="M9 12h.01M15 12h.01M12 2v4M12 18v4"/></svg></div>
+        AI Assistant<span class="nibadge nb-sf">Chat</span>
+      </div>
+      <div class="ni" data-panel="eligibility" onclick="goPanel('eligibility')">
+        <div class="ni-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+        Check Eligibility
+      </div>
+      <div class="slbl">Schemes</div>
+      <div class="ni" data-panel="schemes" onclick="goPanel('schemes')">
+        <div class="ni-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg></div>
+        All Schemes<span class="nibadge nb-sf notranslate" translate="no" data-scheme-count>—</span>
+      </div>
+      <div class="ni" data-panel="deadlines" onclick="goPanel('deadlines')">
+        <div class="ni-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg></div>
+        Deadlines<span class="nibadge nb-rd" id="nav-deadlines">—</span>
+      </div>
+      <div class="ni" data-panel="tracker" onclick="goPanel('tracker')">
+        <div class="ni-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg></div>
+        Application Tracker<span class="nibadge nb-sf" id="trackerBadge" hidden>0</span>
+      </div>
+      <div class="slbl">Education</div>
+      <div class="ni" data-panel="news" onclick="goPanel('news')">
+        <div class="ni-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8M15 18h-5M10 6h8v4h-8V6Z"/></svg></div>
+        Education News<span class="nibadge nb-gn">New</span>
+      </div>
+      <div class="ni" data-panel="exams" onclick="goPanel('exams')">
+        <div class="ni-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/><path d="m15 5 4 4"/></svg></div>
+        Exam Calendar
+      </div>
+      <div class="ni" data-panel="calculator" onclick="goPanel('calculator')">
+        <div class="ni-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="18"/><path d="M16 10h.01M12 10h.01M8 10h.01M12 14h.01M8 14h.01M12 18h.01M8 18h.01"/></svg></div>
+        Scholarship Calc
+      </div>
+      <div class="ni" data-panel="compare" onclick="goPanel('compare')">
+        <div class="ni-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01M12 10h.01M12 14h.01M16 10h.01M16 14h.01M8 10h.01M8 14h.01"/></svg></div>
+        College Compare
+      </div>
+      <div class="slbl">My Account</div>
+      <div class="ni" data-panel="profile" onclick="goPanel('profile')">
+        <div class="ni-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        My Profile
+      </div>
+    </div>
+    <div class="sb-foot">
+      <small class="translation-credit notranslate" translate="no">Translation powered by <a href="https://translate.google.com/" target="_blank" rel="noopener noreferrer">Google Translate</a></small>
+      <button class="sb-back" onclick="goLand()">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        Back to Home
+      </button>
+    </div>
+  </aside>
+
+  <div class="main">
+    <div class="abar">
+      <div class="ab-l">
+        <button class="ab-menu-btn" id="mobileMenuBtn" onclick="toggleMobileSidebar(true)" aria-label="Open Navigation Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <div class="ab-title" id="abTitle">Dashboard</div>
+      </div>
+      <div class="ab-r">
+        <div class="abbtn" onclick="goPanel('chat')" title="AI Chat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="12" x="3" y="6" rx="2"/><path d="M9 12h.01M15 12h.01M12 2v4M12 18v4"/></svg>
+        </div>
+        <div class="abbtn" onclick="goPanel('profile')" title="Profile">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- DASHBOARD -->
+    <div class="panel active" id="pn-dashboard">
+      <div class="dscroll">
+        <div class="wb">
+          <div class="wb-bg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div class="wb-tag">Welcome back</div>
+          <div class="wb-h" id="wbName">Hello, Student</div>
+          <div class="wb-sub" id="wbSub">Complete your profile to see personalised scheme matches.</div>
+          <div class="wbstats">
+            <div><div class="wbs-n" id="wb-matched">—</div><div class="wbs-l">Scheme Suggestions</div></div>
+            <div style="margin-left:20px"><div class="wbs-n" id="wb-pot">—</div><div class="wbs-l">Annual Benefit</div></div>
+            <div style="margin-left:20px"><div class="wbs-n" id="wb-deadlines">—</div><div class="wbs-l">Deadlines This Month</div></div>
+          </div>
+          <div class="wb-notice" id="wb-notice" style="display:none">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--gd)"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            <span id="wb-notice-txt"></span>
+          </div>
+        </div>
+        <div id="no-prof-warn" class="no-profile-warn">
+          <div class="npw-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <div><div class="npw-t">Profile Incomplete</div><div class="npw-s">Add your details to see personalised eligibility matches</div></div>
+          <button class="npw-btn" onclick="document.getElementById('modal').classList.remove('hidden')">Set Up Now</button>
+        </div>
+        <div class="srow">
+          <div class="sc" onclick="goPanel('eligibility')">
+            <div class="sc-top">
+              <div class="sc-ico">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--sf)"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg>
+              </div>
+              <div class="sc-chg" style="background:var(--bll);color:var(--bl)" id="sc-matched-chg">Check &rarr;</div>
+            </div>
+            <div class="sc-val" id="sc-matched">—</div><div class="sc-lbl">Scheme Suggestions</div>
+          </div>
+          <div class="sc" onclick="goPanel('deadlines')">
+            <div class="sc-top">
+              <div class="sc-ico">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--rd)"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div class="sc-chg" style="background:var(--rdl);color:var(--rd)">Urgent</div>
+            </div>
+            <div class="sc-val" style="color:var(--rd)" id="sc-deadlines">—</div><div class="sc-lbl">Deadlines This Month</div>
+          </div>
+          <div class="sc" onclick="goPanel('eligibility')">
+            <div class="sc-top">
+              <div class="sc-ico">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--gn)"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              </div>
+              <div class="sc-chg" style="background:var(--gnl);color:var(--gn)">Best</div>
+            </div>
+            <div class="sc-val" style="color:var(--sf)" id="sc-pot">—</div><div class="sc-lbl">Potential/Year</div><div class="sc-note" id="sc-pot-note">Check eligibility</div>
+          </div>
+          <div class="sc" onclick="goPanel('exams')">
+            <div class="sc-top">
+              <div class="sc-ico">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--pu)"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              </div>
+              <div class="sc-chg" style="background:var(--pul);color:var(--pu)">View</div>
+            </div>
+            <div class="sc-val" style="color:var(--pu)" id="sc-exams">—</div><div class="sc-lbl">Upcoming Exams</div>
+          </div>
+        </div>
+        <div class="twocol">
+          <div class="cbox">
+            <div class="cbt">Deadlines <button class="cbsee" onclick="goPanel('deadlines')">See all</button></div>
+            <div id="dash-deadlines"></div>
+          </div>
+          <div class="cbox">
+            <div class="cbt">Your Top Matches <button class="cbsee" onclick="goPanel('schemes')">All schemes</button></div>
+            <div id="dash-top-matches"><div style="text-align:center;padding:20px;color:var(--t3);font-size:13px">Complete your profile to see matches &rarr;</div></div>
+          </div>
+        </div>
+        <div class="cbox">
+          <div class="cbt">Email proposals <button class="cbsee" id="proposal-preview-button" onclick="previewEmailProposal()">Preview my proposal</button></div>
+          <p style="font-size:13px;color:var(--t3)">Get your best saved-profile matches, benefit details and application links by email. Enable automatic emails in My Profile.</p>
+          <div id="proposal-email-status" role="status" aria-live="polite" style="font-size:13px;margin:12px 0"></div>
+          <div id="proposal-email-preview" class="hidden"></div>
+        </div>
+        <!-- TRENDING -->
+        <div class="cbox">
+          <div class="cbt">Trending Searches</div>
+          <div class="trend-tags">
+            <div class="tt" onclick="sendQ('NSP Post-Matric Scholarship details');goPanel('chat')">NSP Scholarship</div>
+            <div class="tt" onclick="sendQ('AICTE Pragati for girl students');goPanel('chat')">AICTE Pragati</div>
+            <div class="tt" onclick="sendQ('Scholarships for SC ST students');goPanel('chat')">SC/ST Schemes</div>
+            <div class="tt" onclick="sendQ('UGC JRF fellowship details');goPanel('chat')">UGC JRF</div>
+            <div class="tt" onclick="sendQ('How to apply for PMRF fellowship?');goPanel('chat')">PMRF Fellowship</div>
+            <div class="tt" onclick="sendQ('How to get income certificate quickly?');goPanel('chat')">Income Certificate</div>
+            <div class="tt" onclick="sendQ('Scholarship for minority students');goPanel('chat')">Minority Schemes</div>
+            <div class="tt" onclick="goPanel('exams')">JEE/NEET Dates</div>
+          </div>
+        </div>
+        <!-- AI BANNER -->
+        <div class="aibanner" onclick="goPanel('chat')">
+          <div><div class="aib-tag">AI Powered</div><div class="aib-h">Describe yourself, review relevant programmes</div><div class="aib-s">Try: "I'm 20, OBC from UP, doing BTech, income 1.8 lakh" — review the filled profile before checking conditions</div></div>
+          <div class="aib-r">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg>
+          </div>
+        </div>
+        <!-- TIPS -->
+        <div class="tiprow">
+          <div class="tipc" onclick="sendQ('What documents do I need for scholarships?');goPanel('chat')">
+            <div class="tipc-ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            </div>
+            <div class="tipc-t">Get Documents Early</div><div class="tipc-d">Confirm the exact documents and issuing dates in your programme’s current notice.</div>
+          </div>
+          <div class="tipc" onclick="sendQ('Can I apply for multiple scholarships?');goPanel('chat')">
+            <div class="tipc-ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/></svg>
+            </div>
+            <div class="tipc-t">Check Combination Rules</div><div class="tipc-d">Check both programmes’ rules before receiving more than one benefit.</div>
+          </div>
+          <div class="tipc" onclick="goPanel('calculator')">
+            <div class="tipc-ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/></svg>
+            </div>
+            <div class="tipc-t">Calculate Your Benefit</div><div class="tipc-d">See how much you can earn over your full degree with our calculator.</div>
+          </div>
+        </div>
+        <!-- CHECKLIST -->
+        <div class="cbox">
+          <div class="cbt">Application Checklist <button class="cbsee" onclick="goPanel('eligibility')">Start</button></div>
+          <div class="prog-item"><div class="pstep" style="background:rgba(16,185,129,0.15);color:var(--gn)">1</div><div class="pname">Open SchemeMatch</div><div class="pstat" style="background:var(--gnl);color:var(--gn)">Done</div></div>
+          <div class="prog-item" id="chk2"><div class="pstep" id="chk2-ico" style="background:rgba(249,115,22,0.15);color:var(--sf)">2</div><div class="pname">Complete your profile</div><div class="pstat" id="chk2-stat" style="background:var(--sfl);color:var(--sf);cursor:pointer" onclick="document.getElementById('modal').classList.remove('hidden')">Set up &rarr;</div></div>
+          <div class="prog-item"><div class="pstep" id="chk3-ico" style="background:rgba(255,255,255,0.05);color:var(--t3)">3</div><div class="pname">Run eligibility check</div><div class="pstat" id="chk3-stat" style="background:rgba(255,255,255,0.05);color:var(--t3)">Pending</div></div>
+          <div class="prog-item"><div class="pstep" id="chk4-ico" style="background:rgba(255,255,255,0.05);color:var(--t3)">4</div><div class="pname">Collect documents</div><div class="pstat" id="chk4-stat" style="background:rgba(255,255,255,0.05);color:var(--t3);cursor:pointer" onclick="toggleChecklist('docs')">Pending</div></div>
+          <div class="prog-item"><div class="pstep" id="chk5-ico" style="background:rgba(255,255,255,0.05);color:var(--t3)">5</div><div class="pname">Submit on NSP portal</div><div class="pstat" id="chk5-stat" style="background:rgba(255,255,255,0.05);color:var(--t3);cursor:pointer" onclick="toggleChecklist('submitted')">Pending</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHAT -->
+    <div class="panel" id="pn-chat">
+      <div class="chat-wrap">
+        <div class="chat-msgs" id="chatMsgs"></div>
+        <div class="cin-zone">
+          <div class="csugg">
+            <div class="csp" onclick="sendQ('What scholarships am I eligible for?')">My eligible schemes</div>
+            <div class="csp" onclick="sendQ('NSP Post-Matric Scholarship application steps')">NSP steps</div>
+            <div class="csp" onclick="sendQ('I need income certificate help')">Income cert</div>
+            <div class="csp" onclick="sendQ('Scholarships for girl students in engineering')">Girl schemes</div>
+            <div class="csp" onclick="sendQ('UGC NET JRF fellowship details')">UGC JRF</div>
+            <div class="csp" onclick="sendQ('Upcoming scholarship deadlines')">Deadlines</div>
+          </div>
+          <div class="cinrow">
+            <textarea class="cin" id="cinput" rows="1" placeholder="Ask anything — 'Am I eligible for NSP?', '2 lakh income OBC BTech scholarships?'…" onkeydown="chatKey(event)" oninput="grow(this)"></textarea>
+            <button class="csend" onclick="doSend()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ELIGIBILITY -->
+    <div class="panel" id="pn-eligibility">
+      <div class="escroll">
+        <div class="ehero">
+          <div class="ehero-bg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <div class="eh">Eligibility Checker</div>
+          <div class="es">Enter your details to find relevant programmes and check reviewed conditions. Unreviewed rules and missing details cannot confirm eligibility.</div>
+        </div>
+        <div class="nlbox">
+          <div class="nlbox-t" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
+            <div style="display:flex;align-items:center;gap:8px">
+              <svg class="v-ico" style="width:14px;height:14px;color:var(--sf)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg>
+              Describe yourself in your own words
+            </div>
+            <div class="nl-lang-picker" style="display:flex;align-items:center;gap:6px">
+              <span style="font-size:11px;color:var(--t3);font-weight:600">Language:</span>
+              <select id="nl-voice-lang" class="nl-lang-select" aria-label="Speech Language" title="Select your spoken language" onchange="setVoiceLang(this.value)">
+                <option value="ta-IN">Tamil (தமிழ்)</option>
+                <option value="hi-IN">Hindi (हिन्दी)</option>
+                <option value="te-IN">Telugu (తెలుగు)</option>
+                <option value="mr-IN">Marathi (मराठी)</option>
+                <option value="kn-IN">Kannada (ಕನ್ನಡ)</option>
+                <option value="ml-IN">Malayalam (മലയാളം)</option>
+                <option value="bn-IN">Bengali (বাংলা)</option>
+                <option value="gu-IN">Gujarati (ગુજરાતી)</option>
+                <option value="pa-IN">Punjabi (ਪੰਜਾਬੀ)</option>
+                <option value="ur-IN">Urdu (اردو)</option>
+                <option value="en-IN">English (India)</option>
+              </select>
+            </div>
+          </div>
+          <div class="nl-lang-chips" id="nl-lang-chips" style="margin:8px 0">
+            <button type="button" class="nl-lang-chip" data-lang="ta-IN" onclick="setVoiceLang('ta-IN')">தமிழ்</button>
+            <button type="button" class="nl-lang-chip" data-lang="hi-IN" onclick="setVoiceLang('hi-IN')">हिन्दी</button>
+            <button type="button" class="nl-lang-chip" data-lang="te-IN" onclick="setVoiceLang('te-IN')">తెలుగు</button>
+            <button type="button" class="nl-lang-chip" data-lang="mr-IN" onclick="setVoiceLang('mr-IN')">मराठी</button>
+            <button type="button" class="nl-lang-chip" data-lang="kn-IN" onclick="setVoiceLang('kn-IN')">ಕನ್ನಡ</button>
+            <button type="button" class="nl-lang-chip" data-lang="ml-IN" onclick="setVoiceLang('ml-IN')">മലയാളം</button>
+            <button type="button" class="nl-lang-chip" data-lang="bn-IN" onclick="setVoiceLang('bn-IN')">বাংলা</button>
+            <button type="button" class="nl-lang-chip" data-lang="gu-IN" onclick="setVoiceLang('gu-IN')">ગુજરાતી</button>
+            <button type="button" class="nl-lang-chip" data-lang="en-IN" onclick="setVoiceLang('en-IN')">English</button>
+          </div>
+          <textarea id="nl-text" placeholder="Select one of the 11 language options, then type or speak your details. Example: 'I am a female BC student, annual family income ₹1.8L, doing B.Tech in Tamil Nadu.' Review the filled fields before checking schemes."></textarea>
+          <div class="nl-actions" style="display:flex;align-items:center;gap:10px;margin-top:12px;flex-wrap:wrap">
+            <button class="nl-voice-btn" id="nl-voice-btn" onclick="toggleVoiceInput()" type="button" title="Click to speak in your language — click again when finished to auto-fill">
+              <svg class="nl-mic-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
+              <span id="nl-voice-btn-txt">Speak to Fill</span>
+            </button>
+            <button class="nlbtn" id="nl-btn" onclick="parseNLProfile()">Fill form with AI</button>
+            <div id="nl-voice-status" class="nl-voice-status" style="display:none"></div>
+          </div>
+          <div class="nlnote" id="nl-note" role="status" aria-live="polite"></div>
+        </div>
+        <div class="eform" id="elig-form-container">
+          <div class="eform-header-row" style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;flex-wrap:wrap;gap:10px">
+            <div class="eform-t" style="margin-bottom:0">Your Details</div>
+            <div id="eform-lock-pill" class="eform-status-pill locked" style="display:none">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Details Saved &amp; Locked
+            </div>
+          </div>
+          <div class="efgrid">
+            <div class="fg"><label>Full Name</label><input id="ef-name" placeholder="e.g. Priya Sharma"/></div>
+            <div class="fg"><label>Age</label><input id="ef-age" type="number" min="10" max="40" placeholder="e.g. 19"/></div>
+            <div class="fg"><label>Gender</label><select id="ef-gender"><option value="">Select</option><option>Male</option><option>Female</option><option>Other / Transgender</option></select></div>
+            <div class="fg"><label>State</label><select id="ef-state">
+              <option value="">Select State</option>
+              <option>Andhra Pradesh</option><option>Arunachal Pradesh</option><option>Assam</option><option>Bihar</option><option>Chhattisgarh</option><option>Delhi</option><option>Goa</option><option>Gujarat</option><option>Haryana</option><option>Himachal Pradesh</option><option>Jharkhand</option><option>Karnataka</option><option>Kerala</option><option>Madhya Pradesh</option><option>Maharashtra</option><option>Manipur</option><option>Meghalaya</option><option>Mizoram</option><option>Nagaland</option><option>Odisha</option><option>Punjab</option><option>Rajasthan</option><option>Sikkim</option><option>Tamil Nadu</option><option>Telangana</option><option>Tripura</option><option>Uttar Pradesh</option><option>Uttarakhand</option><option>West Bengal</option><option>J&K</option><option>Ladakh</option>
+            </select></div>
+            <div class="fg"><label>Category</label><select id="ef-cat"><option value="">Select</option><option>General</option><option>OBC</option><option>SC</option><option>ST</option><option>BC</option><option>MBC</option><option>DNC</option><option>EWS</option><option>Minority (Muslim)</option><option>Minority (Christian)</option><option>Minority (Buddhist)</option><option>Minority (Jain)</option><option>Minority (Sikh)</option></select></div>
+            <div class="fg"><label>Annual Family Income</label><select id="ef-inc">
+              <option value="">Select Range</option>
+              <option value="under1">Below ₹1 Lakh</option>
+              <option value="1to2.5">₹1L – ₹2.5L</option>
+              <option value="2.5to4.5">₹2.5L – ₹4.5L</option>
+              <option value="4.5to8">₹4.5L – ₹8L</option>
+              <option value="above8">Above ₹8L</option>
+            </select></div>
+            <div class="fg"><label>Education Level</label><select id="ef-edu">
+              <option value="">Select</option>
+              <option value="9-10">Class 9–10</option>
+              <option value="11-12">Class 11–12</option>
+              <option value="diploma">Diploma / ITI</option>
+              <option value="ug-arts">UG – BA / BSc / BCom / BCA</option>
+              <option value="ug-tech">UG – BTech / BE</option>
+              <option value="ug-medical">UG – MBBS / BDS / Nursing</option>
+              <option value="pg">Postgraduate (MA/MSc/MTech/MCA)</option>
+              <option value="phd">PhD / Research</option>
+            </select></div>
+            <div class="fg"><label>Last Exam Marks (%)</label><input id="ef-marks" type="number" min="0" max="100" placeholder="e.g. 78"/></div>
+            <div class="fg"><label>First Generation Graduate?</label><select id="ef-firstgrad"><option value="">Select</option><option value="Yes">Yes — no one in my family has graduated</option><option value="No">No</option></select></div>
+            <div class="fg"><label>Are You Differently-Abled (≥40%)?</label><select id="ef-disability"><option value="">Select</option><option value="Yes">Yes, with certificate</option><option value="No">No</option></select></div>
+            <div class="fg"><label>Parent is Differently-Abled?</label><select id="ef-parentdis"><option value="">Select</option><option value="Yes">Yes, with certificate</option><option value="No">No</option></select></div>
+            <div class="fg"><label>Parent's Occupation</label><select id="ef-parentocc">
+              <option value="">Select (optional)</option>
+              <option value="construction">Registered Construction Worker</option>
+              <option value="government">Government Employee</option>
+              <option value="other">Other / Private / Business</option>
+            </select></div>
+            <div class="fg effull"><label>Stream / Subject</label><select id="ef-stream">
+              <option value="">Select Stream</option>
+              <option value="science">Science / IT / Computer Applications (CS/BCA/Math)</option>
+              <option value="engineering">Engineering / Technology</option>
+              <option value="medical">Medical / Pharmacy / Nursing</option>
+              <option value="arts">Arts / Humanities / Social Sciences</option>
+              <option value="commerce">Commerce / Management</option>
+              <option value="law">Law</option>
+              <option value="agriculture">Agriculture</option>
+            </select></div>
+          </div>
+          <div class="eform-actions" id="eform-actions" style="display:flex;align-items:center;gap:12px;margin-top:18px;flex-wrap:wrap">
+            <button class="ebtn" id="ef-submit-btn" onclick="runElig()" style="flex:1;min-width:220px">Find My Eligible Schemes &rarr;</button>
+            <button class="ebtn-secondary" id="ef-edit-btn" onclick="unlockEligibilityForm()" type="button" style="display:none" title="Click to edit your details">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              Edit Form
+            </button>
+          </div>
+        </div>
+        <div id="bestfit-results" class="hidden"></div>
+        <div id="elig-results" class="hidden">
+          <div class="eres-title">Your Results <span class="ecount" id="eres-count">0 schemes</span></div>
+          <div id="elig-list"></div>
+        </div>
+        <div id="ai-explain-box" class="hidden" style="margin-top:18px"></div>
+        <section id="elig-followups" class="eform hidden" aria-live="polite" style="margin-top:18px"></section>
+      </div>
+    </div>
+
+    <!-- SCHEMES -->
+    <div class="panel" id="pn-schemes">
+      <div class="sscroll">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+          <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:700">All Education Schemes</div>
+          <div style="font-size:12px;color:var(--t3)">Showing <span id="sch-count">12</span> schemes</div>
+        </div>
+        <div class="sch-search-wrap">
+          <svg class="v-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input id="schSearchInput" class="sch-search-input" type="text" placeholder="Search schemes by name, department, or tag..." oninput="renderSchemes(currentSchFilter)"/>
+        </div>
+        <label for="sch-state-filter" style="font-size:12px;color:var(--t3)">State coverage</label>
+        <select id="sch-state-filter" class="nl-lang-select" onchange="renderSchemes(currentSchFilter)" style="margin:8px 0 12px;max-width:100%">
+          <option value="relevant">Your state + central programmes</option>
+          <option value="all">All states and central schemes</option>
+          <option value="central">Central / All India</option>
+          <option>Tamil Nadu</option><option>Maharashtra</option><option>West Bengal</option>
+          <option>Rajasthan</option><option>Gujarat</option><option>Odisha</option>
+          <option>Kerala</option><option>Telangana</option><option>Andhra Pradesh</option>
+          <option>Bihar</option><option>Haryana</option><option>Jharkhand</option>
+          <option>Chhattisgarh</option><option>Uttar Pradesh</option><option>Assam</option>
+        </select>
+        <label for="sch-sector-filter" style="font-size:12px;color:var(--t3)">Programme sector</label>
+        <select id="sch-sector-filter" class="nl-lang-select" onchange="renderSchemes(currentSchFilter)" style="margin:8px 0 12px;max-width:100%">
+          <option value="students">Students and scholarships</option><option value="other">Other sectors</option><option value="all">All sectors</option>
+        </select>
+        <label style="display:flex;align-items:center;gap:8px;margin-bottom:12px;font-size:12px;color:var(--t3)"><input type="checkbox" id="sch-include-outside" onchange="renderSchemes(currentSchFilter)"/>Show schemes outside my profile</label>
+        <div id="state-catalog-note" class="nlnote" role="status" aria-live="polite" style="margin-bottom:12px">Official-source directory. Eligibility, application windows and submission checks are recorded separately.</div>
+        <div class="fbar">
+          <div class="fp active" onclick="filterSch(this,'all')">All</div>
+          <div class="fp" onclick="filterSch(this,'scholarship')">Scholarships</div>
+          <div class="fp" onclick="filterSch(this,'fellowship')">Fellowships</div>
+          <div class="fp" onclick="filterSch(this,'grant')">Grants</div>
+          <div class="fp" onclick="filterSch(this,'girls')">For Girls</div>
+          <div class="fp" onclick="filterSch(this,'minority')">Minority</div>
+          <div class="fp" onclick="filterSch(this,'technical')">Technical</div>
+          <div class="fp" onclick="filterSch(this,'research')">Research</div>
+          <div class="fp" onclick="filterSch(this,'northeast')">North-East</div>
+          <div class="fp" onclick="filterSch(this,'disabled')">Specially-Abled</div>
+        </div>
+        <div class="sgrid" id="schGrid"></div>
+      </div>
+    </div>
+
+    <!-- DEADLINES -->
+    <div class="panel" id="pn-deadlines">
+      <div class="dlscroll">
+        <div class="dlalert hidden" id="deadlineAlert" aria-live="polite"></div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:700;margin-bottom:16px">Published Scholarship Windows</div>
+        <div id="dlList"></div>
+      </div>
+    </div>
+
+    <!-- APPLICATION TRACKER -->
+    <div class="panel" id="pn-tracker">
+      <div class="trscroll">
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:16px">
+          <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:700">Application Tracker</div>
+          <button class="ebtn" style="width:auto;padding:9px 16px" onclick="exportIcs()">Export Deadlines (.ics) &rarr;</button>
+        </div>
+        <div id="trackerBoard"></div>
+      </div>
+    </div>
+
+    <!-- Official notice links replace unsourced static news and guessed exam dates. -->
+    <div class="panel" id="pn-news"><div class="nscroll"><h3>Education News</h3><p class="news-intro">Scholarship announcements from official government portals.</p><div class="exam-filters"><label for="news-state-filter">State<select id="news-state-filter" onchange="renderEducationNews()"><option value="all">All states + Central</option><option value="central">Central / All India</option></select></label><label for="newsSearch">Search<input id="newsSearch" type="search" placeholder="Programme or announcement" oninput="renderEducationNews()"></label></div><div id="newsGrid"></div></div></div>
+    <div class="panel" id="pn-exams"><div class="examscroll"><h3>Exam Calendar</h3><p>Central and state entrance exams and government recruitment notices. Countdown dates come from published organiser schedules; dates may change.</p><div class="exam-filters"><label>State<select id="exam-state-filter" onchange="renderExamCalendar()"></select></label><label>Exam type<select id="exam-kind-filter" onchange="renderExamCalendar()"><option value="all">All exam types</option><option value="admission">Entrance / academic</option><option value="recruitment">Government recruitment</option></select></label><label>Schedule<select id="exam-status-filter" onchange="renderExamCalendar()"><option value="upcoming">Nearest upcoming exams</option><option value="current">Upcoming + dates to be announced</option><option value="unconfirmed">Dates unconfirmed</option><option value="past">Past exams</option><option value="all">All schedules</option></select></label><label>Search<input id="examSearch" type="search" placeholder="Exam, organiser or state" oninput="renderExamCalendar()"></label></div><p><span id="examCount" class="notranslate" translate="no">0</span> exam references · Scholarship application dates are in Deadlines.</p><div id="examGrid" class="exam-grid"></div></div></div>
+
+    <!-- SCHOLARSHIP CALCULATOR -->
+    <div class="panel" id="pn-calculator">
+      <div class="calcscroll">
+        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:700;margin-bottom:4px">Scholarship Benefit Calculator</div>
+        <div style="font-size:12.5px;color:var(--t3);margin-bottom:18px">Explore published programme rates by course and year, then check your eligibility.</div>
+        <div class="calc-card">
+          <div class="calc-t">Degree Scholarship Estimate</div><div class="calc-row"><div class="fg"><label for="cc-scheme">Scholarship</label><select id="cc-scheme"><option value="central-sector">PM-USP CSSS</option><option value="aicte-pragati">AICTE Pragati — Degree</option><option value="aicte-pragati-diploma">AICTE Pragati — Diploma</option><option value="aicte-saksham">AICTE Saksham — Degree</option><option value="aicte-saksham-diploma">AICTE Saksham — Diploma</option><option value="aicte-swanath-degree">AICTE Swanath — Degree</option><option value="aicte-swanath-diploma">AICTE Swanath — Diploma</option></select></div><div class="fg"><label for="cc-year">Current course year</label><select id="cc-year"><option value="1">Year 1</option><option value="2">Year 2</option><option value="3">Year 3</option><option value="4">Year 4</option><option value="5">Year 5</option></select></div></div>
+          <div class="calc-row">
+            <div class="fg"><label>Course Duration (Years)</label><select id="cc-dur"><option value="2">2 years</option><option value="3" selected>3 years</option><option value="4">4 years</option><option value="5">5 years</option></select></div>
+            <div class="fg"><label>Your Category</label><select id="cc-cat"><option value="general">General</option><option value="obc">OBC</option><option value="sc">SC</option><option value="st">ST</option><option value="ews">EWS</option><option value="minority">Minority</option></select></div>
+            <div class="fg"><label>Your Education Level</label><select id="cc-edu"><option value="11-12">Class 11–12</option><option value="ug" selected>Undergraduate</option><option value="ug-tech">UG Technical (BTech)</option><option value="ug-medical">Five-year professional / integrated degree</option><option value="diploma">Diploma</option><option value="pg">Postgraduate</option><option value="phd">PhD / Research</option></select></div>
+            <div class="fg"><label>Your Income Bracket</label><select id="cc-inc"><option value="under1">Below ₹1L</option><option value="1to2.5">₹1L–₹2.5L</option><option value="2.5to4.5">₹2.5L–₹4.5L</option><option value="4.5to8">₹4.5L–₹8L</option></select></div>
+          </div>
+          <div class="fg" style="margin-bottom:14px"><label>Your Gender</label><select id="cc-gen"><option value="male">Male</option><option value="female">Female</option></select></div>
+          <button class="ebtn" style="margin-top:0" onclick="calcBenefit()">Calculate My Benefit &rarr;</button>
+          <div id="calc-result" class="hidden">
+            <div class="calc-result" id="calc-res-card">
+              <div class="calc-rl">Published Annual Programme Rate</div>
+              <div class="calc-rv" id="calc-annual">—</div>
+              <div class="calc-rv2" id="calc-total">—</div>
+            </div>
+            <div style="margin-top:12px" id="calc-breakdown"></div>
+          </div>
+        </div>
+        <div class="calc-card">
+          <div class="calc-t">Loan vs Scholarship Comparison</div>
+          <div class="calc-row">
+            <div class="fg"><label>Annual Tuition Fee (₹)</label><input id="lc-fee" type="number" placeholder="e.g. 100000" value="100000"/></div>
+            <div class="fg"><label>Your Confirmed Annual Award (₹)</label><input id="lc-sch" type="number" min="0" placeholder="Enter only a confirmed award" value="0"/></div>
+          </div>
+          <button class="ebtn" style="margin-top:4px" onclick="calcLoan()">Compare &rarr;</button>
+          <div id="loan-result" class="hidden">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px" id="loan-cards"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COLLEGE COMPARE -->
+    <div class="panel" id="pn-compare">
+      <div class="compscroll">
+        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:700;margin-bottom:4px">College & Course Compare</div>
+        <div style="font-size:12.5px;color:var(--t3);margin-bottom:18px">Compare top colleges across fees, NIRF rank, placements and scholarships available</div>
+        <div class="comp-search">
+          <select class="comp-in" id="comp-type" style="max-width:180px">
+            <option value="iit">IITs (BTech)</option>
+            <option value="nit">NITs (BTech)</option>
+            <option value="central">Central Universities</option>
+            <option value="medical">Medical Colleges (MBBS)</option>
+            <option value="iim">IIMs (MBA)</option>
+          </select>
+          <button class="comp-btn" onclick="renderCompare()">Compare Now</button>
+        </div>
+        <div class="ctable" id="comp-table"></div>
+      </div>
+    </div>
+
+    <!-- PROFILE -->
+    <div class="panel" id="pn-profile">
+      <div class="pscroll">
+        <div class="prof-hero">
+          <div class="profav" id="profAv">S</div>
+          <div>
+            <div class="prof-name" id="profName">Student</div>
+            <div class="prof-sub" id="profSub">Complete your profile for personalised matches</div>
+            <div class="prof-tags" id="profTags"><div class="prof-tag b-sf">Profile Incomplete</div></div>
+          </div>
+        </div>
+        <div class="pgrid">
+          <div class="pic">
+            <div class="pic-t">Personal Info</div>
+            <div class="pic-row"><span class="pk">Name</span><span class="pv" id="pi-name">—</span></div>
+            <div class="pic-row"><span class="pk">Age</span><span class="pv" id="pi-age">—</span></div>
+            <div class="pic-row"><span class="pk">Gender</span><span class="pv" id="pi-gender">—</span></div>
+            <div class="pic-row"><span class="pk">State</span><span class="pv" id="pi-state">—</span></div>
+          </div>
+          <div class="pic">
+            <div class="pic-t">Academic Info</div>
+            <div class="pic-row"><span class="pk">Category</span><span class="pv" id="pi-cat">—</span></div>
+            <div class="pic-row"><span class="pk">Education</span><span class="pv" id="pi-edu">—</span></div>
+            <div class="pic-row"><span class="pk">Marks</span><span class="pv" id="pi-marks">—</span></div>
+            <div class="pic-row"><span class="pk">Income</span><span class="pv" id="pi-inc">—</span></div>
+          </div>
+        </div>
+        <div style="margin-top:16px;display:flex;gap:12px">
+          <button class="btnp" onclick="goPanel('eligibility');restoreSavedEligibilityForm();unlockEligibilityForm()" style="font-size:13px;padding:10px 22px">Edit Profile</button>
+          <button class="btns" onclick="goPanel('eligibility')" style="font-size:13px;padding:10px 22px">Recheck Eligibility</button>
+        </div>
+
+        <!-- ACCOUNT -->
+        <div class="pic" style="margin-top:18px;max-width:440px">
+          <div class="pic-t">Account</div>
+          <div id="acctGuestView">
+            <div style="font-size:12.5px;color:var(--t3);line-height:1.6;margin-bottom:12px">Your profile is currently only saved on this device. Log in or create a free account to save it permanently and access it from any device.</div>
+            <div id="acctMsg" style="font-size:12px;margin-bottom:8px"></div>
+            <div class="fg" id="acct-name-row" style="display:none"><label>Name</label><input id="acct-name" placeholder="Your name"/></div>
+            <div class="fg"><label>Email</label><input id="acct-email" type="email" placeholder="you@example.com"/></div>
+            <div class="fg" style="margin-top:8px"><label>Password</label><input id="acct-password" type="password" placeholder="••••••••"/></div>
+            <div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap">
+              <button class="btnp" id="acct-submit-btn" onclick="submitAccountForm()" style="font-size:13px;padding:9px 18px">Log In</button>
+              <button class="btns" id="acct-toggle-btn" onclick="toggleAccountMode()" style="font-size:13px;padding:9px 18px">Create account instead</button>
+            </div>
+          </div>
+          <div id="acctLoggedInView" class="hidden">
+            <div class="pic-row"><span class="pk">Logged in as</span><span class="pv" id="acct-email-display">—</span></div>
+            <div style="font-size:12px;color:var(--gn);margin:8px 0">Your profile is saved to your account</div>
+            <label style="display:flex;align-items:flex-start;gap:8px;margin:14px 0;font-size:13px"><input type="checkbox" id="proposal-email-automatic" onchange="saveEmailProposalPreference(this.checked)"/>Email me a scheme proposal automatically after I save my profile</label>
+            <p style="font-size:12px;color:var(--t3)">Sent to your account email. Repeated unchanged saves do not resend a proposal.</p>
+            <div id="proposal-preference-status" role="status" aria-live="polite" style="font-size:12px;margin:10px 0"></div>
+            <button class="btns" onclick="doLogout()" style="font-size:13px;padding:9px 18px">Log Out</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /main -->
+
+  <!-- Mobile Bottom Quick Navigation -->
+  <nav class="mobile-bnav" id="mobileBNav">
+    <button class="mbnav-btn active" data-bnav="dashboard" onclick="goPanel('dashboard')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <span>Home</span>
+    </button>
+    <button class="mbnav-btn" data-bnav="eligibility" onclick="goPanel('eligibility')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      <span>Eligibility</span>
+    </button>
+    <button class="mbnav-btn" data-bnav="schemes" onclick="goPanel('schemes')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg>
+      <span>Schemes</span>
+    </button>
+    <button class="mbnav-btn" data-bnav="chat" onclick="goPanel('chat')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="12" x="3" y="6" rx="2"/><path d="M9 12h.01M15 12h.01M12 2v4M12 18v4"/></svg>
+      <span>AI Guide</span>
+    </button>
+    <button class="mbnav-btn" onclick="toggleMobileSidebar(true)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <span>More</span>
+    </button>
+  </nav>
+
+</div><!-- /pg-app -->
+</div><!-- /shell -->
+
+<!-- ONBOARDING MODAL -->
+<div class="mo hidden" id="modal">
+  <div class="md">
+    <div class="md-head">
+      <div class="md-ico" id="m-ico">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      </div>
+      <div class="md-h" id="m-h">Welcome to SchemeMatch</div>
+      <div class="md-sub" id="m-sub">5 quick questions to find your best schemes.</div>
+      <div class="md-dots" id="m-dots">
+        <div class="md-dot active"></div><div class="md-dot"></div><div class="md-dot"></div><div class="md-dot"></div><div class="md-dot"></div>
+      </div>
+    </div>
+    <div class="md-body">
+      <div class="md-step active" id="ms1">
+        <div class="md-ig"><div class="md-il">Your Name</div><input class="md-in" id="m-name" placeholder="e.g. Rahul Kumar"/></div>
+        <div class="md-ig"><div class="md-il">Your Age</div><input class="md-in" id="m-age" type="number" placeholder="e.g. 20"/></div>
+        <div class="md-ig"><div class="md-il">Gender</div><select class="md-in" id="m-gender"><option value="">Select</option><option>Male</option><option>Female</option><option>Other / Transgender</option></select></div>
+      </div>
+      <div class="md-step" id="ms2">
+        <div class="md-ig"><div class="md-q">Which state are you from?</div><select class="md-in" id="m-state"><option value="">Select your state</option><option>Andhra Pradesh</option><option>Assam</option><option>Bihar</option><option>Chhattisgarh</option><option>Delhi</option><option>Gujarat</option><option>Haryana</option><option>Himachal Pradesh</option><option>Jharkhand</option><option>Karnataka</option><option>Kerala</option><option>Madhya Pradesh</option><option>Maharashtra</option><option>Manipur</option><option>Meghalaya</option><option>Nagaland</option><option>Odisha</option><option>Punjab</option><option>Rajasthan</option><option>Tamil Nadu</option><option>Telangana</option><option>Tripura</option><option>Uttar Pradesh</option><option>Uttarakhand</option><option>West Bengal</option><option>J&K</option></select></div>
+        <div class="md-q" style="margin-top:12px">Your category?</div>
+        <div class="md-opts">
+          <div class="md-opt" onclick="selOpt(this,'cat','General')">General</div>
+          <div class="md-opt" onclick="selOpt(this,'cat','OBC')">OBC</div>
+          <div class="md-opt" onclick="selOpt(this,'cat','SC')">SC</div>
+          <div class="md-opt" onclick="selOpt(this,'cat','ST')">ST</div>
+          <div class="md-opt" onclick="selOpt(this,'cat','EWS')">EWS</div>
+          <div class="md-opt" onclick="selOpt(this,'cat','Minority')">Minority</div>
+        </div>
+      </div>
+      <div class="md-step" id="ms3">
+        <div class="md-q">What are you currently studying?</div>
+        <div class="md-opts" style="grid-template-columns:1fr">
+          <div class="md-opt" onclick="selOpt(this,'edu','9-10')">Class 9 or 10</div>
+          <div class="md-opt" onclick="selOpt(this,'edu','11-12')">Class 11 or 12</div>
+          <div class="md-opt" onclick="selOpt(this,'edu','diploma')">Diploma / ITI</div>
+          <div class="md-opt" onclick="selOpt(this,'edu','ug-arts')">Undergraduate (BA/BSc/BCom)</div>
+          <div class="md-opt" onclick="selOpt(this,'edu','ug-tech')">Undergraduate (BTech/BE)</div>
+          <div class="md-opt" onclick="selOpt(this,'edu','pg')">Postgraduate / PhD / Research</div>
+        </div>
+      </div>
+      <div class="md-step" id="ms4">
+        <div class="md-q">Annual family income?</div>
+        <div class="md-opts" style="grid-template-columns:1fr">
+          <div class="md-opt" onclick="selOpt(this,'inc','under1')">Below ₹1 Lakh</div>
+          <div class="md-opt" onclick="selOpt(this,'inc','1to2.5')">₹1 Lakh – ₹2.5 Lakh</div>
+          <div class="md-opt" onclick="selOpt(this,'inc','2.5to4.5')">₹2.5 Lakh – ₹4.5 Lakh</div>
+          <div class="md-opt" onclick="selOpt(this,'inc','4.5to8')">₹4.5 Lakh – ₹8 Lakh</div>
+          <div class="md-opt" onclick="selOpt(this,'inc','above8')">Above ₹8 Lakh</div>
+        </div>
+      </div>
+      <div class="md-step" id="ms5">
+        <div class="md-q">Do you have a disability (≥40%)?</div>
+        <div class="md-opts">
+          <div class="md-opt" onclick="selOpt(this,'disability','Yes')">Yes, with certificate</div>
+          <div class="md-opt" onclick="selOpt(this,'disability','No')">No</div>
+        </div>
+        <div class="md-q" style="margin-top:12px">Are you the first graduate in your family?</div>
+        <div class="md-opts">
+          <div class="md-opt" onclick="selOpt(this,'firstGrad','Yes')">Yes</div>
+          <div class="md-opt" onclick="selOpt(this,'firstGrad','No')">No</div>
+        </div>
+        <div class="md-q" style="margin-top:12px">Is either parent certified differently-abled?</div>
+        <div class="md-opts">
+          <div class="md-opt" onclick="selOpt(this,'parentDisabled','Yes')">Yes, with certificate</div>
+          <div class="md-opt" onclick="selOpt(this,'parentDisabled','No')">No</div>
+        </div>
+      </div>
+    </div>
+    <div class="md-foot" style="flex-wrap:wrap">
+      <button class="md-skip" onclick="finishOnboard()">Skip for now</button>
+      <button class="md-next" id="m-next" onclick="mNext()">Continue &rarr;</button>
+      <div style="width:100%;text-align:center;margin-top:10px;font-size:12px;color:var(--t3)">Already have an account? <a href="#" onclick="goToLogin();return false" style="color:var(--sf);font-weight:700;text-decoration:none">Log in &rarr;</a></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── JavaScript Modules ── -->
+<script src="js/lang.js?v=6"></script>
+<script src="js/eligibility-engine.js?v=6"></script>
+<script src="js/reviewed-conditions.js?v=6"></script>
+<script src="js/programme-rules.js?v=6"></script>
+<script src="js/config.js?v=6"></script>
+<script src="js/state.js?v=6"></script>
+<script src="js/tracker.js?v=6"></script>
+<script src="js/tn-schemes.js?v=6"></script>
+<script src="js/source-policy.js?v=6"></script>
+<script src="js/scheme-catalog.js?v=6"></script>
+<script src="js/catalog-bootstrap.js?v=6"></script>
+<script src="js/conflict-engine.js?v=6"></script>
+<script src="js/navigation.js?v=6"></script>
+<script src="js/onboarding.js?v=6"></script>
+<script src="js/auth.js?v=6"></script>
+<script src="js/proposal-email.js?v=6"></script>
+<script src="js/ui.js?v=6"></script>
+<script src="js/eligibility.js?v=6"></script>
+<script src="js/eligibility-followups.js?v=6"></script>
+<script src="js/panels.js?v=6"></script>
+<script src="js/exam-calendar.js?v=6"></script>
+<script src="js/exams.js?v=6"></script>
+<script src="js/catalog-chat.js?v=6"></script>
+<script src="js/chat.js?v=6"></script>
+<script src="js/init.js?v=6"></script>
+<script src="js/offline.js?v=6"></script>
+
+</body>
+</html>

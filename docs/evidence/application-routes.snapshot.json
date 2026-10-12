@@ -1,0 +1,1992 @@
+{
+  "auditedOn": "2026-10-10",
+  "total": 120,
+  "counts": {
+    "login": 71,
+    "registration": 8,
+    "form": 15,
+    "institution": 11,
+    "unavailable": 5,
+    "download": 6,
+    "closed": 4
+  },
+  "scope": "Public entry routes only. No applicant login, identity verification or submission performed.",
+  "records": [
+    {
+      "id": "tn-bcmbc-postmatric-college",
+      "name": "Post-Matric Scholarship — College (BC/MBC/DNC)",
+      "state": "Tamil Nadu",
+      "access": "login",
+      "source": "https://bcw.tn.gov.in/sub_page/62",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://umisdashboard.tnega.org/auth/login",
+          "label": "Application login"
+        }
+      ],
+      "note": "Opens the UMIS login published by the department for fresh and renewal scholarship forms. Use your UMIS credentials; contact your college if your account or scholarship details need to be completed."
+    },
+    {
+      "id": "mh-sc-postmatric",
+      "name": "Government of India Post-Matric Scholarship (SC) — Maharashtra",
+      "state": "Maharashtra",
+      "access": "login",
+      "source": "https://mahadbt2.maharashtra.gov.in/",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://mahadbt2.maharashtra.gov.in/home/-/login/openid_connect_request?p_p_state=maximized&_com_liferay_login_web_portlet_LoginPortlet_saveLastPath=false&_com_liferay_login_web_portlet_LoginPortlet_redirect=/&_com_liferay_login_web_portlet_LoginPortlet_OPEN_ID_CONNECT_PROVIDER_NAME=eMudhraIDAM",
+          "label": "Application login"
+        }
+      ],
+      "note": "Opens MahaDBT 2.0 citizen authentication. After signing in, select this scholarship; individual forms require an authenticated account."
+    },
+    {
+      "id": "mh-st-postmatric",
+      "name": "Post-Matric Scholarship (ST) — Maharashtra",
+      "state": "Maharashtra",
+      "access": "login",
+      "source": "https://mahadbt2.maharashtra.gov.in/",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://mahadbt2.maharashtra.gov.in/home/-/login/openid_connect_request?p_p_state=maximized&_com_liferay_login_web_portlet_LoginPortlet_saveLastPath=false&_com_liferay_login_web_portlet_LoginPortlet_redirect=/&_com_liferay_login_web_portlet_LoginPortlet_OPEN_ID_CONNECT_PROVIDER_NAME=eMudhraIDAM",
+          "label": "Application login"
+        }
+      ],
+      "note": "Opens MahaDBT 2.0 citizen authentication. After signing in, select this scholarship; individual forms require an authenticated account."
+    },
+    {
+      "id": "mh-obc-postmatric",
+      "name": "Post-Matric Scholarship to OBC Students — Maharashtra",
+      "state": "Maharashtra",
+      "access": "login",
+      "source": "https://mahadbt2.maharashtra.gov.in/",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://mahadbt2.maharashtra.gov.in/home/-/login/openid_connect_request?p_p_state=maximized&_com_liferay_login_web_portlet_LoginPortlet_saveLastPath=false&_com_liferay_login_web_portlet_LoginPortlet_redirect=/&_com_liferay_login_web_portlet_LoginPortlet_OPEN_ID_CONNECT_PROVIDER_NAME=eMudhraIDAM",
+          "label": "Application login"
+        }
+      ],
+      "note": "Opens MahaDBT 2.0 citizen authentication. After signing in, select this scholarship; individual forms require an authenticated account."
+    },
+    {
+      "id": "mh-open-merit",
+      "name": "State Government Open Merit Scholarship — Maharashtra",
+      "state": "Maharashtra",
+      "access": "login",
+      "source": "https://mahadbt2.maharashtra.gov.in/",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://mahadbt2.maharashtra.gov.in/home/-/login/openid_connect_request?p_p_state=maximized&_com_liferay_login_web_portlet_LoginPortlet_saveLastPath=false&_com_liferay_login_web_portlet_LoginPortlet_redirect=/&_com_liferay_login_web_portlet_LoginPortlet_OPEN_ID_CONNECT_PROVIDER_NAME=eMudhraIDAM",
+          "label": "Application login"
+        }
+      ],
+      "note": "Opens MahaDBT 2.0 citizen authentication. After signing in, select this scholarship; individual forms require an authenticated account."
+    },
+    {
+      "id": "wb-svmcm",
+      "name": "Swami Vivekananda Merit-cum-Means Scholarship",
+      "state": "West Bengal",
+      "access": "registration",
+      "source": "https://svmcm.wb.gov.in/",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://svmcm.wb.gov.in/page/register.php",
+          "label": "Registration form"
+        }
+      ],
+      "note": "Choose your course/directorate to open the corresponding fresh registration form."
+    },
+    {
+      "id": "rj-postmatric",
+      "name": "Post-Matric Scholarships — Rajasthan",
+      "state": "Rajasthan",
+      "access": "login",
+      "source": "https://sje.rajasthan.gov.in/scholarship_portal.aspx/Scholarship_Portal.aspx",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://sso.rajasthan.gov.in/signin",
+          "label": "Application login"
+        }
+      ],
+      "note": "Sign in with your Rajasthan SSO ID, open SCHOLARSHIP (SJE), then select the post-matric scheme."
+    },
+    {
+      "id": "gj-sc-postmatric",
+      "name": "Post-Matric Scholarship for SC Students (BCK-6.1)",
+      "state": "Gujarat",
+      "access": "login",
+      "source": "https://www.digitalgujarat.gov.in/loginapp/CitizenLogin.aspx",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://www.digitalgujarat.gov.in/loginapp/CitizenRegistration.aspx",
+          "label": "Registration form"
+        },
+        {
+          "url": "https://www.digitalgujarat.gov.in/loginapp/CitizenLogin.aspx",
+          "label": "Application login"
+        }
+      ],
+      "note": "Create a citizen account or sign in, then select this programme under scholarship services."
+    },
+    {
+      "id": "od-emedhabruti",
+      "name": "e-Medhabruti — MMCPY",
+      "state": "Odisha",
+      "access": "registration",
+      "source": "https://scholarship.odisha.gov.in/",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarship.odisha.gov.in/student-registration?state=1",
+          "label": "Registration form"
+        }
+      ],
+      "note": "Complete student registration, then sign in and select the Department of Higher Education and this scheme."
+    },
+    {
+      "id": "od-gopabandhu",
+      "name": "Gopabandhu Sikhya Sahayata Yojana",
+      "state": "Odisha",
+      "access": "registration",
+      "source": "https://scholarship.odisha.gov.in/",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarship.odisha.gov.in/student-registration?state=1",
+          "label": "Registration form"
+        }
+      ],
+      "note": "Complete student registration, then sign in and select the Department of Higher Education and this scheme."
+    },
+    {
+      "id": "kl-egrantz",
+      "name": "Pre- and Post-Matric Educational Assistance — eGrantz",
+      "state": "Kerala",
+      "access": "login",
+      "source": "https://egrantz.kerala.gov.in/",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://egrantz.kerala.gov.in/Registration/onetime_reg",
+          "label": "Registration form"
+        },
+        {
+          "url": "https://egrantz.kerala.gov.in/Registration/index",
+          "label": "Application login"
+        }
+      ],
+      "note": "New applicants: complete one-time registration. Existing applicants: sign in and choose the scholarship."
+    },
+    {
+      "id": "tg-postmatric",
+      "name": "Post-Matric Scholarships — TG ePASS",
+      "state": "Telangana",
+      "access": "form",
+      "source": "https://telanganaepass.cgg.gov.in/epassonlinelinks.jsp",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://tgepass.cgg.gov.in/homeServicePMSPreReg",
+          "label": "Open application form"
+        },
+        {
+          "url": "https://tgepass.cgg.gov.in/homeServicesPMSRenewalReg",
+          "label": "Renewal application form"
+        }
+      ],
+      "note": "Fresh post-matric application: start with your SSC details. For renewal, use the renewal form below."
+    },
+    {
+      "id": "ap-postmatric",
+      "name": "Post-Matric Fee Reimbursement and Maintenance Assistance",
+      "state": "Andhra Pradesh",
+      "access": "institution",
+      "source": "https://westgodavari.ap.gov.in/social-welfare/",
+      "checked": null,
+      "links": [],
+      "note": "Contact your school or college for the programme application. A public individual form link has not been confirmed."
+    },
+    {
+      "id": "br-bcebc-postmatric",
+      "name": "Post-Matric Scholarship (BC/EBC) — Bihar",
+      "state": "Bihar",
+      "access": "form",
+      "source": "https://pmsonline.bihar.gov.in/2026-27/pms/pms_online/Default.aspx",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://pmsonline.bihar.gov.in/2026-27/pms/pms_online/CreateProfile.aspx",
+          "label": "Open application form"
+        }
+      ],
+      "note": "Starts the BC/EBC post-matric profile form with OTR and CAPTCHA. Check the current application window before proceeding."
+    },
+    {
+      "id": "hr-sc-bc-postmatric",
+      "name": "Post-Matric Scholarships (SC/BC) — Haryana",
+      "state": "Haryana",
+      "access": "login",
+      "source": "https://harchhatravratti.highereduhry.ac.in/HowToApply",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://harchhatravratti.highereduhry.ac.in/UserLogin",
+          "label": "Application login"
+        }
+      ],
+      "note": "Sign in as a student, then choose this scholarship. The published new-registration link currently returns an invalid-page message."
+    },
+    {
+      "id": "hr-ugpg-merit",
+      "name": "State Merit Scholarship to UG/PG Students — Haryana",
+      "state": "Haryana",
+      "access": "login",
+      "source": "https://harchhatravratti.highereduhry.ac.in/HowToApply",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://harchhatravratti.highereduhry.ac.in/UserLogin",
+          "label": "Application login"
+        }
+      ],
+      "note": "Sign in as a student, then choose this scholarship. The published new-registration link currently returns an invalid-page message."
+    },
+    {
+      "id": "hr-ug-girls-merit",
+      "name": "State Merit Scholarship to UG Girls — Haryana",
+      "state": "Haryana",
+      "access": "login",
+      "source": "https://harchhatravratti.highereduhry.ac.in/HowToApply",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://harchhatravratti.highereduhry.ac.in/UserLogin",
+          "label": "Application login"
+        }
+      ],
+      "note": "Sign in as a student, then choose this scholarship. The published new-registration link currently returns an invalid-page message."
+    },
+    {
+      "id": "jh-postmatric",
+      "name": "Post-Matric Scholarships — e-Kalyan",
+      "state": "Jharkhand",
+      "access": "login",
+      "source": "https://ekalyan.cgg.gov.in/",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://ekalyan.cgg.gov.in/student.do",
+          "label": "Application login"
+        }
+      ],
+      "note": "Use Student Login / Register on this form, then choose Post-Matric Scholarship."
+    },
+    {
+      "id": "cg-postmatric",
+      "name": "Post-Matric Scholarships (SC/ST/OBC) — Chhattisgarh",
+      "state": "Chhattisgarh",
+      "access": "login",
+      "source": "https://postmatric-scholarship.cg.nic.in/",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://postmatric-scholarship.cg.nic.in/StudentRegistration.aspx",
+          "label": "Registration form"
+        },
+        {
+          "url": "https://postmatric-scholarship.cg.nic.in/LoginPage.aspx",
+          "label": "Application login"
+        }
+      ],
+      "note": "New students: register first. Existing students: sign in to open the post-matric form."
+    },
+    {
+      "id": "up-scholarship-fees",
+      "name": "Scholarships and Fee Reimbursement — Uttar Pradesh",
+      "state": "Uttar Pradesh",
+      "access": "registration",
+      "source": "https://scholarship.up.gov.in/",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarship.up.gov.in/RegistrationNew.aspx",
+          "label": "Registration form"
+        }
+      ],
+      "note": "Opens 2026–27 student registration. Choose the department for your category and your course to start the corresponding fresh form. The government service responded intermittently during this check."
+    },
+    {
+      "id": "as-combined-merit",
+      "name": "Combined Merit Scholarship — Assam",
+      "state": "Assam",
+      "access": "unavailable",
+      "source": "https://directorateofhighereducation.assam.gov.in/portlets/scholarships",
+      "checked": null,
+      "links": [],
+      "note": "The department’s Apply Now link currently has an expired security certificate. A working application form link has not been confirmed.",
+      "search": {
+        "url": "https://www.google.com/search?q=Combined%20Merit%20Scholarship%20%E2%80%94%20Assam%20Assam%20application%20form%20registration%20(site%3Agov.in%20OR%20site%3Anic.in)",
+        "label": "Search official application forms"
+      }
+    },
+    {
+      "id": "as-pg-research",
+      "name": "PG Research Scholarship — Assam",
+      "state": "Assam",
+      "access": "unavailable",
+      "source": "https://directorateofhighereducation.assam.gov.in/portlets/scholarships",
+      "checked": null,
+      "links": [],
+      "note": "The department’s Apply Now link currently has an expired security certificate. A working application form link has not been confirmed.",
+      "search": {
+        "url": "https://www.google.com/search?q=PG%20Research%20Scholarship%20%E2%80%94%20Assam%20Assam%20application%20form%20registration%20(site%3Agov.in%20OR%20site%3Anic.in)",
+        "label": "Search official application forms"
+      }
+    },
+    {
+      "id": "tn-pre-matric",
+      "name": "Pre-Matric Scholarship and Examination Fee Assistance (BC/MBC/DNC)",
+      "state": "Tamil Nadu",
+      "access": "institution",
+      "source": "https://bcw.tn.gov.in/sub_page/8",
+      "checked": null,
+      "links": [],
+      "note": "Contact your school or college for the programme application. A public individual form link has not been confirmed."
+    },
+    {
+      "id": "tn-school-postmatric",
+      "name": "Post-Matric Examination Fee Assistance — Classes XI/XII",
+      "state": "Tamil Nadu",
+      "access": "institution",
+      "source": "https://bcw.tn.gov.in/sub_page/8",
+      "checked": null,
+      "links": [],
+      "note": "Contact your school or college for the programme application. A public individual form link has not been confirmed."
+    },
+    {
+      "id": "tn-central-institutions",
+      "name": "Scholarship for BC/MBC/DNC Students in IIT/IIM/IIIT/NIT/Central Universities",
+      "state": "Tamil Nadu",
+      "access": "download",
+      "source": "https://bcw.tn.gov.in/sub_page/62",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://www.bcw.tn.gov.in/files/2026-2027-IIT-NIT-FreshApplication.pdf",
+          "label": "Download application form"
+        },
+        {
+          "url": "https://www.bcw.tn.gov.in/files/2026-2027-IIT-NIT-RenewalApplication.pdf",
+          "label": "Download renewal application form"
+        }
+      ],
+      "note": "Download the 2026–27 fresh application; existing recipients should use the renewal form. Submit through the institution as instructed in the form."
+    },
+    {
+      "id": "wb-kanyashree",
+      "name": "Kanyashree Prakalpa — K1/K2",
+      "state": "West Bengal",
+      "access": "institution",
+      "source": "https://kanyashree.wb.gov.in/",
+      "checked": null,
+      "links": [],
+      "note": "Contact your school or college for the programme application. A public individual form link has not been confirmed."
+    },
+    {
+      "id": "wb-hindi-scholarship",
+      "name": "Hindi Scholarship Scheme — West Bengal",
+      "state": "West Bengal",
+      "access": "unavailable",
+      "source": "https://wbchse.wb.gov.in/student/scholarship/hindi-scholarship-scheme/",
+      "checked": "2026-10-10",
+      "links": [],
+      "note": "The council’s download contains an old scheme notice, not a current application form. Ask the Education Directorate’s Scholarship and Stipend Section for the current form.",
+      "search": {
+        "url": "https://www.google.com/search?q=Hindi%20Scholarship%20Scheme%20%E2%80%94%20West%20Bengal%20West%20Bengal%20application%20form%20registration%20(site%3Agov.in%20OR%20site%3Anic.in)",
+        "label": "Search official application forms"
+      }
+    },
+    {
+      "id": "wb-student-credit",
+      "name": "West Bengal Student Credit Card",
+      "state": "West Bengal",
+      "access": "login",
+      "source": "https://wbscc.wb.gov.in/",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://wbscc.wb.gov.in/Applicant_Registration",
+          "label": "Registration form"
+        },
+        {
+          "url": "https://wbscc.wb.gov.in/Applicant_Login",
+          "label": "Application login"
+        },
+        {
+          "url": "https://wbscc.wb.gov.in/Scc_Foreign/Applicant_Registration",
+          "label": "Foreign-course registration form"
+        },
+        {
+          "url": "https://wbscc.wb.gov.in/Scc_Foreign/Applicant_Login",
+          "label": "Foreign-course application login"
+        }
+      ],
+      "note": "For study at an institution in India. For an institution outside India, use the foreign-course form below."
+    },
+    {
+      "id": "rj-cm-higher-education",
+      "name": "Chief Minister Higher Education Scholarship",
+      "state": "Rajasthan",
+      "access": "login",
+      "source": "https://hte.rajasthan.gov.in/HTE/30992",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://sso.rajasthan.gov.in/signin?RU=scholarship",
+          "label": "Application login"
+        }
+      ],
+      "note": "Sign in with your Rajasthan SSO ID, then select this scholarship in the scholarship application."
+    },
+    {
+      "id": "rj-kalibai-scooty",
+      "name": "Kalibai Bheel Medhavi Chhatra Scooty Yojana",
+      "state": "Rajasthan",
+      "access": "login",
+      "source": "https://hte.rajasthan.gov.in/HTE/30992",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://sso.rajasthan.gov.in/signin?RU=scholarship",
+          "label": "Application login"
+        }
+      ],
+      "note": "Sign in with your Rajasthan SSO ID, then select this scholarship in the scholarship application."
+    },
+    {
+      "id": "rj-devnarayan",
+      "name": "Devnarayan Girls Scooty and Incentive Scheme",
+      "state": "Rajasthan",
+      "access": "login",
+      "source": "https://hte.rajasthan.gov.in/HTE/30992",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://sso.rajasthan.gov.in/signin?RU=scholarship",
+          "label": "Application login"
+        }
+      ],
+      "note": "Sign in with your Rajasthan SSO ID, then select this scholarship in the scholarship application."
+    },
+    {
+      "id": "gj-food-bill",
+      "name": "Food Bill Assistance to SC Students (BCK-10)",
+      "state": "Gujarat",
+      "access": "login",
+      "source": "https://www.digitalgujarat.gov.in/loginapp/CitizenLogin.aspx",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://www.digitalgujarat.gov.in/loginapp/CitizenRegistration.aspx",
+          "label": "Registration form"
+        },
+        {
+          "url": "https://www.digitalgujarat.gov.in/loginapp/CitizenLogin.aspx",
+          "label": "Application login"
+        }
+      ],
+      "note": "Create a citizen account or sign in, then select this programme under scholarship services."
+    },
+    {
+      "id": "gj-thesis",
+      "name": "Thesis Assistance for MPhil/PhD SC Students (BCK-11)",
+      "state": "Gujarat",
+      "access": "login",
+      "source": "https://sje.gujarat.gov.in/dscw/schemes/1529?lang=English",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://www.digitalgujarat.gov.in/loginapp/CitizenRegistration.aspx",
+          "label": "Registration form"
+        },
+        {
+          "url": "https://www.digitalgujarat.gov.in/loginapp/CitizenLogin.aspx",
+          "label": "Application login"
+        }
+      ],
+      "note": "Register or sign in, then select BCK-11 thesis assistance."
+    },
+    {
+      "id": "gj-medical-engineering",
+      "name": "Financial Assistance to SC Students in Medical/Engineering/Diploma (BCK-12)",
+      "state": "Gujarat",
+      "access": "login",
+      "source": "https://sje.gujarat.gov.in/dscw/schemes/1531?lang=English",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://www.digitalgujarat.gov.in/loginapp/CitizenRegistration.aspx",
+          "label": "Registration form"
+        },
+        {
+          "url": "https://www.digitalgujarat.gov.in/loginapp/CitizenLogin.aspx",
+          "label": "Application login"
+        }
+      ],
+      "note": "Register or sign in, then select BCK-12 educational assistance."
+    },
+    {
+      "id": "od-bhasabruti",
+      "name": "Vyasakabi Fakir Mohan Bhasabruti",
+      "state": "Odisha",
+      "access": "registration",
+      "source": "https://scholarship.odisha.gov.in/",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarship.odisha.gov.in/student-registration?state=1",
+          "label": "Registration form"
+        }
+      ],
+      "note": "Complete student registration, then sign in and select the Department of Higher Education and this scheme."
+    },
+    {
+      "id": "od-kalinga-sikhya",
+      "name": "Kalinga Sikhya Sathi Yojana — Education Loan Interest Subsidy",
+      "state": "Odisha",
+      "access": "registration",
+      "source": "https://dhe.odisha.gov.in/sites/default/files/2023-11/51596.pdf",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarship.odisha.gov.in/student-registration?state=1",
+          "label": "Registration form"
+        }
+      ],
+      "note": "Register on the state scholarship portal, then choose Kalinga Sikhya Sathi for the interest subsidy after obtaining an eligible education loan. The loan itself is applied for through a scheduled bank."
+    },
+    {
+      "id": "kl-state-merit",
+      "name": "State Merit Scholarship — Kerala",
+      "state": "Kerala",
+      "access": "login",
+      "source": "https://dcescholarship.kerala.gov.in/he_ma/he_maindx.php",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://dcescholarship.kerala.gov.in/he_notifn/registration.php",
+          "label": "Registration form"
+        },
+        {
+          "url": "https://dcescholarship.kerala.gov.in/he_ma/hec_cadpge.php?st=1",
+          "label": "Application login"
+        }
+      ],
+      "note": "Published DCE registration and candidate-login forms. The login currently lists years only through 2024–25; a 2026–27 application window has not been confirmed."
+    },
+    {
+      "id": "kl-suvarna-jubilee",
+      "name": "Suvarna Jubilee Merit Scholarship",
+      "state": "Kerala",
+      "access": "login",
+      "source": "https://dcescholarship.kerala.gov.in/he_ma/he_maindx.php",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://dcescholarship.kerala.gov.in/he_notifn/registration.php",
+          "label": "Registration form"
+        },
+        {
+          "url": "https://dcescholarship.kerala.gov.in/he_ma/hec_cadpge.php?st=1",
+          "label": "Application login"
+        }
+      ],
+      "note": "Published DCE registration and candidate-login forms. The login currently lists years only through 2024–25; a 2026–27 application window has not been confirmed."
+    },
+    {
+      "id": "kl-ch-muhammedkoya",
+      "name": "C H Muhammedkoya Scholarship",
+      "state": "Kerala",
+      "access": "login",
+      "source": "https://dcescholarship.kerala.gov.in/he_ma/he_maindx.php",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://dcescholarship.kerala.gov.in/he_notifn/registration.php",
+          "label": "Registration form"
+        },
+        {
+          "url": "https://dcescholarship.kerala.gov.in/he_ma/hec_cadpge.php?st=1",
+          "label": "Application login"
+        }
+      ],
+      "note": "Published DCE registration and candidate-login forms. The login currently lists years only through 2024–25; a 2026–27 application window has not been confirmed."
+    },
+    {
+      "id": "tg-pre-matric",
+      "name": "Pre-Matric Scholarships — TG ePASS",
+      "state": "Telangana",
+      "access": "form",
+      "source": "https://telanganaepass.cgg.gov.in/PrematricLinks.jsp",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://tgepass.cgg.gov.in/homeServicesprematricFreshRegistration",
+          "label": "Open application form"
+        },
+        {
+          "url": "https://tgepass.cgg.gov.in/HomeServicePrematricRenewalRegistration",
+          "label": "Renewal application form"
+        }
+      ],
+      "note": "Opens the fresh pre-matric student form. Existing recipients can use the renewal form below."
+    },
+    {
+      "id": "tg-overseas-sc",
+      "name": "Ambedkar Overseas Vidya Nidhi — SC",
+      "state": "Telangana",
+      "access": "closed",
+      "source": "https://telanganaepass.cgg.gov.in/OverseasLinks.do",
+      "checked": "2026-10-10",
+      "links": [],
+      "note": "The published overseas service page reports registrations closed for this category. A new form link will be needed when applications reopen."
+    },
+    {
+      "id": "tg-overseas-st",
+      "name": "Ambedkar Overseas Vidya Nidhi — ST",
+      "state": "Telangana",
+      "access": "form",
+      "source": "https://telanganaepass.cgg.gov.in/OverseasLinks.do",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://telanganaepass.cgg.gov.in/OverseasReg.do?dept=2&stu_details(studentAction)=unspecified",
+          "label": "Open application form"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "tg-overseas-minority",
+      "name": "Chief Minister’s Overseas Scholarship for Minorities",
+      "state": "Telangana",
+      "access": "closed",
+      "source": "https://telanganaepass.cgg.gov.in/OverseasLinks.do",
+      "checked": "2026-10-10",
+      "links": [],
+      "note": "The published overseas service page reports registrations closed for this category. A new form link will be needed when applications reopen."
+    },
+    {
+      "id": "tg-overseas-bcebc",
+      "name": "Mahatma Jyothiba Phule Overseas Vidya Nidhi — BC/EBC",
+      "state": "Telangana",
+      "access": "form",
+      "source": "https://telanganaepass.cgg.gov.in/OverseasLinks.do",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://telanganaepass.cgg.gov.in/OverseasReg.do?dept=3&stu_details(studentAction)=unspecified",
+          "label": "Open application form"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "tg-corporate-admissions",
+      "name": "Corporate Admissions Scheme",
+      "state": "Telangana",
+      "access": "closed",
+      "source": "https://telanganaepass.cgg.gov.in/CorporateApplicationForm.do",
+      "checked": "2026-10-10",
+      "links": [],
+      "note": "The official Corporate Admissions page reports student registrations closed."
+    },
+    {
+      "id": "ap-pre-matric",
+      "name": "Pre-Matric Scholarship — Tribal Students",
+      "state": "Andhra Pradesh",
+      "access": "institution",
+      "source": "https://vizianagaram.ap.gov.in/tribal-welfare/",
+      "checked": null,
+      "links": [],
+      "note": "Contact your school or college for the programme application. A public individual form link has not been confirmed."
+    },
+    {
+      "id": "ap-best-schools",
+      "name": "Best Available Schools Scheme",
+      "state": "Andhra Pradesh",
+      "access": "institution",
+      "source": "https://vizianagaram.ap.gov.in/tribal-welfare/",
+      "checked": null,
+      "links": [],
+      "note": "Contact your school or college for the programme application. A public individual form link has not been confirmed."
+    },
+    {
+      "id": "ap-overseas",
+      "name": "Ambedkar Overseas Vidya Nidhi — Andhra Pradesh",
+      "state": "Andhra Pradesh",
+      "access": "unavailable",
+      "source": "https://tirupati.ap.gov.in/social-welfare/",
+      "checked": null,
+      "links": [],
+      "note": "A working public application form link has not been confirmed for this programme. Check the programme source or contact its department.",
+      "search": {
+        "url": "https://www.google.com/search?q=Ambedkar%20Overseas%20Vidya%20Nidhi%20%E2%80%94%20Andhra%20Pradesh%20Andhra%20Pradesh%20application%20form%20registration%20(site%3Agov.in%20OR%20site%3Anic.in)",
+        "label": "Search official application forms"
+      }
+    },
+    {
+      "id": "br-matric-incentive",
+      "name": "Mukhyamantri Balak/Balika Protsahan Yojana — Class X",
+      "state": "Bihar",
+      "access": "form",
+      "source": "https://medhasoft.bihar.gov.in/",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://medhasoft.bihar.gov.in/Matric2627/Register.aspx",
+          "label": "Open application form"
+        }
+      ],
+      "note": "Starts this programme’s application with the required instructions and declarations."
+    },
+    {
+      "id": "br-inter-girls",
+      "name": "Mukhyamantri Kanya Utthan / Balika Protsahan — Intermediate",
+      "state": "Bihar",
+      "access": "form",
+      "source": "https://medhasoft.bihar.gov.in/",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://medhasoft.bihar.gov.in/Inter2627/Register.aspx",
+          "label": "Open application form"
+        }
+      ],
+      "note": "Starts this programme’s application with the required instructions and declarations."
+    },
+    {
+      "id": "br-inter-scst-girls",
+      "name": "Mukhyamantri Medhavriti — SC/ST Intermediate Girls",
+      "state": "Bihar",
+      "access": "form",
+      "source": "https://medhasoft.bihar.gov.in/",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://medhasoft.bihar.gov.in/InterSCST2026/Register.aspx",
+          "label": "Open application form"
+        }
+      ],
+      "note": "Starts this programme’s application with the required instructions and declarations."
+    },
+    {
+      "id": "hr-sc-stipend",
+      "name": "Consolidated Stipend Scheme for SC Students",
+      "state": "Haryana",
+      "access": "login",
+      "source": "https://harchhatravratti.highereduhry.ac.in/HowToApply",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://harchhatravratti.highereduhry.ac.in/UserLogin",
+          "label": "Application login"
+        }
+      ],
+      "note": "Sign in as a student, then choose this scholarship. The published new-registration link currently returns an invalid-page message."
+    },
+    {
+      "id": "jh-savitribai",
+      "name": "Savitribai Phule Kishori Samriddhi Yojana",
+      "state": "Jharkhand",
+      "access": "login",
+      "source": "https://savitribaipksy.jharkhand.gov.in/",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://savitribaipksy.jharkhand.gov.in/login",
+          "label": "Application login"
+        },
+        {
+          "url": "https://savitribaipksy.jharkhand.gov.in/offlineForm_pdf",
+          "label": "Download application form"
+        }
+      ],
+      "note": "Use Beneficiary Login to access your application, or download the published paper application form below."
+    },
+    {
+      "id": "jh-marang-gomke",
+      "name": "Marang Gomke Jaipal Singh Munda Overseas Scholarship",
+      "state": "Jharkhand",
+      "access": "closed",
+      "source": "https://mgos.jharkhand.gov.in/",
+      "checked": "2026-10-10",
+      "links": [],
+      "note": "The official MGOS portal reports applications closed for 2026–27 and has published selection results. Check for the next application announcement."
+    },
+    {
+      "id": "jh-sc-coaching",
+      "name": "Coaching and Allied Scheme for SC Students",
+      "state": "Jharkhand",
+      "access": "institution",
+      "source": "https://www.jharkhand.gov.in/PDepartment/ViewDocument?id=D030DO00616012019010943594",
+      "checked": "2026-10-10",
+      "links": [],
+      "note": "The published scheme accepts grant applications from coaching institutions. Students should contact the Welfare Department or a participating coaching institution for admission."
+    },
+    {
+      "id": "cg-naunihal",
+      "name": "Mukhyamantri Naunihal Chhatravritti Yojana",
+      "state": "Chhattisgarh",
+      "access": "form",
+      "source": "https://shramevjayate.cg.gov.in/Public/ApplicationBOC_public.aspx",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://shramevjayate.cg.gov.in/Public/ApplicationBOC_public.aspx",
+          "label": "Open application form"
+        }
+      ],
+      "note": "Start the construction-worker scheme application with your district and labour registration number, then choose this programme."
+    },
+    {
+      "id": "cg-noni-babu",
+      "name": "Mukhyamantri Noni Babu Medhavi Shiksha Sahayata",
+      "state": "Chhattisgarh",
+      "access": "form",
+      "source": "https://shramevjayate.cg.gov.in/Public/ApplicationBOC_public.aspx",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://shramevjayate.cg.gov.in/Public/ApplicationBOC_public.aspx",
+          "label": "Open application form"
+        }
+      ],
+      "note": "Start the construction-worker scheme application with your district and labour registration number, then choose this programme."
+    },
+    {
+      "id": "cg-gyan-protsahan",
+      "name": "Mukhyamantri Gyan Protsahan Yojana",
+      "state": "Chhattisgarh",
+      "access": "form",
+      "source": "https://schoolscholarship.cg.nic.in/fhome.aspx",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://schoolscholarship.cg.nic.in/CMGyaanProtsaahanRegistration.aspx",
+          "label": "Open application form"
+        }
+      ],
+      "note": "Start with the academic year and board roll number, then complete the student application."
+    },
+    {
+      "id": "up-kanya-sumangala",
+      "name": "Mukhyamantri Kanya Sumangala — Education Stages",
+      "state": "Uttar Pradesh",
+      "access": "registration",
+      "source": "https://mksy.up.gov.in/women_welfare/citizen/guest_login.php",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://mksy.up.gov.in/women_welfare/citizen/guest_login.php",
+          "label": "Registration form"
+        }
+      ],
+      "note": "Opens citizen registration and applicant login. New applicants must read and accept the programme terms themselves before filling the registration form."
+    },
+    {
+      "id": "up-abhyudaya",
+      "name": "Mukhyamantri Abhyudaya — Free Competitive Exam Coaching",
+      "state": "Uttar Pradesh",
+      "access": "unavailable",
+      "source": "https://sonbhadra.nic.in/education/",
+      "checked": "2026-10-10",
+      "links": [],
+      "note": "A working statewide student application form has not been confirmed. The published Abhyudaya portal could not be reached; contact your district Social Welfare Office for the current batch application.",
+      "search": {
+        "url": "https://www.google.com/search?q=Mukhyamantri%20Abhyudaya%20%E2%80%94%20Free%20Competitive%20Exam%20Coaching%20Uttar%20Pradesh%20application%20form%20registration%20(site%3Agov.in%20OR%20site%3Anic.in)",
+        "label": "Search official application forms"
+      }
+    },
+    {
+      "id": "up-sant-ravidas",
+      "name": "Sant Ravidas Shiksha Sahayata Yojana",
+      "state": "Uttar Pradesh",
+      "access": "form",
+      "source": "https://uplabour.gov.in/",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://labour.upbocw.in/worker/scheme/sant-ravidas-shiksha",
+          "label": "Open application form"
+        }
+      ],
+      "note": "Opens the Sant Ravidas education application route. Registered construction workers must sign in and complete their worker profile before the form is available."
+    },
+    {
+      "id": "as-nijut-moina",
+      "name": "Mukhya Mantrir Nijut Moina — Girl Student Admission Incentive",
+      "state": "Assam",
+      "access": "institution",
+      "source": "https://directorateofhighereducation.assam.gov.in/sites/default/files/swf_utility_folder/departments/dhe_medhassu_in_oid_4/menu/document/nijut_mona_guideline_2025-26.pdf",
+      "checked": null,
+      "links": [],
+      "note": "Contact your school or college for the programme application. A public individual form link has not been confirmed."
+    },
+    {
+      "id": "as-minority-girls",
+      "name": "Scholarship for Minority Girl Students — Classes X/XI/XII",
+      "state": "Assam",
+      "access": "institution",
+      "source": "https://madhyamik.assam.gov.in/latest/scholarship-for-minority-girl-students-of-classes-x-xi-xii-under-government-provincialised",
+      "checked": null,
+      "links": [],
+      "note": "Contact your school or college for the programme application. A public individual form link has not been confirmed."
+    },
+    {
+      "id": "nsp-665fbe904730ace2",
+      "name": "Pre Matric Scholarship To ST Students (Class Ix And X) - Assam",
+      "state": "Assam",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "nsp-897eb33ad027a9c5",
+      "name": "Pre-Matric Scholarship For SC Students Of Parents Or Guardians Engaged In Unclean Occupation(Class 1-10))-Assam",
+      "state": "Assam",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "nsp-eb9e61261548695b",
+      "name": "Post Matric Scholarship To OBC Students - Assam",
+      "state": "Assam",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "nsp-02bbacfce044fd9f",
+      "name": "Pre-Matric Scholarship For SC Students (Class Ix And X) - Assam",
+      "state": "Assam",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "nsp-1c908a65dc963d7b",
+      "name": "Pre Matric Scholarship To OBC Students (Class 9 And Class 10) -Assam",
+      "state": "Assam",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "nsp-e1cd00dcc1fe33a9",
+      "name": "Post Matric Scholarship To ST Students - Assam",
+      "state": "Assam",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "nsp-b5ff818cafc561b5",
+      "name": "Post Matric Scholarship For SC Students - Assam",
+      "state": "Assam",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "nsp-e832ac4d87d1bd51",
+      "name": "PM YASASVI Pre Matric Scholarship Scheme For OBC EBC And DNT - Maharashtra",
+      "state": "Maharashtra",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "nsp-c3af4168f656478e",
+      "name": "Centrally Sponsored Pre Matric Scholarship Scheme For SC (Class 9 & 10)- West Bengal",
+      "state": "West Bengal",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "nsp-697bc9264f940bc2",
+      "name": "Centrally Sponsored Pre Matric Scholarship Scheme To The Children Of Those Engaged In Occupations Involving Cleaning And Health Hazard-West Bengal",
+      "state": "West Bengal",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "nsp-a9a53114a3a553b6",
+      "name": "Centrally Sponsored Post Matric Scholarsip Scheme For SC -West Bengal",
+      "state": "West Bengal",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "nsp-d0fbd15e1135397b",
+      "name": "State Scholarship Schemes For Divyangjan (Class 1 To 10)- Chattisgarh",
+      "state": "Chhattisgarh",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "nsp-c115f0dc60199700",
+      "name": "State Scholarship Schemes For Divyangjan (Class 11 And 12 )- Chattisgarh",
+      "state": "Chhattisgarh",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "nsp-3c1d47ce2c077d27",
+      "name": "Bpl Sholarship Scheme For College Students-Chattisgarh",
+      "state": "Chhattisgarh",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "central-sector",
+      "name": "PM-USP CSSS — College and University Students",
+      "state": "Central / All India",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "aicte-pragati",
+      "name": "AICTE Pragati — Technical Degree",
+      "state": "Central / All India",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "aicte-pragati-diploma",
+      "name": "AICTE Pragati — Technical Diploma",
+      "state": "Central / All India",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "aicte-saksham",
+      "name": "AICTE Saksham — Technical Degree",
+      "state": "Central / All India",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "aicte-saksham-diploma",
+      "name": "AICTE Saksham — Technical Diploma",
+      "state": "Central / All India",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "aicte-swanath-degree",
+      "name": "AICTE Swanath — Technical Degree",
+      "state": "Central / All India",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "aicte-swanath-diploma",
+      "name": "AICTE Swanath — Technical Diploma",
+      "state": "Central / All India",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "ugc-pg-national",
+      "name": "National Scholarship for Post Graduate Studies",
+      "state": "Central / All India",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "ishan-uday",
+      "name": "Ishan Uday — Special Scholarship Scheme for NER",
+      "state": "Central / All India",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "pm-yasasvi-college",
+      "name": "PM YASASVI — Top Class Education in College",
+      "state": "Central / All India",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "pm-yasasvi-school",
+      "name": "PM YASASVI — Top Class Education in Schools",
+      "state": "Central / All India",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "nmms",
+      "name": "National Means Cum Merit Scholarship",
+      "state": "Central / All India",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "sc-topclass",
+      "name": "Top Class Education Scholarship for SC Students",
+      "state": "Central / All India",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "st-topclass",
+      "name": "National Scholarship for Higher Education of ST Students",
+      "state": "Central / All India",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "nsp-54ed40efae68bf43",
+      "name": "Prime Minister'S Scholarship Scheme For Wards Of States/UTs Police Personnel Martyred During Terror/Naxal Attacks",
+      "state": "Central / All India",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "nsp-57b5cc835f9fee06",
+      "name": "Prime Minister'S Scholarship Scheme For Central Armed Police Forces And Assam Rifles",
+      "state": "Central / All India",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "nsp-dfa85afbfeaabc57",
+      "name": "PM USP Special Scholarship Scheme For Jammu Kashmir And Ladakh",
+      "state": "Central / All India",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "nsp-6d6f77dc3a12ac77",
+      "name": "Financial Assistance For Education To The Wards Of Beedi/Cine/Iomc/Lsdm- Pre Matric",
+      "state": "Central / All India",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "nsp-111650636ef12bd4",
+      "name": "Financial Assistance For Education To The Wards Of Beedi/Cine/Iomc/Lsdm- Post Matric",
+      "state": "Central / All India",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "nsp-a27bb96e7fc877c0",
+      "name": "National Renewable Energy Fellowship Scheme",
+      "state": "Central / All India",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "nsp-33709d3058fb47be",
+      "name": "Stipend Scheme For Under Graduate And Post Graduate Studies In Indian Statistical Institute-Kolkata",
+      "state": "Central / All India",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "nsp-e2b17f9bf92ce073",
+      "name": "Icar National Talent Scholarship(Nts-Ug)",
+      "state": "Central / All India",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "nsp-12bb10d384e84573",
+      "name": "Icar Post Graduate Scholarship(Pgs)",
+      "state": "Central / All India",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "nsp-01a6ea472c1dfb0b",
+      "name": "Icar National Talent Scholarship(Nts-Pg)",
+      "state": "Central / All India",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "nsp-ca2119f8ee0544ba",
+      "name": "Icar Junior Research Fellowships(Jrf) And Senior Research Fellowships(Srf)",
+      "state": "Central / All India",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "nsp-3d67a56cf3741823",
+      "name": "Free Coaching For Scs OBCs And Beneficiaries Of PM Cares Children Scheme",
+      "state": "Central / All India",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "nsp-2fdf27aba21951b0",
+      "name": "Pre Matric Scholarship For Students With Disabilities",
+      "state": "Central / All India",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "nsp-c850d66b651b747b",
+      "name": "Post Matric Scholarship For Students With Disabilities",
+      "state": "Central / All India",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "nsp-3588466b4f2d14ff",
+      "name": "Scholarship For Top Class Education For Students With Disabilities",
+      "state": "Central / All India",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "nsp-2b6b1e48ec381753",
+      "name": "Financial Support To The Students Of NER For Higher Professional Courses(NEC Merit Scholarship)",
+      "state": "Central / All India",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "nsp-cd2d5d377d7b56bc",
+      "name": "Prime Minister'S Scholarship Scheme For Ministry Of Railways",
+      "state": "Central / All India",
+      "access": "login",
+      "source": "https://scholarships.gov.in/Students",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://scholarships.gov.in/ApplicationForm/",
+          "label": "Application login"
+        },
+        {
+          "url": "https://scholarships.gov.in/otrapplication/",
+          "label": "OTR registration form"
+        }
+      ],
+      "note": "Use Application login, sign in to NSP, then select this scholarship. NSP opens the individual application form after sign-in. New applicants must first complete OTR registration."
+    },
+    {
+      "id": "pm-kisan",
+      "name": "PM-KISAN",
+      "state": "Central / All India",
+      "access": "form",
+      "source": "https://pmkisan.gov.in/",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://pmkisan.gov.in/RegistrationFormupdated.aspx",
+          "label": "Open application form"
+        }
+      ],
+      "note": "Opens New Farmer Registration."
+    },
+    {
+      "id": "pmfby",
+      "name": "Pradhan Mantri Fasal Bima Yojana",
+      "state": "Central / All India",
+      "access": "registration",
+      "source": "https://www.pmfby.gov.in/farmerRegistrationForm/",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://www.pmfby.gov.in/farmerRegistrationForm/",
+          "label": "Registration form"
+        }
+      ],
+      "note": "Register as a farmer, then sign in to submit your crop-insurance application for the relevant season."
+    },
+    {
+      "id": "pm-kmy",
+      "name": "Pradhan Mantri Kisan Maandhan Yojana",
+      "state": "Central / All India",
+      "access": "institution",
+      "source": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2309204&lang=2&reg=48",
+      "checked": "2026-10-10",
+      "links": [],
+      "note": "Visit a Common Service Centre (CSC) for enrolment. The CSC operator completes the online registration after checking your details."
+    },
+    {
+      "id": "pmjay",
+      "name": "Ayushman Bharat PM-JAY",
+      "state": "Central / All India",
+      "access": "login",
+      "source": "https://sha.kerala.gov.in/wp-content/uploads/2025/12/BIS-2.0-Web-Usermanual_English_ver7.0.pdf",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://beneficiary.nha.gov.in/",
+          "label": "Application login"
+        }
+      ],
+      "note": "Choose Beneficiary and sign in with your mobile number to access the beneficiary identification and card process."
+    },
+    {
+      "id": "pmjdy",
+      "name": "Pradhan Mantri Jan Dhan Yojana",
+      "state": "Central / All India",
+      "access": "download",
+      "source": "https://pmjdy.gov.in/",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://pmjdy.gov.in/files/forms/account-opening/English.pdf",
+          "label": "Download application form"
+        }
+      ],
+      "note": "Download and complete the account-opening form, then submit it to a participating bank."
+    },
+    {
+      "id": "pmjjby",
+      "name": "Pradhan Mantri Jeevan Jyoti Bima Yojana",
+      "state": "Central / All India",
+      "access": "download",
+      "source": "https://jansuraksha.gov.in/Forms-PMJJBY.aspx",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://jansuraksha.gov.in/Files/PMJJBY/English/ApplicationForm.pdf",
+          "label": "Download application form"
+        }
+      ],
+      "note": "Download the enrolment form and submit it through your participating bank or post office."
+    },
+    {
+      "id": "pmsby",
+      "name": "Pradhan Mantri Suraksha Bima Yojana",
+      "state": "Central / All India",
+      "access": "download",
+      "source": "https://jansuraksha.gov.in/Forms-PMSBY.aspx",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://jansuraksha.gov.in/Files/PMSBY/English/ApplicationForm.pdf",
+          "label": "Download application form"
+        }
+      ],
+      "note": "Download the enrolment form and submit it through your participating bank or post office."
+    },
+    {
+      "id": "apy",
+      "name": "Atal Pension Yojana",
+      "state": "Central / All India",
+      "access": "download",
+      "source": "https://jansuraksha.gov.in/Forms-APY.aspx",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://jansuraksha.gov.in/Files/APY/ENGLISH/ApplicationForm.pdf",
+          "label": "Download application form"
+        }
+      ],
+      "note": "Download the enrolment form and submit it through your participating bank or post office."
+    },
+    {
+      "id": "pm-mudra",
+      "name": "Pradhan Mantri MUDRA Yojana",
+      "state": "Central / All India",
+      "access": "download",
+      "source": "https://financialservices.gov.in/beta/sites/default/files/2025-04/Decade-of-Mudra-Yojana-Cover-Story-by-NIS.pdf",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://www.mudra.org.in/Default/DownloadFile/Common_loan_Application_form.pdf",
+          "label": "Download application form"
+        },
+        {
+          "url": "https://www.mudra.org.in/Default/DownloadFile/Application_Form_for_Shishu.pdf",
+          "label": "Download Shishu application form"
+        }
+      ],
+      "note": "Download the loan application and submit it with the required documents to a participating lender. For a Shishu loan, use the separate form below."
+    },
+    {
+      "id": "pm-vishwakarma",
+      "name": "PM Vishwakarma",
+      "state": "Central / All India",
+      "access": "institution",
+      "source": "https://www.pib.gov.in/PressNoteDetails.aspx?ModuleId=3&NoteId=155216&lang=2&reg=3",
+      "checked": "2026-10-10",
+      "links": [],
+      "note": "Enrolment uses a Common Service Centre (CSC) and Aadhaar biometric authentication. A public self-service application form has not been confirmed."
+    },
+    {
+      "id": "pm-ujjwala",
+      "name": "Pradhan Mantri Ujjwala Yojana",
+      "state": "Central / All India",
+      "access": "form",
+      "source": "https://pmuy.gov.in/",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://my.ebharatgas.com/bharatgas/LPGServices/ApplyUjjwala2Connection",
+          "label": "Bharatgas application form"
+        },
+        {
+          "url": "https://myhpgas.in/myHPGas/NewConsumerRegistration.aspx",
+          "label": "HP Gas registration form"
+        },
+        {
+          "url": "https://cx.indianoil.in/webcenter/portal/Customer/pages_landingpage",
+          "label": "Indane application login"
+        }
+      ],
+      "note": "Choose your LPG provider’s application form below."
+    },
+    {
+      "id": "pmay-u2",
+      "name": "Pradhan Mantri Awas Yojana — Urban 2.0",
+      "state": "Central / All India",
+      "access": "form",
+      "source": "https://pmaymis.gov.in/PMAYMIS2_2024/PmayDefault.aspx",
+      "checked": "2026-10-10",
+      "links": [
+        {
+          "url": "https://pmaymis.gov.in/PMAYMIS2_2024/PMAY_SURVEY/EligiblityCheck.aspx",
+          "label": "Open application form"
+        }
+      ],
+      "note": "Starts the PMAY-U 2.0 application with its prerequisite eligibility questions."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "framework": null,
+  "installCommand": "npm ci && node scripts/prepare-vercel.cjs",
+  "buildCommand": "node scripts/prepare-vercel.cjs",
+  "outputDirectory": "public",
+  "functions": { "api/index.js": { "includeFiles": "shared/**" } },
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api/index" }
+  ]
+}
